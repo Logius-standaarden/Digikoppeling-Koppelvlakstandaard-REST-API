@@ -1,4 +1,4 @@
-# DIgikoppeling Restful API profiel - concept indeling
+# Digikoppeling Restful API profiel - concept indeling
 
 ## Inleiding
 
