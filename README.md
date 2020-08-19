@@ -1,5 +1,7 @@
 # Digikoppeling Restful API profiel - concept indeling
 
+HTML versie [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/)
+
 ## Inleiding
 
 - Historie
