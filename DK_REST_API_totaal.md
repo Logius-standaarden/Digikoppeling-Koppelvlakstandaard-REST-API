@@ -6,7 +6,9 @@ Het Digikoppeling Rest API profiel is gericht op M2M (Machine-to--Machine) en G2
 
 Opzet Digikoppeling:
 
-![alt text](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/media/fig-structuur.png)
+![alt text](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/raw/master/media/fig-structuur.png)
+
+
 
 
 # Digikoppeling Restful API profiel
