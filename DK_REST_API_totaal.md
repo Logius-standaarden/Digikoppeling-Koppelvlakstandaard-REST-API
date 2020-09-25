@@ -44,161 +44,29 @@ Het DK REST-API profiel is gebaseed op de REST-API Design Rules standaard zoals 
 
 -  M -- Must have: De Must have eisen moeten gerealiseerd worden. Hier kan niet van afgeweken worden. 
 
--  S -- Should have: Implementatie conform voorschrift tenzij dit niet mogelijk is én er een workaround beschikbaar is die een vergelijkbaar resultaat mogelijk maakt. 
+-  S -- Should have: Implementatie conform voorschrift tenzij dit niet mogelijk is Ã©n er een workaround beschikbaar is die een vergelijkbaar resultaat mogelijk maakt. 
 
 -  C -- Could have: Dit betreft eisen die gewenst zijn maar waar men vrij is een andere keuze te maken.
 
 -  W -- Won't : Deze eisen worden in de context van dit profiel niet toegepast.
 
-|
-
-**Categorie**
-
- |
-
-**Principe**
-
- |
-
-**Toelichting**
-
- |
-|
-
-MUST
-
- |
-
-3.1 API-01: Operations are Safe and/or Idempotent
-
- |  |
-|
-
-MUST
-
- |
-
-3.2 API-02: Do not maintain state information at the server
-
- |  |
-|
-
-MUST
-
- |
-
-3.3 API-03: Only apply default HTTP operations
-
- |  |
-|
-
-MUST
-
- |
-
-3.4 API-04: Define interfaces in Dutch unless there is an official English glossary
-
- |  |
-|
-
-MUST
-
- |
-
-3.5 API-05: Use plural nouns to indicate resources
-
- |  |
-|
-
-MUST
-
- |
-
-3.6 API-06: Create relations of nested resources within the endpoint
-
- |  |
-|
-
-MUST
-
- |
-
-3.7 API-09: Implement custom representation if supported
-
- |  |
-|
-
-MUST
-
- |
-
-3.8 API-10: Implement operations that do not fit the CRUD model as sub-resources
-
- |  |
-|
-
-MUST
-
- |
-
-3.9 API-16: Use OAS 3.0 for documentation
-
- |  |
-|
-
-MUST
-
- |
-
-3.10 API-17: Publish documentation in Dutch unless there is existing documentation\
-in English or there is an official English glossary available
-
- |  |
-|
-
-MUST
-
- |
-
-3.11 API-18: Include a deprecation schedule when publishing API changes
-
- |  |
-|
-
-MUST
-
- |
-
-3.12 API-19: Allow for a maximum 1 year transition period to a new API version
-
- |  |
-|
-
-MUST
-
- |
-
-3.13 API-20: Include the major version number only in ihe URI
-
- |  |
-|
-
-MUST
-
- |
-
-3.14 API-48: Leave off trailing slashes from API endpoints
-
- |  |
-|
-
-MUST
-
- |
-
-3.15 API-51: Publish OAS at the base-URI in JSON-format
-
- |  |
+|**Categorie** |**Principe** | **Toelichting** |
+|MUST|3.1 API-01: Operations are Safe and/or Idempotent||
+|MUST|3.2 API-02: Do not maintain state information at the server||
+|MUST|3.3 API-03: Only apply default HTTP operations||
+|MUST|3.4 API-04: Define interfaces in Dutch unless there is an official English glossary|  |
+|MUST|3.5 API-05: Use plural nouns to indicate resources|  |
+|MUST|3.6 API-06: Create relations of nested resources within the endpoint|  |
+|MUST|3.7 API-09: Implement custom representation if supported|  |
+|MUST|3.8 API-10: Implement operations that do not fit the CRUD model as sub-resources|  |
+|MUST|3.9 API-16: Use OAS 3.0 for documentation|  |
+|MUST|3.10 API-17: Publish documentation in Dutch unless there is existing documentation\
+in English or there is an official English glossary available|  |
+|MUST|3.11 API-18: Include a deprecation schedule when publishing API changes|  |
+|MUST|3.12 API-19: Allow for a maximum 1 year transition period to a new API version|  |
+|MUST|3.13 API-20: Include the major version number only in ihe URI|  |
+|MUST|3.14 API-48: Leave off trailing slashes from API endpoints |  |
+|MUST|3.15 API-51: Publish OAS at the base-URI in JSON-format|  |
 
 ## Afspraken API Design Rules extensies
 
