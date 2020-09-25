@@ -34,7 +34,7 @@ Dit profiel is toe te passen bij het aanbieden van REST API's ten behoeve van he
 
 ## DK API REST profiel
 
-- Algemeen
+### Algemeen
 
 Het DK REST-API profiel is gebaseed op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden:
 
@@ -53,7 +53,7 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 
 ### API Design Rules
 
-####Toelichting aanduidingen
+#### Toelichting aanduidingen
 
  Voorschriften zijn aangeduid met Must, Should, Could en Won't waarvoor de volgende definities gelden: 
 
