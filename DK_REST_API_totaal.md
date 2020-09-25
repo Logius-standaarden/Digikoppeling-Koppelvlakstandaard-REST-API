@@ -51,6 +51,7 @@ Het DK REST-API profiel is gebaseed op de REST-API Design Rules standaard zoals 
 -  W -- Won't : Deze eisen worden in de context van dit profiel niet toegepast.
 
 |**Categorie** |**Principe** | **Toelichting** |
+| --- | --- |---|
 |MUST|3.1 API-01: Operations are Safe and/or Idempotent||
 |MUST|3.2 API-02: Do not maintain state information at the server||
 |MUST|3.3 API-03: Only apply default HTTP operations||
@@ -83,6 +84,7 @@ in English or there is an official English glossary available|  |
 **Toelichting**
 
  |
+ | --- | --- |---|
 |  |  |  |
 |
 
