@@ -1,6 +1,13 @@
 # Context voor ontwikkeling van het profiel
 
+*Dit profiel is in ontwikkeling*
+
 Het Digikoppeling Rest API profiel is gericht op M2M (Machine-to--Machine) en G2G (Government-to-Government) interacties conform de algemene uitgangspunten van de Digkoppeling standaard en het toepassingsgebied van Digikoppeling op de PTLU (Pas toe of leg uit) lijst van het Forum Standaardisatie;
+
+Opzet Digikoppeling:
+
+![alt text](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/media/fig-structuur.png)
+
 
 # Digikoppeling Restful API profiel
 
@@ -10,9 +17,8 @@ HTML versie [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.g
 
 - Historie
 
-Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond Restful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (RADR) ontwikkeld en de RADR is ook opgenomen op de PTLU lijst van het Formum Standaardisatie. De RADR standaard is dan ook als basis genomen voor dit Digikoppeling Rest API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).
+Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond Restful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de PTLU lijst van het Formum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).
 
-![alt text](https://github.com/Geonovum/KP-APIs/raw/master/Werkgroep%20Architectuur/uitwerkingen/media/govapi.png)
 
 - Toepassingsgebied
 
@@ -32,13 +38,18 @@ Het DK REST-API profiel is gebaseed op de REST-API Design Rules standaard zoals 
 
 <https://docs.geostandaarden.nl/api/API-Designrules/>
 
-- Transport beveiliging
+### Transport beveiliging
+Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
 
-- Identificatie Authenticatie
 
-- Gebruik Service register
+### Identificatie Authenticatie
+https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/Standaarden/Digikoppeling-Identificatie-en-Authenticatie.pdf
 
-- API Design Rules
+### Gebruik Service register
+
+[Toelichting volgt]
+
+### API Design Rules
 
  Voorschriften zijn aangeduid met Must, Should, Could en Won't waarvoor de volgende definities gelden: 
 
