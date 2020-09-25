@@ -53,6 +53,8 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 
 ### API Design Rules
 
+####Toelichting aanduidingen
+
  Voorschriften zijn aangeduid met Must, Should, Could en Won't waarvoor de volgende definities gelden: 
 
 -  M -- Must have: De Must have eisen moeten gerealiseerd worden. Hier kan niet van afgeweken worden. 
@@ -62,6 +64,8 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 -  C -- Could have: Dit betreft eisen die gewenst zijn maar waar men vrij is een andere keuze te maken.
 
 -  W -- Won't : Deze eisen worden in de context van dit profiel niet toegepast.
+
+#### Regels
 
 |**Categorie** |**Principe** | **Toelichting** |
 | --- | --- |---|
