@@ -1,4 +1,4 @@
-# Context voor ontwikkeling van het profiel
+# Context voor ontwikkeling van het Digikoppeling REST API profiel 
 
 *Dit profiel is in ontwikkeling*
 
