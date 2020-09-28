@@ -1,4 +1,6 @@
-# Digikoppeling Afspraken API Design Rules ## Extensies
+# Digikoppeling Afspraken API Design Rules 
+
+## Extensies
 
 ## API Security
 
@@ -27,3 +29,4 @@
 ## Error handling
 
 ## Signing and Encryption
+
