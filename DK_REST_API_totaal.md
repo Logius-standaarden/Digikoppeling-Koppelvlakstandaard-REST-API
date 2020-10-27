@@ -18,8 +18,8 @@ In de figuur wordt onderscheid gemaakt tussen open en gesloten diensten:
 
 Het Digikoppeling REST API profiel richt zich op M2M gegevensuitwisseling over een gesloten kanaal tussen overheidspartijen.
 Buiten scope van het profiel zijn:
-* REST API's voor open diensten van een overheidspartij 
-* REST API's'voor gesloten diensten van een overheidspartij (direct) aan burgers of bedrijven 
+* REST API's voor open diensten van een overheidspartij.
+* REST API's'voor gesloten diensten van een overheidspartij (direct) aan burgers of bedrijven. 
 
 
 
