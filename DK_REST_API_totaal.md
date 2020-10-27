@@ -12,10 +12,13 @@ Opzet Digikoppeling:
 
 <img src="media/api-dk2.jpg" width="400" />
 
+Open Diensten: diensten zonder toegangsbeperking bv open data.
+Gesloten Diensten: diensten met toegangsbeperking bv persoonsgegevens en vertrouwelijke gegevens of diensten voor specifieke partijen.
+
 Het Digikoppeling REST API profiel richt zich op M2M gegevensuitwisseling over een gesloten kanaal tussen overheidspartijen.
-Buiten scope van het profiel is:
-* Gegevensuitwisseling via REST API's door een overheidspartij over een 'open kanaal' (
-* Gegevensuitwisseling via REST API's' door een overheidspartij over een 'gesloten kanaal' met burgers of bedrijven
+Buiten scope van het profiel zijn:
+* REST API's voor open diensten van een overheidspartij 
+* REST API's'voor gesloten diensten van een overheidspartij (direct) aan burgers of bedrijven 
 
 
 
