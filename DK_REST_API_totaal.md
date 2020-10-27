@@ -8,6 +8,15 @@ Opzet Digikoppeling:
 
 ![alt text](media/fig-structuur.png)
 
+Toelichting bij de scope van het Digikoppeling REST API profiel
+
+![alt text](media/api-dk.png)
+
+Het Digikoppeling REST API profiel richt zich op M2M gegevensuitwisseling over een gesloten kanaal tussen overheidspartijen.
+Buiten scope van het profiel is:
+* Gegevensuitwisseling via REST API's door een overheidspartij over een 'open kanaal'  
+* Gegevensuitwisseling via REST API's' door een overheidspartij over een 'gesloten kanaal' met burgers of bedrijven
+
 
 
 
