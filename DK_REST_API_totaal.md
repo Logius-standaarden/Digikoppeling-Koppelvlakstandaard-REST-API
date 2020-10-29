@@ -70,13 +70,12 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 
  Voorschriften zijn aangeduid met Must, Should, Could en Won't waarvoor de volgende definities gelden: 
 
--  M -- Must have: De Must have eisen moeten gerealiseerd worden. Hier kan niet van afgeweken worden. 
-
--  S -- Should have: Implementatie conform voorschrift tenzij dit niet mogelijk is én er een workaround beschikbaar is die een vergelijkbaar resultaat mogelijk maakt. 
-
--  C -- Could have: Dit betreft eisen die gewenst zijn maar waar men vrij is een andere keuze te maken.
-
--  W -- Won't : Deze eisen worden in de context van dit profiel niet toegepast.
+|**Cat** |**Voorschrift** | **Toelichting** |
+| --- | --- |---|
+|  M | MUST have |De Must have eisen moeten gerealiseerd worden. Hier kan niet van afgeweken worden.| 
+|  S |SHOULD have| Implementatie conform voorschrift tenzij dit niet mogelijk is én er een workaround beschikbaar is die een vergelijkbaar resultaat mogelijk maakt.| 
+| C | COULD have| Dit betreft eisen die gewenst zijn maar waar men vrij is een andere keuze te maken.|
+| W | WON'T | Deze eisen worden in de context van dit profiel niet toegepast.|
 
 #### Regels
 
