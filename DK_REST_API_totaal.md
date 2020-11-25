@@ -174,7 +174,7 @@ Onderpen in extensies:
 
 Gebruik van signing is optioneel. 
 Signing van HTTP body en/of header kan toegepast worden om te authentiseren, te autoriseren, de integriteit van de request/response berichten te controleren en signing realiseert ook onweerlegbaarheid.
-(Onweerlegbaarheid in de zin van: de verzender van de request kan niet ontkennen het bericht verzonden te hebben en de verzender van de response kan niet ontkennen de response verzonden te hebben wanneer deze voorzien is van de digitale handtekening van de verzender).
+(Onweerlegbaarheid in de zin van: de verzender van de request kan niet ontkennen het bericht verzonden te hebben en de verzender van de response kan niet ontkennen de response verzonden te hebben wanneer deze voorzien is van de digitale handtekening van de afzender).
 
 De berichten kunnen ook samen met de digitale handtekeningen worden bewaard zodat deze bij audits of juridische bewijsvoering gebruikt kunnen worden.
 
