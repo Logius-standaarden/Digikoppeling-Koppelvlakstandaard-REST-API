@@ -77,6 +77,8 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 | C | COULD have| Dit betreft eisen die gewenst zijn maar waar men vrij is een andere keuze te maken.|
 | W | WON'T | Deze eisen worden in de context van dit profiel niet toegepast.|
 
+(Indeling gebaseerd op https://tools.ietf.org/html/rfc2119)
+
 #### Regels
 
  |**Categorie** |**Principe** |**Toelichting** |**Link** |
