@@ -50,8 +50,7 @@ Dit profiel is toe te passen bij het aanbieden van REST API's ten behoeve van he
 ### Algemeen
 
 Het DK REST-API profiel is gebaseed op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden:
-
-<https://docs.geostandaarden.nl/api/API-Designrules/>
+https://publicatie.centrumvoorstandaarden.nl/api/adr/
 
 ### Transport beveiliging
 Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
