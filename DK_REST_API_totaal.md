@@ -79,26 +79,6 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 
 #### Regels
 
-|**Categorie** |**Principe** | **Toelichting** |
-| --- | --- |---|
-|MUST|3.1 API-01: Operations are Safe and/or Idempotent||
-|MUST|3.2 API-02: Do not maintain state information at the server||
-|MUST|3.3 API-03: Only apply default HTTP operations||
-|MUST|3.4 API-04: Define interfaces in Dutch unless there is an official English glossary|  |
-|MUST|3.5 API-05: Use plural nouns to indicate resources|  |
-|MUST|3.6 API-06: Create relations of nested resources within the endpoint|  |
-|MUST|3.7 API-09: Implement custom representation if supported|  |
-|MUST|3.8 API-10: Implement operations that do not fit the CRUD model as sub-resources|  |
-|MUST|3.9 API-16: Use OAS 3.0 for documentation|  |
-|MUST|3.10 API-17: Publish documentation in Dutch unless there is existing documentation in English or there is an official English glossary available|  |
-|MUST|3.11 API-18: Include a deprecation schedule when publishing API changes|  |
-|MUST|3.12 API-19: Allow for a maximum 1 year transition period to a new API version|  |
-|MUST|3.13 API-20: Include the major version number only in ihe URI|  |
-|MUST|3.14 API-48: Leave off trailing slashes from API endpoints |  |
-|MUST|3.15 API-51: Publish OAS at the base-URI in JSON-format|  |
-
-test
-
  |**Categorie** |**Principe** |**Toelichting** |**Link** |
  |--- | --- |---|---|
  |MUST |3.1 API-01: Operations are Safe and/or Idempotent |  |[API-01: Adhere to HTTP safety and idempotency semantics for operations](https://logius-standaarden.github.io/API-Design-Rules/#api-01) |
@@ -118,46 +98,6 @@ test
  
 ## Afspraken API Design Rules extensies
 
-|**Categorie**|**Principe**|**Toelichting**|
-| --- | --- |---|
-|COULD|17.1 API-11: Encrypt connections using at least TLS v1.3|  |
-|COULD|17.2 API-12: Allow access to an API only if an API key is provided|  |
-|MUST |17.3 API-13: Accept tokens as HTTP headers only |  |
-|COULD |17.4 API-14: Use OAuth 2.0 for authorisation|  |
-|MUST|17.5 API-15: Use PKIoverheid certificates for access-restricted or purpose-limited API authentication|  |
-|WON'T|17.6 API-21: Inform users of a deprecated API actively|  |
-|COULD|17.7 API-22: JSON first - APIs receive and send JSON|  |
-|COULD |17.8 API-23: APIs may provide a JSON Schema|  |
-|COULD |17.9 API-24: Support content negotiation|  |
-|COULD |17.10 API-25: Check the Content-Type header settings|  |
-|COULD |17.11 API-26: Define field names in in camelCase|  |
-|COULD |17.12 API-27: Disable pretty print|  |
-|COULD |17.13 API-28: Send a JSON-response without enclosing envelope|  |
-|COULD |17.14 API-29: Support JSON-encoded POST, PUT, and PATCH payloads|  |
-|COULD |17.15 API-30: Use query parameters corresponding to the queryable fields|  |
-|COULD |17.16 API-31: Use the query parameter sorteer to sort|  |
-|COULD |17.17 API-32: Use the query parameter zoek for full-text search|  |
-|COULD |17.18 API-33: Support both * and ? wildcard characters for full-text search APIs|  |
-|COULD |17.19 API-34: Support GeoJSON for GEO APIs|  |
-|COULD |17.20 API-35: Include GeoJSON as part of the embedded resource in the JSON response|  |
-|COULD |17.21 API-36: Provide a POST endpoint for GEO queries|  |
-|COULD |17.22 API-37: Support mixed queries at POST endpoints|  |
-|COULD |17.23 API-38: Put results of a global spatial query in the relevant geometric context|  |
-|COULD |17.24 API-39: Use ETRS89 as the preferred coordinate reference system (CRS)|  |
-|COULD |17.25 API-40: Pass the coordinate reference system (CRS) of the request and the response in the headers|  |
-|COULD |17.26 API-41: Use content negotiation to serve different CRSs|  |
-|COULD |17.27 API-42: Use JSON+HAL with media type application/hal+json for pagination|  |
-|COULD |17.28 API-43: Apply caching to improve performance|  |
-|COULD |17.29 API-44: Apply rate limiting|  |
-|COULD |17.30 API-45: Provide rate limiting information|  |
-|COULD |17.31 API-46: Use default error handling|  |
-|COULD |17.32 API-47: Use the required HTTP status codes|  |
-|COULD |17.33 API-49: Use public API-keys|  |
-|WON'T|17.34 API-50: Use CORS to control access|  |
-|COULD|17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation|  |
-
-
-test 
 
 |**Categorie** |**Principe** |**Toelichting** |**Link** |
 |---|---|---|---|
