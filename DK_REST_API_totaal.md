@@ -97,6 +97,453 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 |MUST|3.14 API-48: Leave off trailing slashes from API endpoints |  |
 |MUST|3.15 API-51: Publish OAS at the base-URI in JSON-format|  |
 
+|
+
+**Categorie**
+
+ |
+
+**Principe**
+
+ |
+
+**Toelichting**
+
+ |
+
+**Link**
+
+ |
+
+| --- | --- |---|---|
+
+|
+
+MUST
+
+ |
+
+3.1 API-01: Operations are Safe and/or Idempotent
+
+ |  |
+
+[API-01: Adhere to HTTP safety and idempotency semantics for operations](https://logius-standaarden.github.io/API-Design-Rules/#api-01)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.2 API-02: Do not maintain state information at the server
+
+ |  |
+
+[API-02: Do not maintain session state on the server](https://logius-standaarden.github.io/API-Design-Rules/#api-02)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.3 API-03: Only apply default HTTP operations
+
+ |  |
+
+[API-03: Only apply standard HTTP methods](https://logius-standaarden.github.io/API-Design-Rules/#api-03)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.4 API-04: Define interfaces in Dutch unless there is an official English glossary
+
+ |  |
+
+[API-04: Define interfaces in Dutch unless there is an official English glossary available](https://logius-standaarden.github.io/API-Design-Rules/#api-04)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.5 API-05: Use plural nouns to indicate resources
+
+ |  |
+
+[API-05: Use nouns to name resources](https://logius-standaarden.github.io/API-Design-Rules/#api-05)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.6 API-06: Create relations of nested resources within the endpoint
+
+ |  |
+
+[API-06: Use nested URIs for child resources](https://logius-standaarden.github.io/API-Design-Rules/#api-06)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.7 API-09: Implement custom representation if supported
+
+ |  |
+
+[API-10: Model resource operations as a sub-resource or dedicated resource](https://logius-standaarden.github.io/API-Design-Rules/#api-10)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.8 API-10: Implement operations that do not fit the CRUD model as sub-resources
+
+ |  |
+
+[API-10: Model resource operations as a sub-resource or dedicated resource](https://logius-standaarden.github.io/API-Design-Rules/#api-10)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.9 API-16: Use OAS 3.0 for documentation
+
+ |  |
+
+[API-16: Use OpenAPI Specification for documentation](https://logius-standaarden.github.io/API-Design-Rules/#api-16)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.10 API-17: Publish documentation in Dutch unless there is existing documentation in English or there is an official English glossary available
+
+ |  |
+
+[API-17: Publish documentation in Dutch unless there is existing documentation in English](https://logius-standaarden.github.io/API-Design-Rules/#api-17)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.11 API-18: Include a deprecation schedule when publishing API changes
+
+ |  |
+
+[API-18: Include a deprecation schedule when publishing API changes](https://logius-standaarden.github.io/API-Design-Rules/#api-18)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.12 API-19: Allow for a maximum 1 year transition period to a new API version
+
+ |  |
+
+[API-19: Schedule a fixed transition period for a new major API version](https://logius-standaarden.github.io/API-Design-Rules/#api-19)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.13 API-20: Include the major version number only in ihe URI
+
+ |  |
+
+[API-20: Include the major version number in the URI](https://logius-standaarden.github.io/API-Design-Rules/#api-20)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.14 API-48: Leave off trailing slashes from API endpoints
+
+ |  |
+
+[API-48: Leave off trailing slashes from URIs](https://logius-standaarden.github.io/API-Design-Rules/#api-48)
+
+ |
+
+|
+
+MUST
+
+ |
+
+3.15 API-51: Publish OAS at the base-URI in JSON-format
+
+ |\
+ |
+
+[API-51: Publish OAS document at a standard location in JSON-format](https://logius-standaarden.github.io/API-Design-Rules/#api-51)
+
+ |
+
+|
+
+**Categorie**
+
+ |
+
+**Principe**
+
+ |
+
+**Toelichting**
+
+ |
+
+**Link**
+
+ |
+ | --- | --- |---|---|
+|
+
+MUST
+
+ |
+
+3.1 API-01: Operations are Safe and/or Idempotent
+
+ |  |
+
+[API-01: Adhere to HTTP safety and idempotency semantics for operations](https://logius-standaarden.github.io/API-Design-Rules/#api-01)
+
+ |
+|
+
+MUST
+
+ |
+
+3.2 API-02: Do not maintain state information at the server
+
+ |  |
+
+[API-02: Do not maintain session state on the server](https://logius-standaarden.github.io/API-Design-Rules/#api-02)
+
+ |
+|
+
+MUST
+
+ |
+
+3.3 API-03: Only apply default HTTP operations
+
+ |  |
+
+[API-03: Only apply standard HTTP methods](https://logius-standaarden.github.io/API-Design-Rules/#api-03)
+
+ |
+|
+
+MUST
+
+ |
+
+3.4 API-04: Define interfaces in Dutch unless there is an official English glossary
+
+ |  |
+
+[API-04: Define interfaces in Dutch unless there is an official English glossary available](https://logius-standaarden.github.io/API-Design-Rules/#api-04)
+
+ |
+|
+
+MUST
+
+ |
+
+3.5 API-05: Use plural nouns to indicate resources
+
+ |  |
+
+[API-05: Use nouns to name resources](https://logius-standaarden.github.io/API-Design-Rules/#api-05)
+
+ |
+|
+
+MUST
+
+ |
+
+3.6 API-06: Create relations of nested resources within the endpoint
+
+ |  |
+
+[API-06: Use nested URIs for child resources](https://logius-standaarden.github.io/API-Design-Rules/#api-06)
+
+ |
+|
+
+MUST
+
+ |
+
+3.7 API-09: Implement custom representation if supported
+
+ |  |
+
+[API-10: Model resource operations as a sub-resource or dedicated resource](https://logius-standaarden.github.io/API-Design-Rules/#api-10)
+
+ |
+|
+
+MUST
+
+ |
+
+3.8 API-10: Implement operations that do not fit the CRUD model as sub-resources
+
+ |  |
+
+[API-10: Model resource operations as a sub-resource or dedicated resource](https://logius-standaarden.github.io/API-Design-Rules/#api-10)
+
+ |
+|
+
+MUST
+
+ |
+
+3.9 API-16: Use OAS 3.0 for documentation
+
+ |  |
+
+[API-16: Use OpenAPI Specification for documentation](https://logius-standaarden.github.io/API-Design-Rules/#api-16)
+
+ |
+|
+
+MUST
+
+ |
+
+3.10 API-17: Publish documentation in Dutch unless there is existing documentation in English or there is an official English glossary available
+
+ |  |
+
+[API-17: Publish documentation in Dutch unless there is existing documentation in English](https://logius-standaarden.github.io/API-Design-Rules/#api-17)
+
+ |
+|
+
+MUST
+
+ |
+
+3.11 API-18: Include a deprecation schedule when publishing API changes
+
+ |  |
+
+[API-18: Include a deprecation schedule when publishing API changes](https://logius-standaarden.github.io/API-Design-Rules/#api-18)
+
+ |
+|
+
+MUST
+
+ |
+
+3.12 API-19: Allow for a maximum 1 year transition period to a new API version
+
+ |  |
+
+[API-19: Schedule a fixed transition period for a new major API version](https://logius-standaarden.github.io/API-Design-Rules/#api-19)
+
+ |
+|
+
+MUST
+
+ |
+
+3.13 API-20: Include the major version number only in ihe URI
+
+ |  |
+
+[API-20: Include the major version number in the URI](https://logius-standaarden.github.io/API-Design-Rules/#api-20)
+
+ |
+|
+
+MUST
+
+ |
+
+3.14 API-48: Leave off trailing slashes from API endpoints
+
+ |  |
+
+[API-48: Leave off trailing slashes from URIs](https://logius-standaarden.github.io/API-Design-Rules/#api-48)
+
+ |
+|
+
+MUST
+
+ |
+
+3.15 API-51: Publish OAS at the base-URI in JSON-format
+
+ |\
+ |
+
+[API-51: Publish OAS document at a standard location in JSON-format](https://logius-standaarden.github.io/API-Design-Rules/#api-51)
+
+ |
+ 
+ 
 ## Afspraken API Design Rules extensies
 
 |**Categorie**|**Principe**|**Toelichting**|
