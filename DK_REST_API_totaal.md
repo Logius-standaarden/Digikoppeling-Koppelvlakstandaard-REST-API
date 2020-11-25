@@ -96,7 +96,7 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
  |MUST |3.12 API-19: Allow for a maximum 1 year transition period to a new API version |  |[API-19: Schedule a fixed transition period for a new major API version](https://logius-standaarden.github.io/API-Design-Rules/#api-19) |
  |MUST |3.13 API-20: Include the major version number only in ihe URI |  |[API-20: Include the major version number in the URI](https://logius-standaarden.github.io/API-Design-Rules/#api-20) |
  |MUST |3.14 API-48: Leave off trailing slashes from API endpoints |  |[API-48: Leave off trailing slashes from URIs](https://logius-standaarden.github.io/API-Design-Rules/#api-48) |
- |MUST |3.15 API-51: Publish OAS at the base-URI in JSON-format |\ |[API-51: Publish OAS document at a standard location in JSON-format](https://logius-standaarden.github.io/API-Design-Rules/#api-51) 
+ |MUST |3.15 API-51: Publish OAS at the base-URI in JSON-format | |[API-51: Publish OAS document at a standard location in JSON-format](https://logius-standaarden.github.io/API-Design-Rules/#api-51) 
  
 ## Afspraken API Design Rules extensies
 
@@ -137,7 +137,7 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 |COULD |17.32 API-47: Use the required HTTP status codes |  |[17.32 API-47: Use the required HTTP status codes](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-47-use-the-required-http-status-codes) |
 |COULD |17.33 API-49: Use public API-keys |  |[17.33 API-49: Use public API-keys](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-49-use-public-api-keys) |
 |WON'T |17.34 API-50: Use CORS to control access |  |[17.34 API-50: Use CORS to control access](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-50-use-cors-to-control-access) |
-|COULD |17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation |\ |[17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-52-use-oauth-2-0-for-authorisation-with-rights-delegation) |
+|COULD |17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation | |[17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-52-use-oauth-2-0-for-authorisation-with-rights-delegation) |
  
  
 Onderpen in extensies:
