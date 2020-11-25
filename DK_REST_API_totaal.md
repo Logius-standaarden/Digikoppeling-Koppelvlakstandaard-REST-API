@@ -172,17 +172,29 @@ Onderpen in extensies:
 
 ## Signing in de context van HTTP Rest
 
+Gebruik van signing is optioneel. 
 Signing van HTTP body en/of header kan toegepast worden om te authentiseren, te autoriseren, de integriteit van de request/response berichten te controleren en signing realiseert ook onweerlegbaarheid.
 (Onweerlegbaarheid in de zin van: de verzender van de request kan niet ontkennen het bericht verzonden te hebben en de verzender van de response kan niet ontkennen de response verzonden te hebben wanneer deze voorzien is van de digitale handtekening van de verzender).
 
 De berichten kunnen ook samen met de digitale handtekeningen worden bewaard zodat deze bij audits of juridische bewijsvoering gebruikt kunnen worden.
 
-Een HTTP requestbericht kent:
-* HTTP operatie (GET, POST etc)
-* Pad / URL resource
-* Header velden
+Een HTTP requestbericht is opgebouwd uit de volgende onderdelen:
+* Header
+ - HTTP operatie (GET, POST etc)
+ - Pad / URL resource
+ - Protocol
+ - Header velden
 * Body
+ - <data>
+ 
+Door naast de body data ook onderdelen uit de header digitaal te ondertekenen kan worden gecontroleerd dat bv ook de HTTP operatie en resource specificatie in de request echt van de afzender afkomstig zijn en niet onderweg gemanipuleerd.
 
+Aanbevolen wordt om voor signing een van onderstaande opties te gebruiken:
+* https://tools.ietf.org/html/draft-cavage-http-signatures-12
+* https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures-01
+* https://www.openbankingeurope.eu/media/1735/preta-obe-jws-stable-draft.pdf
+
+De aanbieder van de API bepaalt welke manier van signing gewenst is.
 
 
 
