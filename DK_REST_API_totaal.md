@@ -102,7 +102,7 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 
 |**Categorie** |**Principe** |**Toelichting** |**Link** |
 |---|---|---|---|
-|MUST |17.1 API-11: Encrypt connections using TLS following the latest NCSC guidelines |[17.1 API-11: Encrypt connections using TLS following the latest NCSC guidelines](https://geonovum.github.io/KP-APIs/API-strategie-extensies/#api-11-encrypt-connections-using-tls-following-the-latest-ncsc-guidelines) |
+|MUST |17.1 API-11: Encrypt connections using TLS following the latest NCSC guidelines| |[17.1 API-11: Encrypt connections using TLS following the latest NCSC guidelines](https://geonovum.github.io/KP-APIs/API-strategie-extensies/#api-11-encrypt-connections-using-tls-following-the-latest-ncsc-guidelines) |
 |COULD |17.2 API-12: Allow access to an API only if an API key is provided |  |[17.2 API-12: Allow access to an API only if an API key is provided](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-12-allow-access-to-an-api-only-if-an-api-key-is-provided) |
 |MUST |17.3 API-13: Accept tokens as HTTP headers only |  |[17.3 API-13: Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-13-accept-tokens-as-http-headers-only) |
 |COULD |17.4 API-14: Use OAuth 2.0 for authorisation |  |[17.4 API-14: Use OAuth 2.0 for authorisation](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-14-use-oauth-2-0-for-authorisation) |
@@ -184,7 +184,7 @@ Een HTTP requestbericht is opgebouwd uit de volgende onderdelen:
  - Protocol
  - Header velden
 * Body
- - <data>
+ - _data_
  
 Door naast de body data ook onderdelen uit de header digitaal te ondertekenen kan worden gecontroleerd dat bv ook de HTTP operatie en resource specificatie in de request echt van de afzender afkomstig zijn en niet onderweg gemanipuleerd.
 
