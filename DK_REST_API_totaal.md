@@ -141,7 +141,7 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 
  
  
-Onderpen in extensies:
+Onderwerpen in extensies:
 
 - API Security
 
