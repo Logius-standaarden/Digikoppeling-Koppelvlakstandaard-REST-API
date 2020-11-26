@@ -102,7 +102,7 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 
 |**Categorie** |**Principe** |**Toelichting** |**Link** |
 |---|---|---|---|
-|COULD |17.1 API-11: Encrypt connections using at least TLS v1.3 |  |[17.1 API-11: Encrypt connections using at least TLS v1.3](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-11-encrypt-connections-using-at-least-tls-v1-3) |
+|MUST |17.1 API-11: Encrypt connections using TLS following the latest NCSC guidelines |[17.1 API-11: Encrypt connections using TLS following the latest NCSC guidelines](https://geonovum.github.io/KP-APIs/API-strategie-extensies/#api-11-encrypt-connections-using-tls-following-the-latest-ncsc-guidelines) |
 |COULD |17.2 API-12: Allow access to an API only if an API key is provided |  |[17.2 API-12: Allow access to an API only if an API key is provided](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-12-allow-access-to-an-api-only-if-an-api-key-is-provided) |
 |MUST |17.3 API-13: Accept tokens as HTTP headers only |  |[17.3 API-13: Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-13-accept-tokens-as-http-headers-only) |
 |COULD |17.4 API-14: Use OAuth 2.0 for authorisation |  |[17.4 API-14: Use OAuth 2.0 for authorisation](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-14-use-oauth-2-0-for-authorisation) |
@@ -172,8 +172,8 @@ Onderpen in extensies:
 ## Signing in de context van HTTP Rest
 
 Gebruik van signing is optioneel. 
-Signing van HTTP body en/of header kan toegepast worden om te authentiseren, te autoriseren, de integriteit van de request/response berichten te controleren en signing realiseert ook onweerlegbaarheid.
-(Onweerlegbaarheid in de zin van: de verzender van de request kan niet ontkennen het bericht verzonden te hebben en de verzender van de response kan niet ontkennen de response verzonden te hebben wanneer deze voorzien is van de digitale handtekening van de afzender).
+Signing van HTTP body en/of header kan gebruikt worden voor _authenticatie_, om de _integriteit_ van de request/response berichten te controleren en signing realiseert ook _onweerlegbaarheid_.
+(Onweerlegbaarheid in de zin van: de verzender van de request/response kan niet ontkennen het bericht verzonden te hebben wanneer deze voorzien is van de digitale handtekening van de afzender).
 
 De berichten kunnen ook samen met de digitale handtekeningen worden bewaard zodat deze bij audits of juridische bewijsvoering gebruikt kunnen worden.
 
@@ -195,7 +195,11 @@ Aanbevolen wordt om voor signing een van onderstaande opties te gebruiken:
 
 De aanbieder van de API bepaalt welke manier van signing gewenst is.
 
+## Encryptie in de context van HTTP REST
 
+Gebruik van encryptie is optioneel.
+Aanbevolen wordt voor encryptie gebruik te maken van JSON Web Encryption (JWE)  https://tools.ietf.org/html/rfc7516 
+De aanbieder van de API bepaalt welke manier van encryptie gewenst is.
 
 
 
