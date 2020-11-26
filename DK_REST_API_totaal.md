@@ -201,6 +201,7 @@ De aanbieder van de API bepaalt welke manier van signing gewenst is.
 
 Gebruik van encryptie is optioneel.
 Aanbevolen wordt voor encryptie gebruik te maken van JSON Web Encryption (JWE)  https://tools.ietf.org/html/rfc7516. 
+
 De aanbieder van de API bepaalt welke manier van encryptie gewenst is.
 
 
