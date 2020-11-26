@@ -95,7 +95,7 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
  |MUST |3.10 API-17: Publish documentation in Dutch unless there is existing documentation in English or there is an official English glossary available |  |[API-17: Publish documentation in Dutch unless there is existing documentation in English](https://logius-standaarden.github.io/API-Design-Rules/#api-17) |
  |MUST |3.11 API-18: Include a deprecation schedule when publishing API changes |  |[API-18: Include a deprecation schedule when publishing API changes](https://logius-standaarden.github.io/API-Design-Rules/#api-18) |
  |MUST |3.12 API-19: Allow for a maximum 1 year transition period to a new API version |  |[API-19: Schedule a fixed transition period for a new major API version](https://logius-standaarden.github.io/API-Design-Rules/#api-19) |
- |MUST |3.13 API-20: Include the major version number only in ihe URI |  |[API-20: Include the major version number in the URI](https://logius-standaarden.github.io/API-Design-Rules/#api-20) |
+ |MUST |3.13 API-20: Include the major version number only in the URI |  |[API-20: Include the major version number in the URI](https://logius-standaarden.github.io/API-Design-Rules/#api-20) |
  |MUST |3.14 API-48: Leave off trailing slashes from API endpoints |  |[API-48: Leave off trailing slashes from URIs](https://logius-standaarden.github.io/API-Design-Rules/#api-48) |
  |MUST |3.15 API-51: Publish OAS at the base-URI in JSON-format | |[API-51: Publish OAS document at a standard location in JSON-format](https://logius-standaarden.github.io/API-Design-Rules/#api-51) 
  
