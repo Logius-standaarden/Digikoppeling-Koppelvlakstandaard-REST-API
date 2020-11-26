@@ -139,7 +139,12 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 | WON'T | 17.34 API-50: Use CORS to control access | Security | | [17.34 API-50: Use CORS to control access](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-50-use-cors-to-control-access) | 
 | COULD | 17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation | Security | | [17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-52-use-oauth-2-0-for-authorisation-with-rights-delegation) |
 
- 
+Laatste stabiele versie ADR extensies :
+https://docs.geostandaarden.nl/api/API-Strategie-ext/
+
+WerkversieADR extensies:
+https://geonovum.github.io/KP-APIs/API-strategie-extensies/
+
  
 Onderwerpen in extensies:
 
