@@ -181,12 +181,12 @@ De berichten kunnen ook samen met de digitale handtekeningen worden bewaard zoda
 
 Een HTTP requestbericht is opgebouwd uit de volgende onderdelen:
 * Header
- * HTTP operatie (GET, POST etc)
- * Pad / URL resource
- * Protocol
- * Header velden
+  * HTTP operatie (GET, POST etc)
+  * Pad / URL resource
+  * Protocol
+  * Header velden
 * Body
- * _data_
+  * _data_
  
 Door naast de body data ook onderdelen uit de header digitaal te ondertekenen kan worden gecontroleerd dat bv ook de HTTP operatie en resource specificatie in de request echt van de afzender afkomstig zijn en niet onderweg gemanipuleerd.
 
