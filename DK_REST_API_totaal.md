@@ -29,7 +29,7 @@ Het Digikoppeling REST API profiel is wat betreft functionele toepassing vergeli
 De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API profiel is in deze context een systeem (applicatie) en geen internetbrowser.
 
 
-| Invulling | API profiel | WUS profiel | ebMS2 profiel |
+| Invulling | DK API profiel | DK WUS profiel | DK ebMS2 profiel |
 | --- | --- |---|---|
 | Bevragingen / Meldingen |  |  |  |
 | best-effort | 1.0 | 2W-be | osb-be |
