@@ -13,14 +13,16 @@ Opzet Digikoppeling:
 <img src="media/api-dk2.jpg" width="400" />
 
 In de figuur wordt onderscheid gemaakt tussen open en gesloten diensten:
-* Open Diensten: diensten zonder toegangsbeperking bv open data.
-* Gesloten Diensten: diensten met toegangsbeperking bv persoonsgegevens en vertrouwelijke gegevens of diensten voor specifieke partijen.
+* Open Diensten: Diensten zonder toegangsbeperking bv open data.
+* Gesloten Diensten: Diensten met toegangsbeperking bv persoonsgegevens en vertrouwelijke gegevens of diensten voor specifieke partijen.
 
-Het Digikoppeling REST API profiel richt zich op M2M gegevensuitwisseling over een gesloten kanaal tussen overheidspartijen.
+Het Digikoppeling REST API profiel richt zich op M2M gegevensuitwisseling via een gesloten dienst tussen overheidspartijen.
 Buiten scope van het profiel zijn:
 * REST API's voor open diensten van een overheidspartij.
 * REST API's'voor gesloten diensten van een overheidspartij (direct) aan burgers of bedrijven. 
 
+Het Digikoppeling REST API profiel is wat betreft functionele toepassing vergelijkbaar met het Digikoppeling WUS profiel.
+De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API profiel is in deze context een systeem (applicatie) en geen internetbrowser.
 
 
 
@@ -41,8 +43,6 @@ Het toepassingsgebied is voor Digikoppeling:
 
 *Digikoppeling moet worden toegepast op alle digitale gegevensuitwisseling met behulp van gestructureerde berichten die plaatsvindt met voorzieningen die onderdeel zijn van de GDI, waaronder de basisregistraties, of die sector-overstijgend is.*
 
-*Geautomatiseerde gegevensuitwisseling tussen informatiesystemen op basis van NEN3610 is uitgesloten van het functioneel toepassingsgebied*.
-
 Dit profiel is toe te passen bij het aanbieden van REST API's ten behoeve van het ontsluiten van overheidsinformatie en/of functionaliteit.
 
 ## DK API REST profiel
@@ -61,10 +61,6 @@ Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveil
 #### Identificatie & Authenticatie
 https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/Standaarden/Digikoppeling-Identificatie-en-Authenticatie.pdf
 
-### Gebruik Service register
-
-[Toelichting volgt]
-
 ### API Design Rules
 
 #### Toelichting aanduidingen
@@ -79,6 +75,8 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 | W | WON'T | Deze eisen worden in de context van dit profiel niet toegepast.|
 
 (Indeling gebaseerd op https://tools.ietf.org/html/rfc2119)
+
+Daarnaast wordt met 'REPLACED' aangegeven of een principe expliciet vervangen wordt door een andere eis
 
 #### Regels
 
@@ -104,7 +102,15 @@ https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/St
 
 | **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** | 
 | --- | --- | --- | --- | --- |
-| MUST | 17.1 API-11: Encrypt connections using TLS following the latest NCSC guidelines | Security | | [17.1 API-11: Encrypt connections using TLS following the latest NCSC guidelines](https://geonovum.github.io/KP-APIs/API-strategie-extensies/#api-11-encrypt-connections-using-tls-following-the-latest-ncsc-guidelines) | 
+| REPLACED | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften  | |
+
+Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
+
+(
+
+
+| **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** | 
+| --- | --- | --- | --- | --- |
 | COULD | 17.2 API-12: Allow access to an API only if an API key is provided | Security Authorisation | | [17.2 API-12: Allow access to an API only if an API key is provided](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-12-allow-access-to-an-api-only-if-an-api-key-is-provided) | 
 | MUST | 17.3 API-13: Accept tokens as HTTP headers only | Security Authorisation | | [17.3 API-13: Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-13-accept-tokens-as-http-headers-only) |
 | COULD | 17.4 API-14: Use OAuth 2.0 for authorisation | Security Authorisation | | [17.4 API-14: Use OAuth 2.0 for authorisation](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-14-use-oauth-2-0-for-authorisation) | 
@@ -146,39 +152,15 @@ WerkversieADR extensies:
 https://geonovum.github.io/KP-APIs/API-strategie-extensies/
 
  
-Onderwerpen in extensies:
 
-- API Security
 
-- Versionering
 
-- JSON
+# BIJLAGE Gebruik van Signing & Encrytie in de context van HTTP / Rest API
 
-- Filtering
-
-- Sorting
-
-- Custom representation
-
-- Search
-
-- Time travelling
-
-- GEO support
-
-- Paging
-
-- Caching
-
-- Rate limiting
-
-- Error handling
-
-- Signing and Encryption
+>Deze bijlage is informatief en geen normatief onderdeel van de standaard  
 
 ## Signing in de context van HTTP Rest
 
-Gebruik van signing is optioneel. 
 Signing van HTTP body en/of header kan gebruikt worden voor _authenticatie_, om de _integriteit_ van de request/response berichten te controleren en signing realiseert ook _onweerlegbaarheid_.
 (Onweerlegbaarheid in de zin van: de verzender van de request/response kan niet ontkennen het bericht verzonden te hebben wanneer deze voorzien is van de digitale handtekening van de afzender).
 
@@ -195,19 +177,19 @@ Een HTTP requestbericht is opgebouwd uit de volgende onderdelen:
  
 Door naast de body data ook onderdelen uit de header digitaal te ondertekenen kan worden gecontroleerd dat bv ook de HTTP operatie en resource specificatie in de request echt van de afzender afkomstig zijn en niet onderweg gemanipuleerd.
 
-Aanbevolen wordt om voor signing een van onderstaande opties te gebruiken:
+Enkele voorbeelden van signing standaarden die in ontwikkeling zijn:
 * https://tools.ietf.org/html/draft-cavage-http-signatures-12
 * https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures-01
 * https://www.openbankingeurope.eu/media/1735/preta-obe-jws-stable-draft.pdf
 
-De aanbieder van de API bepaalt welke manier van signing gewenst is.
-
 ## Encryptie in de context van HTTP REST
 
-Gebruik van encryptie is optioneel.
-Aanbevolen wordt voor encryptie gebruik te maken van JSON Web Encryption (JWE)  https://tools.ietf.org/html/rfc7516. 
+Voor encryptie is de standaard JSON Web Encryption (JWE)  https://tools.ietf.org/html/rfc7516 beschikbaar
 
-De aanbieder van de API bepaalt welke manier van encryptie gewenst is.
+Zie ook de ADR extensie signing en encryptie : 
+* https://docs.geostandaarden.nl/api/API-Strategie-ext/#signing-and-encryption
+
+
 
 
 
