@@ -75,14 +75,14 @@ Het DK REST-API profiel conformeert zich volledig aan het normatieve deel van de
 #### Vertrouwelijkheid
 
 De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKI-Overheid certificaten en 2-zijdig TLS.
-Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
+* Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
 
 
 #### Identificatie & Authenticatie
 
 Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties.
 Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
-Zie https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/Standaarden/Digikoppeling-Identificatie-en-Authenticatie.pdf
+* Zie https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/Standaarden/Digikoppeling-Identificatie-en-Authenticatie.pdf
 
 ### API Design Rules
 
@@ -162,8 +162,8 @@ Daarnaast wordt met 'REPLACED' aangegeven of een principe expliciet vervangen wo
 | COULD | 17.28 API-43: Apply caching to improve performance | Caching | | [17.28 API-43: Apply caching to improve performance](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-43-apply-caching-to-improve-performance) | 
 | COULD | 17.29 API-44: Apply rate limiting | Rate limiting | | [17.29 API-44: Apply rate limiting](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-44-apply-rate-limiting) | 
 | COULD | 17.30 API-45: Provide rate limiting information | Rate limiting | | [17.30 API-45: Provide rate limiting information](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-45-provide-rate-limiting-information) | 
-| COULD | 17.31 API-46: Use default error handling | Error handling | | [17.31 API-46: Use default error handling](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-46-use-default-error-handling) |
-| COULD | 17.32 API-47: Use the required HTTP status codes | Error handling  | | [17.32 API-47: Use the required HTTP status codes](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-47-use-the-required-http-status-codes) |
+| SHOULD | 17.31 API-46: Use default error handling | Error handling | | [17.31 API-46: Use default error handling](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-46-use-default-error-handling) |
+| SHOULD | 17.32 API-47: Use the required HTTP status codes | Error handling  | | [17.32 API-47: Use the required HTTP status codes](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-47-use-the-required-http-status-codes) |
 | COULD | 17.33 API-49: Use public API-keys | Rate limiting | | [17.33 API-49: Use public API-keys](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-49-use-public-api-keys) | 
 | WON'T | 17.34 API-50: Use CORS to control access | Security | | [17.34 API-50: Use CORS to control access](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-50-use-cors-to-control-access) | 
 | COULD | 17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation | Security | | [17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-52-use-oauth-2-0-for-authorisation-with-rights-delegation) |
