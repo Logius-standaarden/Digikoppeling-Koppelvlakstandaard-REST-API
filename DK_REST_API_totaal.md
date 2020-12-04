@@ -74,7 +74,7 @@ Het DK REST-API profiel conformeert zich volledig aan het normatieve deel van de
 
 #### Vertrouwelijkheid
 
-De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKI-Overheid certificaten en 2-zijdig TLS.
+De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten en 2-zijdig TLS.
 * Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
 
 
