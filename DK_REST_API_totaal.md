@@ -1,3 +1,8 @@
+ |**Naam** |**Versie** |**Status** |
+ |--- | --- |---|---|
+ |Digikoppeling REST API profiel| 1.0 | Draft|
+
+
 # Context voor ontwikkeling van het Digikoppeling REST API profiel 
 
 *Dit profiel is in ontwikkeling*
@@ -19,7 +24,7 @@ In de figuur wordt onderscheid gemaakt tussen open en gesloten diensten:
 Het Digikoppeling REST API profiel richt zich op M2M gegevensuitwisseling via een gesloten dienst tussen overheidspartijen.
 Buiten scope van het profiel zijn:
 * REST API's voor open diensten van een overheidspartij.
-* REST API's'voor gesloten diensten van een overheidspartij (direct) aan burgers of bedrijven. 
+* REST API's voor gesloten diensten van een overheidspartij (direct) aan burgers of bedrijven. 
 
 Het Digikoppeling REST API profiel is wat betreft functionele toepassing vergelijkbaar met het Digikoppeling WUS profiel.
 De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API profiel is in deze context een systeem (applicatie) en geen internetbrowser.
@@ -34,7 +39,7 @@ HTML versie [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.g
 
 - Historie
 
-Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond Restful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de PTLU lijst van het Formum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).
+Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond Restful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de PTLU lijst van het Forum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).
 
 
 - Toepassingsgebied
@@ -104,8 +109,7 @@ Daarnaast wordt met 'REPLACED' aangegeven of een principe expliciet vervangen wo
 
 | **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** | 
 | --- | --- | --- | --- | --- |
-| REPLACED | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften  |[Link DK Beveiligingsvoorschriften]( https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf)
- |
+| REPLACED | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften  |[Link DK Beveiligingsvoorschriften]( https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf) |
 
 Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
 
@@ -158,7 +162,7 @@ https://geonovum.github.io/KP-APIs/API-strategie-extensies/
 
 
 
-# BIJLAGE Gebruik van Signing & Encrytie in de context van HTTP / Rest API
+# BIJLAGE Gebruik van Signing & Encryptie in de context van HTTP / Rest API
 
 >Deze bijlage is informatief en geen normatief onderdeel van de standaard  
 
