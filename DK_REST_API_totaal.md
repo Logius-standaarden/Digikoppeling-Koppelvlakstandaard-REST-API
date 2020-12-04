@@ -28,7 +28,7 @@ Buiten scope van het profiel zijn:
 Het Digikoppeling REST API profiel is wat betreft functionele toepassing vergelijkbaar met het Digikoppeling WUS profiel.
 De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API profiel is in deze context een systeem (applicatie) en geen internetbrowser.
 
-|  |
+
 | Invulling | API profiel | WUS profiel | ebMS2 profiel |
 | --- | --- |---|---|
 | Bevragingen / Meldingen |  |  |  |
