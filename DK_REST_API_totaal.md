@@ -108,9 +108,9 @@ Daarnaast wordt met 'REPLACED' aangegeven of een principe expliciet vervangen wo
 
 | **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** | 
 | --- | --- | --- | --- | --- |
-| REPLACED | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften  |[Link DK Beveiligingsvoorschriften]( https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf) |
+| REPLACED | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[Link DK Beveiligingsvoorschriften]( https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf) |
 
-Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
+(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
 
 
 
