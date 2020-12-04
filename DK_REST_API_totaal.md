@@ -163,7 +163,7 @@ https://geonovum.github.io/KP-APIs/API-strategie-extensies/
 
 # BIJLAGE Gebruik van Signing & Encryptie in de context van HTTP / Rest API
 
->Deze bijlage is informatief en geen normatief onderdeel van de standaard  
+>Deze bijlage is informatief en geen normatief onderdeel van het profiel
 
 ## Signing in de context van HTTP Rest
 
