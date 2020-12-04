@@ -49,8 +49,10 @@ Dit profiel is toe te passen bij het aanbieden van REST API's ten behoeve van he
 
 ### Algemeen
 
-Het DK REST-API profiel is gebaseed op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden:
+Het DK REST-API profiel is gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden:
 https://publicatie.centrumvoorstandaarden.nl/api/adr/
+
+Het DK REST-API profiel conformeert zich volledig aan het normatieve deel van de REST API Design Rules.
 
 ### Koppelvlak Generiek
 
