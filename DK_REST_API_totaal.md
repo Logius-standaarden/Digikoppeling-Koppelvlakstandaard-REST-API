@@ -40,7 +40,7 @@ De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API 
 | reliable signed |  |  | osb-rm-s |
 | reliable signed en encrypted |  |  | osb-rm-e |
 
-In versie 1.0 van het Digikoppeling REST API profiel wordt signing en encrytie niet ondersteund. In toekomstige versies van het profiel zal hier wel invulling aan worden gegeven. (Zie ook [Bijlage Signing & Encryptie](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/blob/master/DK_REST_API_totaal.md#bijlage-gebruik-van-signing--encryptie-in-de-context-van-http--rest-api) ) 
+In versie 1.0 van het Digikoppeling REST API profiel wordt signing en encrytie niet ondersteund. In toekomstige versies van het profiel zal hier wel invulling aan worden gegeven. (Zie ook [Bijlage HTTP Signing & Encryptie](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/blob/master/DK_REST_API_totaal.md#bijlage-gebruik-van-signing--encryptie-in-de-context-van-http--rest-api) ) 
 
 # Digikoppeling Restful API profiel
 
