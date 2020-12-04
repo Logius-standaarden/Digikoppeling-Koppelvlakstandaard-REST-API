@@ -36,12 +36,12 @@ HTML versie [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.g
 
 ## Inleiding
 
-- Historie
+### Historie
 
 Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond Restful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de PTLU lijst van het Forum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).
 
 
-- Toepassingsgebied
+### Toepassingsgebied
 
 Het toepassingsgebied is voor Digikoppeling:
 
