@@ -1,8 +1,8 @@
 # Digikoppeling Restful API profiel - concept indeling
 
-<!--- HTML versie [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/snapshot.html) --->
+HTML versie [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/) -
 
-Draft versie van profiel : [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/)
+Draft versie van profiel : [Digikoppeling Restful API Profiel](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/blob/master/DK_REST_API_totaal.md)
 
 <!---
 ## Inleiding
