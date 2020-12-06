@@ -1,6 +1,6 @@
 var respecConfig = {
   //voor specStatus mogelijkheden zie https://github.com/centrumvoorstandaarden/respec/wiki/specStatus
-  specStatus: "DK-WV",
+  specStatus: "GN-WV",
   //voor specType mogelijkheden zie https://github.com/centrumvoorstandaarden/respec/wiki/specType
   specType: "ST",
   // TODO: Standaard emailadres bij een consultatieversie: geo-standaarden@geonovum.nl
@@ -9,10 +9,11 @@ var respecConfig = {
   // TODO: Voor pubDomain mogelijkheden zie https://github.com/Geonovum/respec/wiki/pubDomain
   // TODO: pubDomain: "...",
   splitMDsections: true,
- 
+
+
   // Vul in om een korte extra uitleg te weergeven op de docs.centrumvoorstandaarden.nl website.
-  subExplanation: "", 
- 
+  subExplanation: "",
+
   // Voor publishDate zie https://github.com/w3c/respec/wiki/publishDate
   // Als er geen publishDate is opgegeven, genereert ReSpec de dataum o.b.v. de laatste wijzigingen
   // Belangrijk: als publishDate niet opgegeven is, wordt bij de link "Laatst gepubliceerde versie" "geen" gezet. Anders wordt een link opgebouwd voor de laatste versie, met het formaat:
@@ -58,3 +59,4 @@ var respecConfig = {
   },
   format: "markdown",
 };
+

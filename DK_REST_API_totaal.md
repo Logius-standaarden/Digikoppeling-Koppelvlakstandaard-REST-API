@@ -1,7 +1,10 @@
+ <span class="simple">
+
  |**Naam** |**Versie** |**Status** |
  |--- | --- |---|
  |Digikoppeling REST API profiel| 1.0 | Draft|
 
+</span>
 
 # Context voor ontwikkeling van het Digikoppeling REST API profiel 
 
@@ -28,6 +31,7 @@ Buiten scope van het profiel zijn:
 Het Digikoppeling REST API profiel is wat betreft functionele toepassing vergelijkbaar met het Digikoppeling WUS profiel.
 De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API profiel is in deze context een systeem (applicatie) en geen internetbrowser.
 
+<span class="simple">
 
 | Invulling | DK API profiel | DK WUS profiel | DK ebMS2 profiel |
 | --- | --- |---|---|
@@ -39,6 +43,8 @@ De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API 
 | reliable |  |  | osb-rm |
 | reliable signed |  |  | osb-rm-s |
 | reliable signed en encrypted |  |  | osb-rm-e |
+
+</span>
 
 In versie 1.0 van het Digikoppeling REST API profiel wordt signing en encrytie niet ondersteund. In toekomstige versies van het profiel zal hier wel invulling aan worden gegeven. (Zie ook [Bijlage HTTP Signing & Encryptie](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/blob/master/DK_REST_API_totaal.md#bijlage-gebruik-van-signing--encryptie-in-de-context-van-http--rest-api) ) 
 
@@ -90,6 +96,8 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
 
  Voorschriften zijn aangeduid met Must, Should, Could en Won't waarvoor de volgende definities gelden: 
 
+<span class="simple">
+
 |**Cat** |**Voorschrift** | **Toelichting** |
 | --- | --- |---|
 |  M | MUST have |De Must have eisen moeten gerealiseerd worden. Hier kan niet van afgeweken worden.| 
@@ -97,11 +105,15 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
 | C | COULD have| Dit betreft eisen die gewenst zijn maar waar men vrij is een andere keuze te maken.|
 | W | WON'T | Deze eisen worden in de context van dit profiel niet toegepast.|
 
+</span>
+
 (Indeling gebaseerd op https://tools.ietf.org/html/rfc2119)
 
 Daarnaast wordt met 'REPLACED' aangegeven of een principe expliciet vervangen wordt door een andere eis
 
 #### Regels
+
+<span class="simple">
 
  |**Categorie** |**Principe** |**Toelichting** |**Link** |
  |--- | --- |---|---|
@@ -120,17 +132,21 @@ Daarnaast wordt met 'REPLACED' aangegeven of een principe expliciet vervangen wo
  |MUST |3.14 API-48: Leave off trailing slashes from API endpoints |  |[API-48: Leave off trailing slashes from URIs](https://logius-standaarden.github.io/API-Design-Rules/#api-48) |
  |MUST |3.15 API-51: Publish OAS at the base-URI in JSON-format | |[API-51: Publish OAS document at a standard location in JSON-format](https://logius-standaarden.github.io/API-Design-Rules/#api-51) 
  
+ </span>
+
 ## Afspraken API Design Rules extensies
 
+<span class="simple">
 
 | **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** | 
 | --- | --- | --- | --- | --- |
 | REPLACED | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[Link DK Beveiligingsvoorschriften]( https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf) |
 
+</span>
+
 (*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
 
-
-
+<span class="simple">
 
 | **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** | 
 | --- | --- | --- | --- | --- |
@@ -167,6 +183,8 @@ Daarnaast wordt met 'REPLACED' aangegeven of een principe expliciet vervangen wo
 | COULD | 17.33 API-49: Use public API-keys | Rate limiting | | [17.33 API-49: Use public API-keys](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-49-use-public-api-keys) | 
 | WON'T | 17.34 API-50: Use CORS to control access | Security | | [17.34 API-50: Use CORS to control access](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-50-use-cors-to-control-access) | 
 | COULD | 17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation | Security | | [17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-52-use-oauth-2-0-for-authorisation-with-rights-delegation) |
+
+</span>
 
 Laatste stabiele versie ADR extensies :
 https://docs.geostandaarden.nl/api/API-Strategie-ext/
