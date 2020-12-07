@@ -223,7 +223,7 @@ Enkele voorbeelden van signing standaarden die in ontwikkeling zijn:
 * https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures-01
 * https://www.openbankingeurope.eu/media/1735/preta-obe-jws-stable-draft.pdf
 
-## Encryptie in de context van HTTP REST
+## Encryptie in de context van HTTP Rest
 
 Voor encryptie is de standaard JSON Web Encryption (JWE)  https://tools.ietf.org/html/rfc7516 beschikbaar
 
