@@ -15,7 +15,7 @@ Opzet Digikoppeling:
 
 ![alt text](media/fig-structuur.png)
 
-## Toelichting bij de scope van het Digikoppeling REST API profiel
+# Toelichting bij de scope van het Digikoppeling REST API profiel
 
 <img src="media/api-dk2.jpg" width="400" />
 
