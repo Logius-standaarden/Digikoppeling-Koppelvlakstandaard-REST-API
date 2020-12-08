@@ -15,7 +15,7 @@ Opzet Digikoppeling:
 
 ![alt text](media/fig-structuur.png)
 
-## Toelichting bij de scope van het Digikoppeling REST API profiel
+# Toelichting bij de scope van het Digikoppeling REST API profiel
 
 <img src="media/api-dk2.jpg" width="400" />
 
@@ -72,7 +72,7 @@ Dit profiel is toe te passen bij het aanbieden van REST API's ten behoeve van he
 ### Algemeen
 
 Het DK REST-API profiel is gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden:
-https://publicatie.centrumvoorstandaarden.nl/api/adr/
+https://publicatie.centrumvoorstandaarden.nl/api/adr/ (Vastgestelde versie 09 juli 2020)
 
 Het DK REST-API profiel conformeert zich volledig aan het normatieve deel van de REST API Design Rules.
 
@@ -223,7 +223,7 @@ Enkele voorbeelden van signing standaarden die in ontwikkeling zijn:
 * https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures-01
 * https://www.openbankingeurope.eu/media/1735/preta-obe-jws-stable-draft.pdf
 
-## Encryptie in de context van HTTP REST
+## Encryptie in de context van HTTP Rest
 
 Voor encryptie is de standaard JSON Web Encryption (JWE)  https://tools.ietf.org/html/rfc7516 beschikbaar
 
