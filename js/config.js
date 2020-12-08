@@ -1,6 +1,6 @@
 var respecConfig = {
   //voor specStatus mogelijkheden zie https://github.com/centrumvoorstandaarden/respec/wiki/specStatus
-  specStatus: "DK-WV",
+  specStatus: "GN-WV",
   //voor specType mogelijkheden zie https://github.com/centrumvoorstandaarden/respec/wiki/specType
   specType: "ST",
   // TODO: Standaard emailadres bij een consultatieversie: geo-standaarden@geonovum.nl
