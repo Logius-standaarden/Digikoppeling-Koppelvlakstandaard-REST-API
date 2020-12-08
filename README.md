@@ -2,6 +2,8 @@
 
 - HTML versie [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/)
 
+- HTML versie voor oudere browsers [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/static.html)
+
 - Draft versie van profiel : [Digikoppeling Restful API Profiel](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/blob/master/DK_REST_API_totaal.md)
 
 <!---
