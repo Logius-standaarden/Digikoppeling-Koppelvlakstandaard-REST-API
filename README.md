@@ -12,6 +12,10 @@ Het Digikoppeling Rest API profiel is gericht op M2M (Machine-to-Machine) en G2G
 (Het Digikoppeling Rest API profiel is opgenomen in de Digikoppeling Architectuur versie 2.0, zie hiervoor [Digikoppeling Architectuur 2.0](https://centrumvoorstandaarden.github.io/Architectuur2.0-metRestfulAPI/) )
 
 
+## Commentaar is welkom!
+
+Maak een issue aan in deze repository. Eerste keer? Hoe een issue moet worden aangemaakt vind u [hier](https://github.com/Logius-standaarden/Openbare-Consultaties#issues-en-pull-requests-opmerkingen-maken-of-tekstvoorstellen-indienen).
+
 <!---
 ## Inleiding
 
