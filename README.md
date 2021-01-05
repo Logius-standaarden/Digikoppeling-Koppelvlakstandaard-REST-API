@@ -14,7 +14,7 @@ Het Digikoppeling Rest API profiel is gericht op M2M (Machine-to-Machine) en G2G
 
 ## Commentaar is welkom!
 
-Maak een issue aan in deze repository. Eerste keer? Hoe een issue moet worden aangemaakt vind u [hier](https://github.com/Logius-standaarden/Openbare-Consultaties#issues-en-pull-requests-opmerkingen-maken-of-tekstvoorstellen-indienen).
+Maak een issue aan in deze repository. Eerste keer? Hoe een issue moet worden aangemaakt vindt u [hier](https://github.com/Logius-standaarden/Openbare-Consultaties#issues-en-pull-requests-opmerkingen-maken-of-tekstvoorstellen-indienen).
 
 <!---
 ## Inleiding
