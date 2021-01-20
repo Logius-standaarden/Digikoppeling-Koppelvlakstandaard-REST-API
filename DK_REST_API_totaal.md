@@ -1,6 +1,6 @@
 # Context voor ontwikkeling van het Digikoppeling REST API profiel 
 
-Het Digikoppeling Rest API profiel is gericht op M2M (Machine-to-Machine) en G2G (Government-to-Government) interacties conform de algemene uitgangspunten van de Digkoppeling standaard en het toepassingsgebied van Digikoppeling op de PTLU (Pas toe of leg uit) lijst van het Forum Standaardisatie;
+Het Digikoppeling Rest API profiel is gericht op M2M (Machine-to-Machine) en G2G (Government-to-Government) interacties conform de algemene uitgangspunten van de Digikoppeling standaard en het toepassingsgebied van Digikoppeling op de PTLU (Pas toe of leg uit) lijst van het Forum Standaardisatie;
 
 Opzet Digikoppeling:
 
