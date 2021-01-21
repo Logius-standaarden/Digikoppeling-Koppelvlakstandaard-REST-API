@@ -57,6 +57,6 @@ var respecConfig = {
       publisher: "Nederlands Normalisatie-instituut",
     },
   },
-  format: "markdown",
+  // format: "markdown",
 };
 
