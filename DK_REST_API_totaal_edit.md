@@ -158,7 +158,7 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 
 
 </span>
-Zie [REST ADR extensies](https://docs.geostandaarden.nl/api/API-Strategie-ext) (versie 17 januari 2020)
+Zie [REST ADR extensies](https://docs.geostandaarden.nl/api/API-Strategie-ext) - (versie 17 januari 2020)
 
  
 
