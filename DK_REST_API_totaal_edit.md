@@ -102,13 +102,13 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
 
 #### Regels
 
-Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [REST-API Design Rules] (https://publicatie.centrumvoorstandaarden.nl/api/adr/) (Vastgestelde versie 09 juli 2020).
+Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [REST-API Design Rules](https://publicatie.centrumvoorstandaarden.nl/api/adr/) (Vastgestelde versie 09 juli 2020).
 
  |**Categorie** |**Principe** |**Toelichting** |**Link** |
  |--- | --- |---|---|
- |Verplicht | REST-API Design Rules | Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules |[REST-API Design Rules] (https://publicatie.centrumvoorstandaarden.nl/api/adr/) (Vastgestelde versie 09 juli 2020). |
+ |Verplicht | REST-API Design Rules | Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules |[REST-API Design Rules](https://publicatie.centrumvoorstandaarden.nl/api/adr/) (Vastgestelde versie 09 juli 2020). |
 
-In onderstaande tabel worden de normatieve eisen van de [REST-API Design Rules] (https://publicatie.centrumvoorstandaarden.nl/api/adr/) weergegeven:
+In onderstaande tabel worden de normatieve eisen van de [REST-API Design Rules](https://publicatie.centrumvoorstandaarden.nl/api/adr/) weergegeven:
 
 <span class="simple">
 
