@@ -137,7 +137,6 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 
 <span class="simple">
 
-### TLS Transport Layer Security 
 | **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** | 
 | --- | --- | --- | --- | --- |
 | Niet van toepassing | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[Digikoppeling Beveiligingsvoorschriften]( https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf) |
@@ -148,7 +147,6 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 (*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
 
 
-### Overige regels uit REST-ADR Extensie
 <span class="simple">
 
 | **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** | 
