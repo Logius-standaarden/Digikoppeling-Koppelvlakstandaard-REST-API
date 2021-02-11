@@ -72,14 +72,14 @@ Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve 
 #### Vertrouwelijkheid
 
 De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten en 2-zijdig TLS.
-* Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
+* Zie [Digikoppeling Beveiligingsstandaarden en voorschriften](https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf)
 
 
 #### Identificatie & Authenticatie
 
 Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties.
 Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
-* Zie https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/Standaarden/Digikoppeling-Identificatie-en-Authenticatie.pdf
+* Zie [Digikoppeling Identificatie en Authenticatie](https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/Standaarden/Digikoppeling-Identificatie-en-Authenticatie.pdf)
 
 ### API Design Rules
 
@@ -144,7 +144,7 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 
 </span>
 
-(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf
+(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [Digikoppeling Beveiligingsstandaarden en voorschriften](https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf)
 
 
 <span class="simple">
@@ -158,10 +158,7 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 
 
 </span>
-
-> Laatste stabiele versie ADR extensies : https://docs.geostandaarden.nl/api/API-Strategie-ext/
-> WerkversieADR extensies:
-https://geonovum.github.io/KP-APIs/API-strategie-extensies/
+> Dit onderdeel van het profiel is gebaseerd op [REST ADR extensies](https://docs.geostandaarden.nl/api/API-Strategie-ext) (versie 17 januari 2020)
 
  
 
