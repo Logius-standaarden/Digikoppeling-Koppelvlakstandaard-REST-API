@@ -156,10 +156,10 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 | Aanbevolen | 17.31 API-46: Use default error handling | Error handling | | [17.31 API-46: Use default error handling](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-46-use-default-error-handling) |
 | Aanbevolen | 17.32 API-47: Use the required HTTP status codes | Error handling  | | [17.32 API-47: Use the required HTTP status codes](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-47-use-the-required-http-status-codes) |
 
-
 </span>
+
 Zie [REST ADR extensies](https://docs.geostandaarden.nl/api/API-Strategie-ext) 
-(versie 17 januari 2020)
+- versie 17 januari 2020
 
  
 
