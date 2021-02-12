@@ -133,24 +133,13 @@ In onderstaande tabel worden de normatieve eisen van de [REST-API Design Rules](
 
 ## Afspraken API Design Rules extensies
 
-Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit profiel verplicht zijn of worden aanbevolen.
+De ADR extensie onderderdelen van dit profiel zijn gebaseerd op: [REST ADR extensies](https://docs.geostandaarden.nl/api/API-Strategie-ext) - versie 17 januari 2020.
 
-<span class="simple">
+Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit profiel verplicht zijn of worden aanbevolen.
 
 | **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** | 
 | --- | --- | --- | --- | --- |
 | Niet van toepassing | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[Digikoppeling Beveiligingsvoorschriften]( https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf) |
-| Verplicht | Digikoppeling eisen m.b.t. TLS | - | Digikoppeling vereist 2 zijdig TLS en gebruik van PKIO certificaten (*) |[Digikoppeling Beveiligingsvoorschriften]( https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf) |
-
-</span>
-
-(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [Digikoppeling Beveiligingsstandaarden en voorschriften](https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf)
-
-
-<span class="simple">
-
-| **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** | 
-| --- | --- | --- | --- | --- |
 | Verplicht | 17.3 API-13: Accept tokens as HTTP headers only | Security Authorisation | | [17.3 API-13: Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-13-accept-tokens-as-http-headers-only) |
 | Verplicht | 17.5 API-15: Use PKIoverheid certificates for access-restricted or purpose-limited API authentication | Security Authorisation | | [17.5 API-15: Use PKIoverheid certificates for access-restricted or purpose-limited API authentication](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-15-use-pkioverheid-certificates-for-access-restricted-or-purpose-limited-api-authentication) | 
 | Aanbevolen | 17.31 API-46: Use default error handling | Error handling | | [17.31 API-46: Use default error handling](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-46-use-default-error-handling) |
@@ -158,7 +147,8 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 
 </span>
 
-Zie [REST ADR extensies](https://docs.geostandaarden.nl/api/API-Strategie-ext) - versie 17 januari 2020
+(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [Digikoppeling Beveiligingsstandaarden en voorschriften](https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf)
+
 
  
 
