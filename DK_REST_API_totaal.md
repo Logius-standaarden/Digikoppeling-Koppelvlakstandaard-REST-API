@@ -4,25 +4,26 @@ Het Digikoppeling Rest API profiel is gericht op Machine-to-Machine (M2M) en Gov
 
 Opzet Digikoppeling:
 
-![alt text](media/fig-structuur.png)
+![Overzicht Digikoppeling Koppelvlakken](media/fig-structuurv2.png "Overzicht Digikoppeling Koppelvlakken")
 
 # Toelichting bij de scope van het Digikoppeling REST API profiel
 
-<img src="media/api-dk2.jpg" width="400" />
+![Digikoppeling voor Closed Data G2G Uitwisseling](media/DK_closed_g2g.png "Digikoppeling voor Closed Data G2G Uitwisseling")
+<!-- <img src="media/api-dk2.jpg" width="400" /> -->
 
 In de figuur wordt onderscheid gemaakt tussen open en gesloten diensten:
-* Open Diensten: Diensten zonder toegangsbeperking bv open data.
-* Gesloten Diensten: Diensten met toegangsbeperking bv persoonsgegevens en vertrouwelijke gegevens of diensten voor specifieke partijen.
+
+- Open Diensten: Diensten zonder toegangsbeperking bv open data.
+- Gesloten Diensten: Diensten met toegangsbeperking bv persoonsgegevens en vertrouwelijke gegevens of diensten voor specifieke partijen.
 
 Het Digikoppeling REST API profiel richt zich op Machine-to-Machine (M2M) gegevensuitwisseling via een gesloten dienst tussen overheidspartijen.
 Buiten scope van het profiel zijn:
-* REST API's voor open diensten van een overheidspartij.
-* REST API's voor gesloten diensten van een overheidspartij (direct) aan burgers of bedrijven. 
+
+- REST API's voor open diensten van een overheidspartij.
+- REST API's voor gesloten diensten van een overheidspartij (direct) aan burgers of bedrijven. 
 
 Het Digikoppeling REST API profiel is wat betreft functionele toepassing vergelijkbaar met het Digikoppeling WUS profiel.
 De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API profiel is in deze context een systeem (applicatie) en geen internetbrowser.
-
-<span class="simple">
 
 | Invulling Digikoppeling  | DK REST API profiel | DK WUS profiel | DK ebMS2 profiel |
 | --- | --- |---|---|
@@ -35,9 +36,9 @@ De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API 
 | reliable signed |  |  | osb-rm-s |
 | reliable signed en encrypted |  |  | osb-rm-e |
 
-</span>
+In versie 1.0 van het Digikoppeling REST API profiel wordt signing en encryptie niet ondersteund. In toekomstige versies van het profiel zal hier wel invulling aan worden gegeven. (Zie ook [Bijlage HTTP Signing & Encryptie](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/blob/master/DK_REST_API_totaal.md#bijlage-gebruik-van-signing--encryptie-in-de-context-van-http--rest-api) )
 
-In versie 1.0 van het Digikoppeling REST API profiel wordt signing en encrytie niet ondersteund. In toekomstige versies van het profiel zal hier wel invulling aan worden gegeven. (Zie ook [Bijlage HTTP Signing & Encryptie](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/blob/master/DK_REST_API_totaal.md#bijlage-gebruik-van-signing--encryptie-in-de-context-van-http--rest-api) ) 
+<!-- [Bijlage HTTP Signing & Encryptie](#Bijlage-gebruik-van-signing--encryptie-in-de-context-van-http--rest-api)  -->
 
 # Digikoppeling Restful API profiel
 
@@ -49,12 +50,11 @@ HTML versie [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.g
 
 Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond Restful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de Pas-toe-of-leg-uit lijst van het Forum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).
 
-
 ### Toepassingsgebied
 
 Het toepassingsgebied is voor Digikoppeling:
 
-*Digikoppeling moet worden toegepast op alle digitale gegevensuitwisseling met behulp van gestructureerde berichten die plaatsvindt met voorzieningen die onderdeel zijn van de GDI, waaronder de basisregistraties, of die sector-overstijgend is.*
+> *Digikoppeling moet worden toegepast op alle digitale gegevensuitwisseling met behulp van gestructureerde berichten die plaatsvindt met voorzieningen die onderdeel zijn van de GDI, waaronder de basisregistraties, of die sector-overstijgend is.*
 
 Dit profiel is toe te passen bij het aanbieden van REST API's ten behoeve van het ontsluiten van overheidsinformatie en/of functionaliteit.
 
@@ -62,8 +62,8 @@ Dit profiel is toe te passen bij het aanbieden van REST API's ten behoeve van he
 
 ### Algemeen
 
-Het Digikoppeling REST-API profiel is gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden:
-[REST-API Design Rules standaard](https://publicatie.centrumvoorstandaarden.nl/api/adr/) (Vastgestelde versie 09 juli 2020)
+Het Digikoppeling REST-API profiel is gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden: [[API Design Rules]]
+
 
 Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de REST-API Design Rules.
 
@@ -71,15 +71,15 @@ Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve 
 
 #### Vertrouwelijkheid
 
-De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten en 2-zijdig TLS.
-* Zie [Digikoppeling Beveiligingsstandaarden en voorschriften](https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf)
+De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [[PKI Policy]] en 2-zijdig TLS.
+* Zie [[Digikoppeling Beveiligingsdocument]]
 
 
 #### Identificatie & Authenticatie
 
 Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties.
 Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
-* Zie [Digikoppeling Identificatie en Authenticatie](https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/Standaarden/Digikoppeling-Identificatie-en-Authenticatie.pdf)
+* Zie [[Digikoppeling Identificatie-Authenticatie]]
 
 ### API Design Rules
 
@@ -88,29 +88,26 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
  Voorschriften zijn aangeduid met 'Verplicht', 'Aanbevolen' en 'Niet van Toepassing' waarvoor de volgende definities gelden: 
 
 
-<span class="simple">
-
 |**Categorie** | **Codering RFC2119** |**Voorschrift** | **Toelichting** |
 | --- | --- |---|---|
-|  Verplicht | MUST |De eisen moeten gevolgd worden. Hier kan niet van afgeweken worden.| 
+|  Verplicht | MUST |De eisen moeten gevolgd worden. Hier kan niet van afgeweken worden.|
 |  Aanbevolen | SHOULD | Aanbevolen is om de eisen conform conform voorschrift te implementeren. Wanneer hier van afgeweken wordt dient een zorgvuldige afweging plaats te vinden  | 
 |  Niet van Toepassing | - | De eisen zijn niet van toepassing|
 
-</span>
-
-(Indeling gebaseerd op RFC2119 : https://tools.ietf.org/html/rfc2119)
+(Indeling gebaseerd op [[?rfc2119]])
 
 #### Regels
 
-Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [REST-API Design Rules](https://publicatie.centrumvoorstandaarden.nl/api/adr/) (Vastgestelde versie 09 juli 2020).
+Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [[API Design Rules]].
 
  |**Categorie** |**Principe** |**Toelichting** |**Link** |
  |--- | --- |---|---|
- |Verplicht | REST-API Design Rules | Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules |[REST-API Design Rules](https://publicatie.centrumvoorstandaarden.nl/api/adr/) (Vastgestelde versie 09 juli 2020). |
+ |Verplicht | REST-API Design Rules | Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules |[[API Design Rules]]. |
 
-In onderstaande tabel worden de normatieve eisen van de [REST-API Design Rules](https://publicatie.centrumvoorstandaarden.nl/api/adr/) weergegeven:
+In onderstaande tabel worden de normatieve eisen van de [[API Design Rules]] weergegeven:
 
-<span class="simple">
+<details>
+<summary>Normatieve eisen van de REST API Design Rules</summary>
 
  |**Categorie** |**Principe** |**Toelichting** |**Link** |
  |--- | --- |---|---|
@@ -129,17 +126,18 @@ In onderstaande tabel worden de normatieve eisen van de [REST-API Design Rules](
  |Verplicht |3.14 API-48: Leave off trailing slashes from API endpoints |  |[API-48: Leave off trailing slashes from URIs](https://logius-standaarden.github.io/API-Design-Rules/#api-48) |
  |Verplicht |3.15 API-51: Publish OAS at the base-URI in JSON-format | |[API-51: Publish OAS document at a standard location in JSON-format](https://logius-standaarden.github.io/API-Design-Rules/#api-51) 
  
- </span>
+
+</details>
 
 ## Afspraken API Design Rules extensies
 
-De ADR extensie onderderdelen van dit profiel zijn gebaseerd op: [REST ADR extensies](https://docs.geostandaarden.nl/api/API-Strategie-ext) - versie 17 januari 2020.
+De ADR extensie onderderdelen van dit profiel zijn gebaseerd op: [[API Design Rules-Extensions]].
 
 Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit profiel verplicht zijn of worden aanbevolen.
 
 | **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** | 
 | --- | --- | --- | --- | --- |
-| Niet van toepassing | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[Digikoppeling Beveiligingsvoorschriften]( https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf) |
+| Niet van toepassing | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[[Digikoppeling Beveiligingsdocument]] |
 | Verplicht | 17.3 API-13: Accept tokens as HTTP headers only | Security Authorisation | | [17.3 API-13: Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-13-accept-tokens-as-http-headers-only) |
 | Verplicht | 17.5 API-15: Use PKIoverheid certificates for access-restricted or purpose-limited API authentication | Security Authorisation | | [17.5 API-15: Use PKIoverheid certificates for access-restricted or purpose-limited API authentication](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-15-use-pkioverheid-certificates-for-access-restricted-or-purpose-limited-api-authentication) | 
 | Aanbevolen | 17.31 API-46: Use default error handling | Error handling | | [17.31 API-46: Use default error handling](https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-46-use-default-error-handling) |
@@ -147,15 +145,11 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 
 </span>
 
-(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [Digikoppeling Beveiligingsstandaarden en voorschriften](https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf)
-
-
- 
-
+(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [[Digikoppeling Beveiligingsdocument]]
 
 # BIJLAGE Gebruik van Signing & Encryptie in de context van HTTP / Rest API
 
->Deze bijlage is informatief en geen normatief onderdeel van het profiel
+<aside class="note">Deze bijlage is informatief en geen normatief onderdeel van het profiel</aside>
 
 ## Signing in de context van HTTP Rest
 
@@ -165,27 +159,30 @@ Signing van HTTP body en/of header kan gebruikt worden voor _authenticatie_, om 
 De berichten kunnen ook samen met de digitale handtekeningen worden bewaard zodat deze bij audits of juridische bewijsvoering gebruikt kunnen worden.
 
 Een HTTP requestbericht is opgebouwd uit de volgende onderdelen:
-* Header
-  * HTTP operatie (GET, POST etc)
-  * Pad / URL resource
-  * Protocol
-  * Header velden
-* Body
-  * _data_
+
+- Header
+  - HTTP operatie (GET, POST etc)
+  - Pad / URL resource
+  - Protocol
+  - Header velden
+- Body
+  - _data_
  
 Door naast de body data ook onderdelen uit de header digitaal te ondertekenen kan worden gecontroleerd dat bv ook de HTTP operatie en resource specificatie in de request echt van de afzender afkomstig zijn en niet onderweg gemanipuleerd.
 
 Enkele voorbeelden van signing standaarden die in ontwikkeling zijn:
-* https://tools.ietf.org/html/draft-cavage-http-signatures-12
-* https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures-01
-* https://www.openbankingeurope.eu/media/1735/preta-obe-jws-stable-draft.pdf
+
+- https://tools.ietf.org/html/draft-cavage-http-signatures-12
+- https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures-01
+- https://www.openbankingeurope.eu/media/1735/preta-obe-jws-stable-draft.pdf
 
 ## Encryptie in de context van HTTP Rest
 
-Voor encryptie is de standaard JSON Web Encryption (JWE)  https://tools.ietf.org/html/rfc7516 beschikbaar
+Voor encryptie is de standaard JSON Web Encryption (JWE) [[rfc7516]] beschikbaar
 
-Zie ook de ADR extensie signing en encryptie : 
-* https://docs.geostandaarden.nl/api/API-Strategie-ext/#signing-and-encryption
+Zie ook de ADR extensie signing en encryptie: 
+
+- https://docs.geostandaarden.nl/api/API-Strategie-ext/#signing-and-encryption
 
 
 
