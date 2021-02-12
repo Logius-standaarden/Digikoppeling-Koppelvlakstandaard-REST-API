@@ -1,343 +1,118 @@
-<!DOCTYPE html><html lang="nl"><head><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta content="text/html; charset=utf-8" http-equiv="content-type"><meta name="generator" content="ReSpec 24.5.2">
+<!DOCTYPE html><html lang="nl"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<meta name="generator" content="ReSpec 26.0.0">
+<style>
+.issue-label{text-transform:initial}
+.warning>p:first-child{margin-top:0}
+.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
+span.warning{padding:.1em .5em .15em}
+.issue.closed span.issue-number{text-decoration:line-through}
+.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
+.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+li.task-list-item{list-style:none}
+input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
+.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
+</style>
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font:small Helvetica Neue,sans-serif,Droid Sans Fallback;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;margin-top:.25em}
+.dfn-panel ul a[href]{color:#333}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
     
     
-    <!-- <link rel='shortcut icon' type='image/x-icon' href='...' /> -->
-    <title>Digikoppeling Restful API Profiel</title>
-    <script>try {
-                        Object.defineProperty(screen, "availTop", { value: 0 });
-                    } catch (e) {}
-                    try {
-                        Object.defineProperty(screen, "availLeft", { value: 0 });
-                    } catch (e) {}
-                    try {
-                        Object.defineProperty(screen, "availWidth", { value: 2048 });
-                    } catch (e) {}
-                    try {
-                        Object.defineProperty(screen, "availHeight", { value: 1152 });
-                    } catch (e) {}
-                    try {
-                        Object.defineProperty(screen, "colorDepth", { value: 24 });
-                    } catch (e) {}
-                    try {
-                        Object.defineProperty(screen, "pixelDepth", { value: 24 });
-                    } catch (e) {}
-                    try {
-                        Object.defineProperty(navigator, "hardwareConcurrency", { value: 8 });
-                    } catch (e) {}
-                    try {
-                        Object.defineProperty(navigator, "appVersion", { value: "5.0 (Windows)" });
-                    } catch (e) {}
-                    try {
-                        Object.defineProperty(navigator, "doNotTrack", { value: "unspecified" });
-                    } catch (e) {}
-                    
-            try {
-                window.screenY = 1145
-            } catch (e) { }
-        
-            try {
-                window.screenTop = 1145
-            } catch (e) { }
-        
-            try {
-                window.top.window.outerHeight = window.screen.height
-            } catch (e) { }
-        
-            try {
-                window.screenX = 0
-            } catch (e) { }
-        
-            try {
-                window.screenLeft = 0
-            } catch (e) { }
-        
-            try {
-                window.top.window.outerWidth = window.screen.width
-            } catch (e) { }
-        </script>
     
-  <style id="respec-mainstyle">/*****************************************************************
- * ReSpec 3 CSS
- * Robin Berjon - http://berjon.com/
- *****************************************************************/
-
-/* Override code highlighter background */
-.hljs {
-  background: transparent !important;
+<link rel="shortcut icon" type="image/x-icon" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/logius.ico">
+    
+<title>Digikoppeling Restful API Profiel</title>
+    
+    
+    
+    
+<link rel="stylesheet" type="text/css" href="./media/style.css">
+  
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
 }
-
-/* --- INLINES --- */
-h1 abbr,
-h2 abbr,
-h3 abbr,
-h4 abbr,
-h5 abbr,
-h6 abbr,
-a abbr {
-  border: none;
+.hljs{background:0 0!important}
+a abbr,h1 abbr,h2 abbr,h3 abbr,h4 abbr,h5 abbr,h6 abbr{border:none}
+dfn{font-weight:700}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
 }
-
-dfn {
-  font-weight: bold;
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+cite .bibref{font-style:normal}
+code{color:#c63501}
+th code{color:inherit}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+.toc a,.tof a{text-decoration:none}
+a .figno,a .secno{color:#000}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
+.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
+.simple th a{color:#fff;padding:3px 5px;text-align:left}
+.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
+.simple td{padding:3px 10px;border-top:1px solid #ddd}
+.simple tr:nth-child(even){background:#f0f6ff}
+.section dd>p:first-child{margin-top:0}
+.section dd>p:last-child{margin-bottom:0}
+.section dd{margin-bottom:1em}
+.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none;display:inline-block}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+h2,h3,h4,h5,h6{position:relative}
+aside.example .marker>a.self-link{color:inherit}
+h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}
+h2>a.self-link::before,h3>a.self-link::before,h4>a.self-link::before,h5>a.self-link::before,h6>a.self-link::before{content:"§";display:block}
+@media (max-width:767px){
+dd{margin-left:0}
+h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:auto;top:auto}
 }
-
-a.internalDFN {
-  color: inherit;
-  border-bottom: 1px solid #99c;
-  text-decoration: none;
+@media print{
+.removeOnSave{display:none}
 }
-
-a.externalDFN {
-  color: inherit;
-  border-bottom: 1px dotted #ccc;
-  text-decoration: none;
-}
-
-a.bibref {
-  text-decoration: none;
-}
-
-#references :target {
-  background: #eaf3ff;
-}
-
-cite .bibref {
-  font-style: normal;
-}
-
-code {
-  color: #c83500;
-}
-
-th code {
-  color: inherit;
-}
-
-/* --- TOC --- */
-
-.toc a,
-.tof a {
-  text-decoration: none;
-}
-
-a .secno,
-a .figno {
-  color: #000;
-}
-
-ul.tof,
-ol.tof {
-  list-style: none outside none;
-}
-
-.caption {
-  margin-top: 0.5em;
-  font-style: italic;
-}
-
-/* --- TABLE --- */
-
-table.simple {
-  border-spacing: 0;
-  border-collapse: collapse;
-  border-bottom: 3px solid #005a9c;
-}
-
-.simple th {
-  background: #005a9c;
-  color: #fff;
-  padding: 3px 5px;
-  text-align: left;
-}
-
-.simple th[scope="row"] {
-  background: inherit;
-  color: inherit;
-  border-top: 1px solid #ddd;
-}
-
-.simple td {
-  padding: 3px 10px;
-  border-top: 1px solid #ddd;
-}
-
-.simple tr:nth-child(even) {
-  background: #f0f6ff;
-}
-
-/* --- DL --- */
-
-.section dd>p:first-child {
-  margin-top: 0;
-}
-
-.section dd>p:last-child {
-  margin-bottom: 0;
-}
-
-.section dd {
-  margin-bottom: 1em;
-}
-
-.section dl.attrs dd,
-.section dl.eldef dd {
-  margin-bottom: 0;
-}
-
-#issue-summary>ul,
-.respec-dfn-list {
-  column-count: 2;
-}
-
-#issue-summary li,
-.respec-dfn-list li {
-  list-style: none;
-}
-
-details.respec-tests-details {
-  margin-left: 1em;
-  display: inline-block;
-  vertical-align: top;
-}
-
-details.respec-tests-details>* {
-  padding-right: 2em;
-}
-
-details.respec-tests-details[open] {
-  z-index: 999999;
-  position: absolute;
-  border: thin solid #cad3e2;
-  border-radius: 0.3em;
-  background-color: white;
-  padding-bottom: 0.5em;
-}
-
-details.respec-tests-details[open]>summary {
-  border-bottom: thin solid #cad3e2;
-  padding-left: 1em;
-  margin-bottom: 1em;
-  line-height: 2em;
-}
-
-details.respec-tests-details>ul {
-  width: 100%;
-  margin-top: -0.3em;
-}
-
-details.respec-tests-details>li {
-  padding-left: 1em;
-}
-
-a[href].self-link:hover {
-  opacity: 1;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  position: relative;
-}
-
-aside.example .marker > a.self-link {
-  color: inherit;
-}
-
-h2>a.self-link,
-h3>a.self-link,
-h4>a.self-link,
-h5>a.self-link,
-h6>a.self-link {
-  border: none;
-  color: inherit;
-  font-size: 83%;
-  height: 2em;
-  left: -1.6em;
-  opacity: .5;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  top: 0;
-  transition: opacity .2s;
-  width: 2em;
-}
-
-h2>a.self-link::before,
-h3>a.self-link::before,
-h4>a.self-link::before,
-h5>a.self-link::before,
-h6>a.self-link::before {
-  content: "§";
-  display: block;
-}
-
-@media (max-width: 767px) {
-  dd {
-    margin-left: 0;
-  }
-
-  /* Don't position self-link in headings off-screen */
-  h2>a.self-link,
-  h3>a.self-link,
-  h4>a.self-link,
-  h5>a.self-link,
-  h6>a.self-link {
-    left: auto;
-    top: auto;
-  }
-}
-
-@media print {
-  .removeOnSave {
-    display: none;
-  }
-}
-</style><link rel="stylesheet" href="https://publicatie.centrumvoorstandaarden.nl/respec-tools/media/DK-WV.css"><link rel="shortcut icon" type="image/x-icon" href="TODO"><script id="initialUserConfig" type="application/json">{
-  "specStatus": "DK-WV",
-  "specType": "ST",
-  "splitMDsections": true,
-  "subExplanation": "",
-  "license": "cc-by-nd",
-  "doJsonLd": true,
-  "editors": [
-    {
-      "name": "Peter Haasnoot",
-      "company": "Logius",
-      "companyURL": "http://www.logius.nl/"
-    },
-    {
-      "name": "Pieter Hering",
-      "company": "Logius",
-      "companyURL": "http://www.logius.nl/"
-    }
-  ],
-  "shortName": "...",
-  "github": "https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel",
-  "issueBase": "https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/issues/",
-  "localBiblio": {
-    "NEN3610": {
-      "href": "http://www.nen.nl/web/Normshop/Norm/NEN-36102011-nl.htm",
-      "title": "Basismodel Geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten",
-      "authors": [
-        ""
-      ],
-      "date": "Maart 2011",
-      "publisher": "Nederlands Normalisatie-instituut"
-    }
-  },
-  "format": "markdown",
-  "publishISODate": "2020-12-08T00:00:00.000Z",
-  "generatedSubtitle": "Werkversie 08 december 2020"
-}</script><script type="application/ld+json">{
+</style>
+<link rel="canonical" href="https://www.w3.org/TR/restapi/">
+<script type="application/ld+json">{
   "@context": [
     "http://schema.org",
     {
       "@vocab": "http://schema.org/",
       "@language": "nl",
+      "w3p": "http://www.w3.org/2001/02pd/rec54#",
       "foaf": "http://xmlns.com/foaf/0.1/",
       "datePublished": {
         "@type": "http://www.w3.org/2001/XMLSchema#date"
@@ -353,17 +128,17 @@ h6>a.self-link::before {
       }
     }
   ],
-  "id": "https://centrumvoorstandaarden.github.io/DigikoppelingRestfulAPiProfiel/",
+  "id": "https://www.w3.org/TR/restapi/",
   "type": [
     "TechArticle"
   ],
   "name": "Digikoppeling Restful API Profiel",
   "inLanguage": "nl",
   "license": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.nl",
-  "datePublished": "2020-12-08",
+  "datePublished": "2021-02-12",
   "copyrightHolder": {
-    "name": "Logius",
-    "url": "https://www.logius.nl/"
+    "name": "World Wide Web Consortium",
+    "url": "https://www.w3.org/"
   },
   "discussionUrl": "https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/issues/",
   "alternativeHeadline": "",
@@ -385,103 +160,321 @@ h6>a.self-link::before {
       }
     }
   ],
-  "citation": []
-}</script></head>
+  "citation": [
+    {
+      "id": "https://publicatie.centrumvoorstandaarden.nl/api/adr/",
+      "type": "TechArticle",
+      "name": "API Design Rules (Nederlandse API Strategie IIa)",
+      "url": "https://publicatie.centrumvoorstandaarden.nl/api/adr/",
+      "creator": [
+        {
+          "name": "Jasper Roes"
+        },
+        {
+          "name": "Joost Farla"
+        }
+      ],
+      "publisher": {
+        "name": "Logius"
+      }
+    },
+    {
+      "id": "https://www.logius.nl/diensten/pkioverheid/aansluiten-als-tsp/pogramma-van-eisen",
+      "type": "TechArticle",
+      "name": "Programma van Eisen (PKIoverheid)",
+      "url": "https://www.logius.nl/diensten/pkioverheid/aansluiten-als-tsp/pogramma-van-eisen",
+      "publisher": {
+        "name": "Logius"
+      }
+    },
+    {
+      "id": "https://www.logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf",
+      "type": "TechArticle",
+      "name": "Digikoppeling Beveiligingsstandaarden en voorschriften",
+      "url": "https://www.logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf",
+      "publisher": {
+        "name": "Logius"
+      }
+    },
+    {
+      "id": "http://www.logius.nl/digikoppeling",
+      "type": "TechArticle",
+      "name": "Digikoppeling Identificatie en Authenticatie",
+      "url": "http://www.logius.nl/digikoppeling",
+      "publisher": {
+        "name": "Logius"
+      }
+    },
+    {
+      "id": "https://docs.geostandaarden.nl/api/API-Strategie-ext",
+      "type": "TechArticle",
+      "name": "API Designrules Extensions (Nederlandse API Strategie IIb)",
+      "url": "https://docs.geostandaarden.nl/api/API-Strategie-ext",
+      "creator": [
+        {
+          "name": "Jasper Roes"
+        },
+        {
+          "name": "Linda van den Brink"
+        }
+      ],
+      "publisher": {
+        "name": "Geonovum/Kennisplatform APi's"
+      }
+    },
+    {
+      "id": "https://tools.ietf.org/html/rfc7516",
+      "type": "TechArticle",
+      "name": "JSON Web Encryption (JWE)",
+      "url": "https://tools.ietf.org/html/rfc7516",
+      "creator": [
+        {
+          "name": "M. Jones"
+        },
+        {
+          "name": "J. Hildebrand"
+        }
+      ],
+      "publisher": {
+        "name": "IETF"
+      }
+    },
+    {
+      "id": "https://tools.ietf.org/html/rfc2119",
+      "type": "TechArticle",
+      "name": "Key words for use in RFCs to Indicate Requirement Levels",
+      "url": "https://tools.ietf.org/html/rfc2119",
+      "creator": [
+        {
+          "name": "S. Bradner"
+        }
+      ],
+      "publisher": {
+        "name": "IETF"
+      }
+    }
+  ]
+}</script>
+<script id="initialUserConfig" type="application/json">{
+  "specStatus": "WV",
+  "specType": "ST",
+  "shortName": "restapi",
+  "addSectionLinks": true,
+  "license": "cc-by-nd",
+  "doJsonLd": true,
+  "editors": [
+    {
+      "name": "Peter Haasnoot",
+      "company": "Logius",
+      "companyURL": "http://www.logius.nl/"
+    },
+    {
+      "name": "Pieter Hering",
+      "company": "Logius",
+      "companyURL": "http://www.logius.nl/"
+    }
+  ],
+  "github": "https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel",
+  "nl_addReleaseTagTitle": true,
+  "nl_markdownSplitH1sections": true,
+  "nl_github": {
+    "revision": "https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel"
+  },
+  "nl_organisationName": "Logius",
+  "nl_organisationPrefix": "LS-",
+  "nl_markdownTableClass": "dkkvs",
+  "nl_markdownEmbedImageInFigure": true,
+  "nl_organisationStylesURL": "https://publicatie.centrumvoorstandaarden.nl/respec/style/",
+  "nl_organisationPublishURL": "https://publicatie.centrumvoorstandaarden.nl/",
+  "nl_logo": {
+    "src": "https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/figure-logius.svg",
+    "alt": "Logius",
+    "id": "Logius",
+    "height": 77,
+    "width": 44,
+    "url": "https://www.logius.nl/standaarden"
+  },
+  "localBiblio": {
+    "NEN3610": {
+      "href": "http://www.nen.nl/web/Normshop/Norm/NEN-36102011-nl.htm",
+      "title": "Basismodel Geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten",
+      "authors": [
+        ""
+      ],
+      "date": "Maart 2011",
+      "publisher": "Nederlands Normalisatie-instituut"
+    },
+    "API Design Rules": {
+      "href": "https://publicatie.centrumvoorstandaarden.nl/api/adr/",
+      "title": "API Design Rules (Nederlandse API Strategie IIa)",
+      "authors": [
+        "Jasper Roes",
+        "Joost Farla"
+      ],
+      "date": "Juli 2020",
+      "publisher": "Logius",
+      "id": "api design rules"
+    },
+    "API Design Rules-Extensions": {
+      "href": "https://docs.geostandaarden.nl/api/API-Strategie-ext",
+      "title": "API Designrules Extensions (Nederlandse API Strategie IIb)",
+      "authors": [
+        "Jasper Roes",
+        "Linda van den Brink"
+      ],
+      "date": "Januari 2020",
+      "publisher": "Geonovum/Kennisplatform APi's",
+      "id": "api design rules-extensions"
+    },
+    "Beheermodel": {
+      "href": "https://www.logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/Standaarden/Digikoppeling-Beheermodel.pdf",
+      "title": "Beheermodel en releasebeleid Digikoppeling v1.5",
+      "date": "Oktober 2017",
+      "publisher": "Logius"
+    },
+    "Digikoppeling Architectuur": {
+      "href": "https://centrumvoorstandaarden.github.io/Architectuur2.0-metRestfulAPI/static.html",
+      "title": "Digikoppeling Architectuur",
+      "authors": [
+        "Logius Centrum voor standaarden"
+      ],
+      "date": "december 2020",
+      "publisher": "Logius"
+    },
+    "Digikoppeling Beveiligingsdocument": {
+      "href": "https://www.logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf",
+      "title": "Digikoppeling Beveiligingsstandaarden en voorschriften",
+      "date": "2020",
+      "publisher": "Logius",
+      "id": "digikoppeling beveiligingsdocument"
+    },
+    "Digikoppeling Identificatie-Authenticatie": {
+      "href": "http://www.logius.nl/digikoppeling",
+      "title": "Digikoppeling Identificatie en Authenticatie",
+      "publisher": "Logius",
+      "id": "digikoppeling identificatie-authenticatie"
+    },
+    "Digikoppeling-Cert": {
+      "href": "http://www.logius.nl/digikoppeling",
+      "title": "Gebruik en achtergrond van Digikoppeling certificaten",
+      "publisher": "Logius"
+    },
+    "PKI Policy": {
+      "href": "https://www.logius.nl/diensten/pkioverheid/aansluiten-als-tsp/pogramma-van-eisen",
+      "title": "Programma van Eisen (PKIoverheid)",
+      "publisher": "Logius",
+      "id": "pki policy"
+    },
+    "PKI CA": {
+      "href": "https://www.logius.nl/diensten/pkioverheid/aansluiten-als-tsp/toegetreden-vertrouwensdienstverleners",
+      "title": "Toegetreden vertrouwensdienstverleners",
+      "publisher": "Logius"
+    },
+    "PKIoverheid Certificaten": {
+      "href": "https://cert.pkioverheid.nl/",
+      "title": "Pkioverheid certificaten",
+      "publisher": "Logius"
+    },
+    "Logius website": {
+      "href": "https://logius.nl/digikoppeling",
+      "title": "Logius Digikoppeling",
+      "publisher": "Logius"
+    },
+    "Digikoppeling Compliance Voorziening": {
+      "href": "https://portaal.digikoppeling.nl",
+      "title": "Digikoppeling Compliance Voorziening",
+      "publisher": "Logius"
+    }
+  },
+  "publishISODate": "2021-02-12T00:00:00.000Z",
+  "generatedSubtitle": "Werkversie 12 februari 2021"
+}</script>
+<link rel="stylesheet" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/LS-WV.css"></head>
   <body class="h-entry"><div class="head">
-  <a href="https://www.logius.nl/" class="logo"><img id="Logius" alt="Logius" src="https://centrumvoorstandaarden.github.io/respec-tools/resources/logius.png" width="200"></a>
-  <h1 class="title p-name" id="title">Digikoppeling Restful API Profiel</h1>
-  
-  <h2>Logius Standaard<br>
-  Werkversie <time class="dt-published" datetime="2020-12-08">08 december 2020</time></h2>
-  <dl>
-    <dt>Deze versie:</dt><dd><a class="u-url" href="https://centrumvoorstandaarden.github.io/DigikoppelingRestfulAPiProfiel/">https://centrumvoorstandaarden.github.io/DigikoppelingRestfulAPiProfiel/</a></dd><dt>Laatst gepubliceerde versie:</dt><dd>geen</dd>
+    <a class="logo" href="https://www.logius.nl/standaarden"><img id="Logius" alt="Logius" src="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/figure-logius.svg" width="44" height="77"></a> <h1 id="title" class="title">Digikoppeling Restful API Profiel</h1>
     
-    
-    <dt>Laatste werkversie:</dt><dd><a href="https://centrumvoorstandaarden.github.io/DigikoppelingRestfulAPiProfiel/">https://centrumvoorstandaarden.github.io/DigikoppelingRestfulAPiProfiel/</a></dd>
-    <dt>Redacteurs:</dt>
-    <dd class="p-author h-card vcard"><span class="p-name fn">Peter Haasnoot</span>, <a class="p-org org h-org h-card" href="http://www.logius.nl/">Logius</a></dd><dd class="p-author h-card vcard"><span class="p-name fn">Pieter Hering</span>, <a class="p-org org h-org h-card" href="http://www.logius.nl/">Logius</a></dd>
-    
-    <dt>Doe mee:</dt><dd>
-      <a href="https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/">GitHub centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel</a>
-    </dd><dd>
-      <a href="https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/issues/">Dien een melding in</a>
-    </dd><dd>
-      <a href="https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/commits/gh-pages">Revisiehistorie</a>
-    </dd><dd>
-      <a href="https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/pulls/">Pull requests</a>
-    </dd>
-  </dl>
-  
-  
+    <h2>
+      Logius Standaard<br>
+      Werkversie
+      <time class="dt-published" datetime="2021-02-12">12 februari 2021</time>
+    </h2>
     <dl>
-          <dt>Rechtenbeleid:</dt>
-          <dd>
-            <div class="copyright" style="margin: 0.25em 0;">
-              <abbr title="Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal">
-              <a href="https://creativecommons.org/licenses/by-nd/4.0/legalcode.nl"><img src="https://tools.geostandaarden.nl/respec/style/logos/cc-by-nd.svg" alt="Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal" width="115" height="40"></a>
-            </abbr>
-              <div style="display:inline-block; vertical-align:top">
-                <p style="font-size: small;">Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal<br>(CC-BY-ND)</p>
-              </div>
-            </div>
+      <dt>Deze versie:</dt><dd class="status">
+              <a class="u-url status" href="https://centrumvoorstandaarden.github.io/DigikoppelingRestfulAPiProfiel/">https://centrumvoorstandaarden.github.io/DigikoppelingRestfulAPiProfiel/</a>
+            </dd><dt>Laatst gepubliceerde versie:</dt><dd>
+              none
+            </dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://centrumvoorstandaarden.github.io/DigikoppelingRestfulAPiProfiel/">https://centrumvoorstandaarden.github.io/DigikoppelingRestfulAPiProfiel/</a></dd>
+      
+      
+      
+      
+      
+      <dt>Redacteurs:</dt>
+      <dd class="p-author h-card vcard"><span class="p-name fn">Peter Haasnoot</span>
+            (<a class="p-org org h-org h-card" href="http://www.logius.nl/">Logius</a>)
+          </dd><dd class="p-author h-card vcard"><span class="p-name fn">Pieter Hering</span>
+            (<a class="p-org org h-org h-card" href="http://www.logius.nl/">Logius</a>)
           </dd>
-        </dl>
-  <hr title="Separator for header">
-</div><section id="abstract" data-format="markdown" class="introductory"><h2>Samenvatting</h2><span class="simple">
-
-<table>
-<thead>
-<tr>
-<th><strong>Naam</strong></th>
-<th><strong>Versie</strong></th>
-<th><strong>Status</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Digikoppeling REST API profiel</td>
-<td>1.0</td>
-<td>Draft</td>
-</tr>
-</tbody></table>
-
-</span></section><section id="sotd" class="introductory"><h2>Status van dit document</h2><p>
-    <em>Deze paragraaf beschrijft de status van dit document ten tijde van publicatie. Het is mogelijk dat er actuelere versies van dit document bestaan. Een lijst van Logius publicaties en de laatste gepubliceerde versie van dit document zijn te vinden op <a href="https://publicatie.centrumvoorstandaarden.nl">publicatie.centrumvoorstandaarden.nl</a>.</em>
-  </p><p>
-
-
-
-  Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door de werkgroep goedgekeurde consultatieversie.
-
-
-
-
-
-
-
-
-
-
-
-
-<p>
-Status van het document - verplicht onderdeel. Een deel van de tekst wordt hierin gegenereerd door ReSpec op basis van de configuratieparameter <a href="https://github.com/centrumvoorstandaarden/respec/wiki/specStatus">specStatus</a>
-</p>
-</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><span class="secno">1. </span>Context voor ontwikkeling van het Digikoppeling REST API profiel</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><span class="secno">2. </span>Toelichting bij de scope van het Digikoppeling REST API profiel</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><span class="secno">3. </span>Digikoppeling Restful API profiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><span class="secno">3.1 </span>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#historie"><span class="secno">3.1.1 </span>Historie</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><span class="secno">3.1.2 </span>Toepassingsgebied</a></li></ol></li><li class="tocline"><a class="tocxref" href="#dk-api-rest-profiel"><span class="secno">3.2 </span>DK API REST profiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemeen"><span class="secno">3.2.1 </span>Algemeen</a></li><li class="tocline"><a class="tocxref" href="#koppelvlak-generiek"><span class="secno">3.2.2 </span>Koppelvlak Generiek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#vertrouwelijkheid"><span class="secno">3.2.2.1 </span>Vertrouwelijkheid</a></li><li class="tocline"><a class="tocxref" href="#identificatie-authenticatie"><span class="secno">3.2.2.2 </span>Identificatie &amp; Authenticatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#api-design-rules"><span class="secno">3.2.3 </span>API Design Rules</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toelichting-aanduidingen"><span class="secno">3.2.3.1 </span>Toelichting aanduidingen</a></li><li class="tocline"><a class="tocxref" href="#regels"><span class="secno">3.2.3.2 </span>Regels</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#afspraken-api-design-rules-extensies"><span class="secno">3.3 </span>Afspraken API Design Rules extensies</a></li></ol></li><li class="tocline"><a class="tocxref" href="#inleiding"><span class="secno">4. </span>BIJLAGE Gebruik van Signing &amp; Encryptie in de context van HTTP / Rest API</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#signing-in-de-context-van-http-rest"><span class="secno">4.1 </span>Signing in de context van HTTP Rest</a></li><li class="tocline"><a class="tocxref" href="#encryptie-in-de-context-van-http-rest"><span class="secno">4.2 </span>Encryptie in de context van HTTP Rest</a></li></ol></li></ol></nav><section id="inleiding" data-format="markdown"><!--OddPage--><h2 id="x1-context-voor-ontwikkeling-van-het-digikoppeling-rest-api-profiel"><span class="secno">1. </span>Context voor ontwikkeling van het Digikoppeling REST API profiel</h2><p>Het Digikoppeling Rest API profiel is gericht op M2M (Machine-to-Machine) en G2G (Government-to-Government) interacties conform de algemene uitgangspunten van de Digkoppeling standaard en het toepassingsgebied van Digikoppeling op de PTLU (Pas toe of leg uit) lijst van het Forum Standaardisatie;</p><p>Opzet Digikoppeling:</p><p><img src="media/fig-structuur.png" alt="alt text" width="528" height="197"></p></section><section id="inleiding" data-format="markdown"><!--OddPage--><h2 id="x2-toelichting-bij-de-scope-van-het-digikoppeling-rest-api-profiel"><span class="secno">2. </span>Toelichting bij de scope van het Digikoppeling REST API profiel</h2><img src="media/api-dk2.jpg" width="400"><p>In de figuur wordt onderscheid gemaakt tussen open en gesloten diensten:</p><ul>
+      
+      
+      <dt>Doe mee:</dt><dd>
+    <a href="https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/">GitHub centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel</a>
+  </dd><dd>
+    <a href="https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/issues/">Dien een melding in</a>
+  </dd><dd>
+    <a href="https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel">Revisiehistorie</a>
+  </dd><dd>
+    <a href="https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/pulls/">Pull requests</a>
+  </dd>
+    </dl>
+    
+    
+    
+    <p class="copyright">
+          This document is licensed under a
+          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" class="subfoot">Creative Commons Attribution 4.0 License</a>.
+        </p>
+    <hr title="Separator for header">
+  </div>
+    <section id="abstract" class="introductory"><h2>Samenvatting</h2><table class="dkkvs">
+    <thead>
+        <tr>
+            <th><strong>Naam</strong></th>
+            <th><strong>Versie</strong></th>
+            <th><strong>Status</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Digikoppeling REST API profiel</td>
+            <td>1.0</td>
+            <td>Draft</td>
+        </tr>
+    </tbody>
+</table></section>
+    <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>
+    Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of
+    vervangen door andere documenten. Het is geen door
+    het Technisch Overleg goedgekeurde consultatieversie.
+  </p><p></p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Context voor ontwikkeling van het Digikoppeling REST API profiel</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">3. </bdi>Toelichting bij de scope van het Digikoppeling REST API profiel</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">4. </bdi>Digikoppeling Restful API profiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><bdi class="secno">4.1 </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#historie"><bdi class="secno">4.1.1 </bdi>Historie</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">4.1.2 </bdi>Toepassingsgebied</a></li></ol></li><li class="tocline"><a class="tocxref" href="#digikoppeling-rest-api-profiel"><bdi class="secno">4.2 </bdi>Digikoppeling REST-API profiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemeen"><bdi class="secno">4.2.1 </bdi>Algemeen</a></li><li class="tocline"><a class="tocxref" href="#koppelvlak-generiek"><bdi class="secno">4.2.2 </bdi>Koppelvlak Generiek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#vertrouwelijkheid"><bdi class="secno">4.2.2.1 </bdi>Vertrouwelijkheid</a></li><li class="tocline"><a class="tocxref" href="#identificatie-authenticatie"><bdi class="secno">4.2.2.2 </bdi>Identificatie &amp; Authenticatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#api-design-rules"><bdi class="secno">4.2.3 </bdi>API Design Rules</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toelichting-aanduidingen"><bdi class="secno">4.2.3.1 </bdi>Toelichting aanduidingen</a></li><li class="tocline"><a class="tocxref" href="#regels"><bdi class="secno">4.2.3.2 </bdi>Regels</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#afspraken-api-design-rules-extensies"><bdi class="secno">4.3 </bdi>Afspraken API Design Rules extensies</a></li></ol></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">5. </bdi>BIJLAGE Gebruik van Signing &amp; Encryptie in de context van HTTP / Rest API</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#signing-in-de-context-van-http-rest"><bdi class="secno">5.1 </bdi>Signing in de context van HTTP Rest</a></li><li class="tocline"><a class="tocxref" href="#encryptie-in-de-context-van-http-rest"><bdi class="secno">5.2 </bdi>Encryptie in de context van HTTP Rest</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">A.2 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
+   <section id="conformance"><h2 id="x1-conformiteit"><bdi class="secno">1. </bdi>Conformiteit<a class="self-link" aria-label="§" href="#conformance"></a></h2><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p>
+     
+   </section>
+   
+   <section id="inleiding" data-format="markdown"><h2 id="x2-context-voor-ontwikkeling-van-het-digikoppeling-rest-api-profiel"><bdi class="secno">2. </bdi>Context voor ontwikkeling van het Digikoppeling REST API profiel<a class="self-link" aria-label="§" href="#inleiding"></a></h2><p>Het Digikoppeling Rest API profiel is gericht op Machine-to-Machine (M2M) en Government-to-Government (G2G) interacties conform de algemene uitgangspunten van de Digikoppeling standaard en het toepassingsgebied van Digikoppeling op de Pas-toe-of-leg-uit lijst (PTLU) van het Forum Standaardisatie;</p><p>Opzet Digikoppeling:</p><p><figure id="fig-structuurv2"><img src="media/fig-structuurv2.png" alt="Overzicht Digikoppeling Koppelvlakken" title="Overzicht Digikoppeling Koppelvlakken"><figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Overzicht Digikoppeling Koppelvlakken</span></figcaption></figure></p></section><section id="inleiding" data-format="markdown"><h2 id="x3-toelichting-bij-de-scope-van-het-digikoppeling-rest-api-profiel"><bdi class="secno">3. </bdi>Toelichting bij de scope van het Digikoppeling REST API profiel<a class="self-link" aria-label="§" href="#inleiding"></a></h2><p><figure id="DK_closed_g2g"><img src="media/DK_closed_g2g.png" alt="Digikoppeling voor Closed Data G2G Uitwisseling" title="Digikoppeling voor Closed Data G2G Uitwisseling"><figcaption>Figuur <bdi class="figno">2</bdi> <span class="fig-title">Digikoppeling voor Closed Data G2G Uitwisseling</span></figcaption></figure></p><p>In de figuur wordt onderscheid gemaakt tussen open en gesloten diensten:</p><ul>
 <li>Open Diensten: Diensten zonder toegangsbeperking bv open data.</li>
 <li>Gesloten Diensten: Diensten met toegangsbeperking bv persoonsgegevens en vertrouwelijke gegevens of diensten voor specifieke partijen.</li>
-</ul><p>Het Digikoppeling REST API profiel richt zich op M2M gegevensuitwisseling via een gesloten dienst tussen overheidspartijen.
+</ul><p>Het Digikoppeling REST API profiel richt zich op Machine-to-Machine (M2M) gegevensuitwisseling via een gesloten dienst tussen overheidspartijen.
 Buiten scope van het profiel zijn:</p><ul>
 <li>REST API's voor open diensten van een overheidspartij.</li>
-<li>REST API's voor gesloten diensten van een overheidspartij (direct) aan burgers of bedrijven.
-</li>
+<li>REST API's voor gesloten diensten van een overheidspartij (direct) aan burgers of bedrijven. </li>
 </ul><p>Het Digikoppeling REST API profiel is wat betreft functionele toepassing vergelijkbaar met het Digikoppeling WUS profiel.
-De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API profiel is in deze context een systeem (applicatie) en geen internetbrowser.</p><span class="simple">
-
-<table>
+De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API profiel is in deze context een systeem (applicatie) en geen internetbrowser.</p><table class="dkkvs">
 <thead>
 <tr>
-<th>Invulling</th>
-<th>DK API profiel</th>
+<th>Invulling Digikoppeling</th>
+<th>DK REST API profiel</th>
 <th>DK WUS profiel</th>
 <th>DK ebMS2 profiel</th>
 </tr>
@@ -534,48 +527,41 @@ De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API 
 <td></td>
 <td>osb-rm-e</td>
 </tr>
-</tbody></table>
-</span><p>In versie 1.0 van het Digikoppeling REST API profiel wordt signing en encrytie niet ondersteund. In toekomstige versies van het profiel zal hier wel invulling aan worden gegeven. (Zie ook <a href="https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/blob/master/DK_REST_API_totaal.md#bijlage-gebruik-van-signing--encryptie-in-de-context-van-http--rest-api">Bijlage HTTP Signing &amp; Encryptie</a>)</p></section><section id="inleiding" data-format="markdown"><!--OddPage--><h2 id="x3-digikoppeling-restful-api-profiel"><span class="secno">3. </span>Digikoppeling Restful API profiel</h2><p>HTML versie <a href="https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/">Digikoppeling Restful API Profiel</a></p><section id="inleiding-0"><h3 id="x3-1-inleiding"><span class="secno">3.1 </span>Inleiding</h3><section id="historie"><h4 id="x3-1-1-historie"><span class="secno">3.1.1 </span>Historie</h4><p>Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond Restful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de PTLU lijst van het Forum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).</p></section><section id="toepassingsgebied"><h4 id="x3-1-2-toepassingsgebied"><span class="secno">3.1.2 </span>Toepassingsgebied</h4><p>Het toepassingsgebied is voor Digikoppeling:</p><p><em>Digikoppeling moet worden toegepast op alle digitale gegevensuitwisseling met behulp van gestructureerde berichten die plaatsvindt met voorzieningen die onderdeel zijn van de GDI, waaronder de basisregistraties, of die sector-overstijgend is.</em></p><p>Dit profiel is toe te passen bij het aanbieden van REST API's ten behoeve van het ontsluiten van overheidsinformatie en/of functionaliteit.</p></section></section><section id="dk-api-rest-profiel"><h3 id="x3-2-dk-api-rest-profiel"><span class="secno">3.2 </span>DK API REST profiel</h3><section id="algemeen"><h4 id="x3-2-1-algemeen"><span class="secno">3.2.1 </span>Algemeen</h4><p>Het DK REST-API profiel is gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels &amp; Standaarden:
-<a href="https://publicatie.centrumvoorstandaarden.nl/api/adr/">https://publicatie.centrumvoorstandaarden.nl/api/adr/</a> (Vastgestelde versie 09 juli 2020)</p><p>Het DK REST-API profiel conformeert zich volledig aan het normatieve deel van de REST API Design Rules.</p></section><section id="koppelvlak-generiek"><h4 id="x3-2-2-koppelvlak-generiek"><span class="secno">3.2.2 </span>Koppelvlak Generiek</h4><section id="vertrouwelijkheid"><h5 id="x3-2-2-1-vertrouwelijkheid"><span class="secno">3.2.2.1 </span>Vertrouwelijkheid</h5><p>De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten en 2-zijdig TLS.</p><ul>
-<li>Zie <a href="https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf">https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf</a></li>
-</ul></section><section id="identificatie-authenticatie"><h5 id="x3-2-2-2-identificatie-authenticatie"><span class="secno">3.2.2.2 </span>Identificatie &amp; Authenticatie</h5><p>Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties.
+</tbody></table><p>In versie 1.0 van het Digikoppeling REST API profiel wordt signing en encryptie niet ondersteund. In toekomstige versies van het profiel zal hier wel invulling aan worden gegeven. (Zie ook <a href="https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/blob/master/DK_REST_API_totaal.md#bijlage-gebruik-van-signing--encryptie-in-de-context-van-http--rest-api">Bijlage HTTP Signing &amp; Encryptie</a> )</p></section><section id="inleiding" data-format="markdown"><h2 id="x4-digikoppeling-restful-api-profiel"><bdi class="secno">4. </bdi>Digikoppeling Restful API profiel<a class="self-link" aria-label="§" href="#inleiding"></a></h2><p>HTML versie <a href="https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/">Digikoppeling Restful API Profiel</a></p><section id="inleiding-0"><h3 id="x4-1-inleiding"><bdi class="secno">4.1 </bdi>Inleiding<a class="self-link" aria-label="§" href="#inleiding-0"></a></h3><section id="historie"><h4 id="x4-1-1-historie"><bdi class="secno">4.1.1 </bdi>Historie<a class="self-link" aria-label="§" href="#historie"></a></h4><p>Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond Restful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de Pas-toe-of-leg-uit lijst van het Forum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).</p></section><section id="toepassingsgebied"><h4 id="x4-1-2-toepassingsgebied"><bdi class="secno">4.1.2 </bdi>Toepassingsgebied<a class="self-link" aria-label="§" href="#toepassingsgebied"></a></h4><p>Het toepassingsgebied is voor Digikoppeling:</p><blockquote>
+<p><em>Digikoppeling moet worden toegepast op alle digitale gegevensuitwisseling met behulp van gestructureerde berichten die plaatsvindt met voorzieningen die onderdeel zijn van de GDI, waaronder de basisregistraties, of die sector-overstijgend is.</em></p>
+</blockquote><p>Dit profiel is toe te passen bij het aanbieden van REST API's ten behoeve van het ontsluiten van overheidsinformatie en/of functionaliteit.</p></section></section><section id="digikoppeling-rest-api-profiel"><h3 id="x4-2-digikoppeling-rest-api-profiel"><bdi class="secno">4.2 </bdi>Digikoppeling REST-API profiel<a class="self-link" aria-label="§" href="#digikoppeling-rest-api-profiel"></a></h3><section id="algemeen"><h4 id="x4-2-1-algemeen"><bdi class="secno">4.2.1 </bdi>Algemeen<a class="self-link" aria-label="§" href="#algemeen"></a></h4><p>Het Digikoppeling REST-API profiel is gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels &amp; Standaarden: [<cite><a class="bibref" data-link-type="biblio" href="#bib-api design rules" title="API Design Rules (Nederlandse API Strategie IIa)">API Design Rules</a></cite>]</p><p>Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de REST-API Design Rules.</p></section><section id="koppelvlak-generiek"><h4 id="x4-2-2-koppelvlak-generiek"><bdi class="secno">4.2.2 </bdi>Koppelvlak Generiek<a class="self-link" aria-label="§" href="#koppelvlak-generiek"></a></h4><section id="vertrouwelijkheid"><h5 id="x4-2-2-1-vertrouwelijkheid"><bdi class="secno">4.2.2.1 </bdi>Vertrouwelijkheid<a class="self-link" aria-label="§" href="#vertrouwelijkheid"></a></h5><p>De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [<cite><a class="bibref" data-link-type="biblio" href="#bib-pki policy" title="Programma van Eisen (PKIoverheid)">PKI Policy</a></cite>] en 2-zijdig TLS.</p><ul>
+<li>Zie [<cite><a class="bibref" data-link-type="biblio" href="#bib-digikoppeling beveiligingsdocument" title="Digikoppeling Beveiligingsstandaarden en voorschriften">Digikoppeling Beveiligingsdocument</a></cite>]</li>
+</ul></section><section id="identificatie-authenticatie"><h5 id="x4-2-2-2-identificatie-authenticatie"><bdi class="secno">4.2.2.2 </bdi>Identificatie &amp; Authenticatie<a class="self-link" aria-label="§" href="#identificatie-authenticatie"></a></h5><p>Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties.
 Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.</p><ul>
-<li>Zie <a href="https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/Standaarden/Digikoppeling-Identificatie-en-Authenticatie.pdf">https://logius.nl/sites/default/files/public/bestanden/diensten/DigiKoppeling/Standaarden/Digikoppeling-Identificatie-en-Authenticatie.pdf</a></li>
-</ul></section></section><section id="api-design-rules"><h4 id="x3-2-3-api-design-rules"><span class="secno">3.2.3 </span>API Design Rules</h4><section id="toelichting-aanduidingen"><h5 id="x3-2-3-1-toelichting-aanduidingen"><span class="secno">3.2.3.1 </span>Toelichting aanduidingen</h5><p>Voorschriften zijn aangeduid met Must, Should, Could en Won't waarvoor de volgende definities gelden:
-</p><span class="simple">
-
-<table>
+<li>Zie [<cite><a class="bibref" data-link-type="biblio" href="#bib-digikoppeling identificatie-authenticatie" title="Digikoppeling Identificatie en Authenticatie">Digikoppeling Identificatie-Authenticatie</a></cite>]</li>
+</ul></section></section><section id="api-design-rules"><h4 id="x4-2-3-api-design-rules"><bdi class="secno">4.2.3 </bdi>API Design Rules<a class="self-link" aria-label="§" href="#api-design-rules"></a></h4><section id="toelichting-aanduidingen"><h5 id="x4-2-3-1-toelichting-aanduidingen"><bdi class="secno">4.2.3.1 </bdi>Toelichting aanduidingen<a class="self-link" aria-label="§" href="#toelichting-aanduidingen"></a></h5><p> Voorschriften zijn aangeduid met 'Verplicht', 'Aanbevolen' en 'Niet van Toepassing' waarvoor de volgende definities gelden: </p><table class="dkkvs">
 <thead>
 <tr>
-<th><strong>Cat</strong></th>
+<th><strong>Categorie</strong></th>
+<th><strong>Codering RFC2119</strong></th>
 <th><strong>Voorschrift</strong></th>
 <th><strong>Toelichting</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td>M</td>
-<td>MUST have</td>
-<td>De Must have eisen moeten gerealiseerd worden. Hier kan niet van afgeweken worden.</td>
+<td>Verplicht</td>
+<td>MUST</td>
+<td>De eisen moeten gevolgd worden. Hier kan niet van afgeweken worden.</td>
+<td></td>
 </tr>
 <tr>
-<td>S</td>
-<td>SHOULD have</td>
-<td>Implementatie conform voorschrift tenzij dit niet mogelijk is én er een workaround beschikbaar is die een vergelijkbaar resultaat mogelijk maakt.</td>
+<td>Aanbevolen</td>
+<td>SHOULD</td>
+<td>Aanbevolen is om de eisen conform conform voorschrift te implementeren. Wanneer hier van afgeweken wordt dient een zorgvuldige afweging plaats te vinden</td>
+<td></td>
 </tr>
 <tr>
-<td>C</td>
-<td>COULD have</td>
-<td>Dit betreft eisen die gewenst zijn maar waar men vrij is een andere keuze te maken.</td>
+<td>Niet van Toepassing</td>
+<td>-</td>
+<td>De eisen zijn niet van toepassing</td>
+<td></td>
 </tr>
-<tr>
-<td>W</td>
-<td>WON'T</td>
-<td>Deze eisen worden in de context van dit profiel niet toegepast.</td>
-</tr>
-</tbody></table>
-</span><p>(Indeling gebaseerd op <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>)</p><p>Daarnaast wordt met 'REPLACED' aangegeven of een principe expliciet vervangen wordt door een andere eis</p></section><section id="regels"><h5 id="x3-2-3-2-regels"><span class="secno">3.2.3.2 </span>Regels</h5><span class="simple">
-
-<table>
+</tbody></table><p>(Indeling gebaseerd op [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">rfc2119</a></cite>])</p></section><section id="regels"><h5 id="x4-2-3-2-regels"><bdi class="secno">4.2.3.2 </bdi>Regels<a class="self-link" aria-label="§" href="#regels"></a></h5><p>Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [<cite><a class="bibref" data-link-type="biblio" href="#bib-api design rules" title="API Design Rules (Nederlandse API Strategie IIa)">API Design Rules</a></cite>].</p><table class="dkkvs">
 <thead>
 <tr>
 <th><strong>Categorie</strong></th>
@@ -585,93 +571,109 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
 </tr>
 </thead>
 <tbody><tr>
-<td>MUST</td>
+<td>Verplicht</td>
+<td>REST-API Design Rules</td>
+<td>Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules</td>
+<td>[<cite><a class="bibref" data-link-type="biblio" href="#bib-api design rules" title="API Design Rules (Nederlandse API Strategie IIa)">API Design Rules</a></cite>].</td>
+</tr>
+</tbody></table><p>In onderstaande tabel worden de normatieve eisen van de [<cite><a class="bibref" data-link-type="biblio" href="#bib-api design rules" title="API Design Rules (Nederlandse API Strategie IIa)">API Design Rules</a></cite>] weergegeven:</p><details>
+<summary>Normatieve eisen van de REST API Design Rules</summary>
+
+<table class="dkkvs">
+<thead>
+<tr>
+<th><strong>Categorie</strong></th>
+<th><strong>Principe</strong></th>
+<th><strong>Toelichting</strong></th>
+<th><strong>Link</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Verplicht</td>
 <td>3.1 API-01: Operations are Safe and/or Idempotent</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-01">API-01: Adhere to HTTP safety and idempotency semantics for operations</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.2 API-02: Do not maintain state information at the server</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-02">API-02: Do not maintain session state on the server</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.3 API-03: Only apply default HTTP operations</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-03">API-03: Only apply standard HTTP methods</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.4 API-04: Define interfaces in Dutch unless there is an official English glossary</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-04">API-04: Define interfaces in Dutch unless there is an official English glossary available</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.5 API-05: Use plural nouns to indicate resources</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-05">API-05: Use nouns to name resources</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.6 API-06: Create relations of nested resources within the endpoint</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-06">API-06: Use nested URIs for child resources</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.7 API-09: Implement custom representation if supported</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-10">API-10: Model resource operations as a sub-resource or dedicated resource</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.8 API-10: Implement operations that do not fit the CRUD model as sub-resources</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-10">API-10: Model resource operations as a sub-resource or dedicated resource</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.10 API-17: Publish documentation in Dutch unless there is existing documentation in English or there is an official English glossary available</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-17">API-17: Publish documentation in Dutch unless there is existing documentation in English</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.11 API-18: Include a deprecation schedule when publishing API changes</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-18">API-18: Include a deprecation schedule when publishing API changes</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.12 API-19: Allow for a maximum 1 year transition period to a new API version</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-19">API-19: Schedule a fixed transition period for a new major API version</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.13 API-20: Include the major version number only in the URI</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-20">API-20: Include the major version number in the URI</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.14 API-48: Leave off trailing slashes from API endpoints</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-48">API-48: Leave off trailing slashes from URIs</a></td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>3.15 API-51: Publish OAS at the base-URI in JSON-format</td>
 <td></td>
 <td><a href="https://logius-standaarden.github.io/API-Design-Rules/#api-51">API-51: Publish OAS document at a standard location in JSON-format</a></td>
 </tr>
 </tbody></table>
- </span></section></section></section><section id="afspraken-api-design-rules-extensies"><h3 id="x3-3-afspraken-api-design-rules-extensies"><span class="secno">3.3 </span>Afspraken API Design Rules extensies</h3><span class="simple">
-
-<table>
+</details></section></section></section><section id="afspraken-api-design-rules-extensies"><h3 id="x4-3-afspraken-api-design-rules-extensies"><bdi class="secno">4.3 </bdi>Afspraken API Design Rules extensies<a class="self-link" aria-label="§" href="#afspraken-api-design-rules-extensies"></a></h3><p>De ADR extensie onderderdelen van dit profiel zijn gebaseerd op: [<cite><a class="bibref" data-link-type="biblio" href="#bib-api design rules-extensions" title="API Designrules Extensions (Nederlandse API Strategie IIb)">API Design Rules-Extensions</a></cite>].</p><p>Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit profiel verplicht zijn of worden aanbevolen.</p><table class="dkkvs">
 <thead>
 <tr>
 <th><strong>Categorie</strong></th>
@@ -682,275 +684,176 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
 </tr>
 </thead>
 <tbody><tr>
-<td>REPLACED</td>
+<td>Niet van toepassing</td>
 <td>17.1 API-11: Encrypt connections using at least TLS v1.3</td>
 <td>Security</td>
 <td>Vervangen door Digikoppeling beveiligingsvoorschriften (*)</td>
-<td><a href="https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf">Link DK Beveiligingsvoorschriften</a></td>
-</tr>
-</tbody></table>
-</span><p>(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie <a href="https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf">https://logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf</a></p><span class="simple">
-
-<table>
-<thead>
-<tr>
-<th><strong>Categorie</strong></th>
-<th><strong>Principe</strong></th>
-<th><strong>Extensie</strong></th>
-<th><strong>Toelichting</strong></th>
-<th><strong>Link</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>COULD</td>
-<td>17.2 API-12: Allow access to an API only if an API key is provided</td>
-<td>Security Authorisation</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-12-allow-access-to-an-api-only-if-an-api-key-is-provided">17.2 API-12: Allow access to an API only if an API key is provided</a></td>
+<td>[<cite><a class="bibref" data-link-type="biblio" href="#bib-digikoppeling beveiligingsdocument" title="Digikoppeling Beveiligingsstandaarden en voorschriften">Digikoppeling Beveiligingsdocument</a></cite>]</td>
 </tr>
 <tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>17.3 API-13: Accept tokens as HTTP headers only</td>
 <td>Security Authorisation</td>
 <td></td>
 <td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-13-accept-tokens-as-http-headers-only">17.3 API-13: Accept tokens as HTTP headers only</a></td>
 </tr>
 <tr>
-<td>COULD</td>
-<td>17.4 API-14: Use OAuth 2.0 for authorisation</td>
-<td>Security Authorisation</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-14-use-oauth-2-0-for-authorisation">17.4 API-14: Use OAuth 2.0 for authorisation</a></td>
-</tr>
-<tr>
-<td>MUST</td>
+<td>Verplicht</td>
 <td>17.5 API-15: Use PKIoverheid certificates for access-restricted or purpose-limited API authentication</td>
 <td>Security Authorisation</td>
 <td></td>
 <td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-15-use-pkioverheid-certificates-for-access-restricted-or-purpose-limited-api-authentication">17.5 API-15: Use PKIoverheid certificates for access-restricted or purpose-limited API authentication</a></td>
 </tr>
 <tr>
-<td>WON'T</td>
-<td>17.6 API-21: Inform users of a deprecated API actively</td>
-<td>Deprecation</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-21-inform-users-of-a-deprecated-api-actively">17.6 API-21: Inform users of a deprecated API actively</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.7 API-22: JSON first - APIs receive and send JSON</td>
-<td>JSON</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-22-json-first-apis-receive-and-send-json">17.7 API-22: JSON first - APIs receive and send JSON</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.8 API-23: APIs may provide a JSON Schema</td>
-<td>JSON</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-23-apis-may-provide-a-json-schema">17.8 API-23: APIs may provide a JSON Schema</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.9 API-24: Support content negotiation</td>
-<td>JSON</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-24-support-content-negotiation">17.9 API-24: Support content negotiation</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.10 API-25: Check the Content-Type header settings</td>
-<td>JSON</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-25-check-the-content-type-header-settings">17.10 API-25: Check the Content-Type header settings</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.11 API-26: Define field names in in camelCase</td>
-<td>JSON</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-26-define-field-names-in-in-camelcase">17.11 API-26: Define field names in in camelCase</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.13 API-28: Send a JSON-response without enclosing envelope</td>
-<td>JSON</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-28-send-a-json-response-without-enclosing-envelope">17.13 API-28: Send a JSON-response without enclosing envelope</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.14 API-29: Support JSON-encoded POST, PUT, and PATCH payloads</td>
-<td>JSON</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-29-support-json-encoded-post-put-and-patch-payloads">17.14 API-29: Support JSON-encoded POST, PUT, and PATCH payloads</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.15 API-30: Use query parameters corresponding to the queryable fields</td>
-<td>Filtering</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-30-use-query-parameters-corresponding-to-the-queryable-fields">17.15 API-30: Use query parameters corresponding to the queryable fields</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.16 API-31: Use the query parameter sorteer to sort</td>
-<td>Filtering</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-31-use-the-query-parameter-sorteer-to-sort">17.16 API-31: Use the query parameter sorteer to sort</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.17 API-32: Use the query parameter zoek for full-text search</td>
-<td>Search</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-32-use-the-query-parameter-zoek-for-full-text-search">17.17 API-32: Use the query parameter zoek for full-text search</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.18 API-33: Support both * and ? wildcard characters for full-text search APIs</td>
-<td>Search</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-33-support-both-and-wildcard-characters-for-full-text-search-apis">17.18 API-33: Support both * and ? wildcard characters for full-text search APIs</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.19 API-34: Support GeoJSON for GEO APIs</td>
-<td>GEO</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-34-support-geojson-for-geo-apis">17.19 API-34: Support GeoJSON for GEO APIs</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.20 API-35: Include GeoJSON as part of the embedded resource in the JSON response</td>
-<td>GEO</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-35-include-geojson-as-part-of-the-embedded-resource-in-the-json-response">17.20 API-35: Include GeoJSON as part of the embedded resource in the JSON response</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.21 API-36: Provide a POST endpoint for GEO queries</td>
-<td>GEO</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-36-provide-a-post-endpoint-for-geo-queries">17.21 API-36: Provide a POST endpoint for GEO queries</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.22 API-37: Support mixed queries at POST endpoints</td>
-<td>GEO</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-37-support-mixed-queries-at-post-endpoints">17.22 API-37: Support mixed queries at POST endpoints</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.23 API-38: Put results of a global spatial query in the relevant geometric context</td>
-<td>GEO</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-38-put-results-of-a-global-spatial-query-in-the-relevant-geometric-context">17.23 API-38: Put results of a global spatial query in the relevant geometric context</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.24 API-39: Use ETRS89 as the preferred coordinate reference system (CRS)</td>
-<td>GEO</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-39-use-etrs89-as-the-preferred-coordinate-reference-system-crs">17.24 API-39: Use ETRS89 as the preferred coordinate reference system (CRS)</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.25 API-40: Pass the coordinate reference system (CRS) of the request and the response in the headers</td>
-<td>GEO</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-40-pass-the-coordinate-reference-system-crs-of-the-request-and-the-response-in-the-headers">17.25 API-40: Pass the coordinate reference system (CRS) of the request and the response in the headers</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.26 API-41: Use content negotiation to serve different CRSs</td>
-<td>GEO</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-41-use-content-negotiation-to-serve-different-crss">17.26 API-41: Use content negotiation to serve different CRSs</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.27 API-42: Use JSON+HAL with media type application/hal+json for pagination</td>
-<td>Paging</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-42-use-json-hal-with-media-type-application-hal-json-for-pagination">17.27 API-42: Use JSON+HAL with media type application/hal+json for pagination</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.28 API-43: Apply caching to improve performance</td>
-<td>Caching</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-43-apply-caching-to-improve-performance">17.28 API-43: Apply caching to improve performance</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.29 API-44: Apply rate limiting</td>
-<td>Rate limiting</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-44-apply-rate-limiting">17.29 API-44: Apply rate limiting</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.30 API-45: Provide rate limiting information</td>
-<td>Rate limiting</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-45-provide-rate-limiting-information">17.30 API-45: Provide rate limiting information</a></td>
-</tr>
-<tr>
-<td>SHOULD</td>
+<td>Aanbevolen</td>
 <td>17.31 API-46: Use default error handling</td>
 <td>Error handling</td>
 <td></td>
 <td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-46-use-default-error-handling">17.31 API-46: Use default error handling</a></td>
 </tr>
 <tr>
-<td>SHOULD</td>
+<td>Aanbevolen</td>
 <td>17.32 API-47: Use the required HTTP status codes</td>
 <td>Error handling</td>
 <td></td>
 <td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-47-use-the-required-http-status-codes">17.32 API-47: Use the required HTTP status codes</a></td>
 </tr>
-<tr>
-<td>COULD</td>
-<td>17.33 API-49: Use public API-keys</td>
-<td>Rate limiting</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-49-use-public-api-keys">17.33 API-49: Use public API-keys</a></td>
-</tr>
-<tr>
-<td>WON'T</td>
-<td>17.34 API-50: Use CORS to control access</td>
-<td>Security</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-50-use-cors-to-control-access">17.34 API-50: Use CORS to control access</a></td>
-</tr>
-<tr>
-<td>COULD</td>
-<td>17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation</td>
-<td>Security</td>
-<td></td>
-<td><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#api-52-use-oauth-2-0-for-authorisation-with-rights-delegation">17.35 API-52: Use OAuth 2.0 for authorisation with rights delegation</a></td>
-</tr>
-</tbody></table>
-</span><p>Laatste stabiele versie ADR extensies :
-<a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/">https://docs.geostandaarden.nl/api/API-Strategie-ext/</a></p><p>WerkversieADR extensies:
-<a href="https://geonovum.github.io/KP-APIs/API-strategie-extensies/">https://geonovum.github.io/KP-APIs/API-strategie-extensies/</a></p></section></section><section id="inleiding" data-format="markdown"><!--OddPage--><h2 id="x4-bijlage-gebruik-van-signing-encryptie-in-de-context-van-http-rest-api"><span class="secno">4. </span>BIJLAGE Gebruik van Signing &amp; Encryptie in de context van HTTP / Rest API</h2><blockquote>
-<p>Deze bijlage is informatief en geen normatief onderdeel van het profiel</p>
-</blockquote><section id="signing-in-de-context-van-http-rest"><h3 id="x4-1-signing-in-de-context-van-http-rest"><span class="secno">4.1 </span>Signing in de context van HTTP Rest</h3><p>Signing van HTTP body en/of header kan gebruikt worden voor <em>authenticatie</em>, om de <em>integriteit</em> van de request/response berichten te controleren en signing realiseert ook <em>onweerlegbaarheid</em>.
+</tbody></table><p>(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [<cite><a class="bibref" data-link-type="biblio" href="#bib-digikoppeling beveiligingsdocument" title="Digikoppeling Beveiligingsstandaarden en voorschriften">Digikoppeling Beveiligingsdocument</a></cite>]</p></section></section><section id="inleiding" data-format="markdown"><h2 id="x5-bijlage-gebruik-van-signing-encryptie-in-de-context-van-http-rest-api"><bdi class="secno">5. </bdi>BIJLAGE Gebruik van Signing &amp; Encryptie in de context van HTTP / Rest API<a class="self-link" aria-label="§" href="#inleiding"></a></h2><div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span></div><aside class="">Deze bijlage is informatief en geen normatief onderdeel van het profiel</aside></div><section id="signing-in-de-context-van-http-rest"><h3 id="x5-1-signing-in-de-context-van-http-rest"><bdi class="secno">5.1 </bdi>Signing in de context van HTTP Rest<a class="self-link" aria-label="§" href="#signing-in-de-context-van-http-rest"></a></h3><p>Signing van HTTP body en/of header kan gebruikt worden voor <em>authenticatie</em>, om de <em>integriteit</em> van de request/response berichten te controleren en signing realiseert ook <em>onweerlegbaarheid</em>.
 (Onweerlegbaarheid in de zin van: de verzender van de request/response kan niet ontkennen het bericht verzonden te hebben wanneer deze voorzien is van de digitale handtekening van de afzender).</p><p>De berichten kunnen ook samen met de digitale handtekeningen worden bewaard zodat deze bij audits of juridische bewijsvoering gebruikt kunnen worden.</p><p>Een HTTP requestbericht is opgebouwd uit de volgende onderdelen:</p><ul>
-<li>Header</li>
+<li>Header<ul>
 <li>HTTP operatie (GET, POST etc)</li>
 <li>Pad / URL resource</li>
 <li>Protocol</li>
 <li>Header velden</li>
-<li>Body</li>
+</ul>
+</li>
+<li>Body<ul>
 <li><em>data</em></li>
+</ul>
+</li>
 </ul><p>Door naast de body data ook onderdelen uit de header digitaal te ondertekenen kan worden gecontroleerd dat bv ook de HTTP operatie en resource specificatie in de request echt van de afzender afkomstig zijn en niet onderweg gemanipuleerd.</p><p>Enkele voorbeelden van signing standaarden die in ontwikkeling zijn:</p><ul>
 <li><a href="https://tools.ietf.org/html/draft-cavage-http-signatures-12">https://tools.ietf.org/html/draft-cavage-http-signatures-12</a></li>
 <li><a href="https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures-01">https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures-01</a></li>
 <li><a href="https://www.openbankingeurope.eu/media/1735/preta-obe-jws-stable-draft.pdf">https://www.openbankingeurope.eu/media/1735/preta-obe-jws-stable-draft.pdf</a></li>
-</ul></section><section id="encryptie-in-de-context-van-http-rest"><h3 id="x4-2-encryptie-in-de-context-van-http-rest"><span class="secno">4.2 </span>Encryptie in de context van HTTP Rest</h3><p>Voor encryptie is de standaard JSON Web Encryption (JWE)  <a href="https://tools.ietf.org/html/rfc7516">https://tools.ietf.org/html/rfc7516</a> beschikbaar</p><p>Zie ook de ADR extensie signing en encryptie :
-</p><ul>
+</ul></section><section id="encryptie-in-de-context-van-http-rest"><h3 id="x5-2-encryptie-in-de-context-van-http-rest"><bdi class="secno">5.2 </bdi>Encryptie in de context van HTTP Rest<a class="self-link" aria-label="§" href="#encryptie-in-de-context-van-http-rest"></a></h3><p>Voor encryptie is de standaard JSON Web Encryption (JWE) [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7516" title="JSON Web Encryption (JWE)">rfc7516</a></cite>] beschikbaar</p><p>Zie ook de ADR extensie signing en encryptie: </p><ul>
 <li><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext/#signing-and-encryption">https://docs.geostandaarden.nl/api/API-Strategie-ext/#signing-and-encryption</a></li>
-</ul></section></section><p role="navigation" id="back-to-top"><a href="#title"><abbr title="Naar begin">↑</abbr></a></p><script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script></body></html>
+</ul></section></section>
+  
+  
+
+<section id="references" class="appendix"><h2 id="a-referenties"><bdi class="secno">A. </bdi>Referenties<a class="self-link" aria-label="§" href="#references"></a></h2><section id="normatieve-referenties">
+    <h3 id="a-1-normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties<a class="self-link" aria-label="§" href="#normatieve-referenties"></a></h3>
+    <dl class="bibliography"><dt id="bib-api design rules">[API Design Rules]</dt><dd><a href="https://publicatie.centrumvoorstandaarden.nl/api/adr/"><cite>API Design Rules (Nederlandse API Strategie IIa)</cite></a>. Jasper Roes; Joost Farla.  Logius. Juli 2020. URL: <a href="https://publicatie.centrumvoorstandaarden.nl/api/adr/">https://publicatie.centrumvoorstandaarden.nl/api/adr/</a></dd><dt id="bib-api design rules-extensions">[API Design Rules-Extensions]</dt><dd><a href="https://docs.geostandaarden.nl/api/API-Strategie-ext"><cite>API Designrules Extensions (Nederlandse API Strategie IIb)</cite></a>. Jasper Roes; Linda van den Brink.  Geonovum/Kennisplatform APi's. Januari 2020. URL: <a href="https://docs.geostandaarden.nl/api/API-Strategie-ext">https://docs.geostandaarden.nl/api/API-Strategie-ext</a></dd><dt id="bib-digikoppeling beveiligingsdocument">[Digikoppeling Beveiligingsdocument]</dt><dd><a href="https://www.logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf"><cite>Digikoppeling Beveiligingsstandaarden en voorschriften</cite></a>.  Logius. 2020. URL: <a href="https://www.logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf">https://www.logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf</a></dd><dt id="bib-digikoppeling identificatie-authenticatie">[Digikoppeling Identificatie-Authenticatie]</dt><dd><a href="http://www.logius.nl/digikoppeling"><cite>Digikoppeling Identificatie en Authenticatie</cite></a>.  Logius. URL: <a href="http://www.logius.nl/digikoppeling">http://www.logius.nl/digikoppeling</a></dd><dt id="bib-pki policy">[PKI Policy]</dt><dd><a href="https://www.logius.nl/diensten/pkioverheid/aansluiten-als-tsp/pogramma-van-eisen"><cite>Programma van Eisen (PKIoverheid)</cite></a>.  Logius. URL: <a href="https://www.logius.nl/diensten/pkioverheid/aansluiten-als-tsp/pogramma-van-eisen">https://www.logius.nl/diensten/pkioverheid/aansluiten-als-tsp/pogramma-van-eisen</a></dd><dt id="bib-rfc7516">[rfc7516]</dt><dd><a href="https://tools.ietf.org/html/rfc7516"><cite>JSON Web Encryption (JWE)</cite></a>. M. Jones; J. Hildebrand.  IETF. May 2015. Proposed Standard. URL: <a href="https://tools.ietf.org/html/rfc7516">https://tools.ietf.org/html/rfc7516</a></dd></dl>
+  </section><section id="informatieve-referenties">
+    <h3 id="a-2-informatieve-referenties"><bdi class="secno">A.2 </bdi>Informatieve referenties<a class="self-link" aria-label="§" href="#informatieve-referenties"></a></h3>
+    <dl class="bibliography"><dt id="bib-rfc2119">[rfc2119]</dt><dd><a href="https://tools.ietf.org/html/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a></dd></dl>
+  </section></section><p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(dfnPanel);
+} else {
+  dfnPanel();
+}
+
+function dfnPanel() {
+  /** @type {HTMLElement} */
+  let panel;
+  document.body.addEventListener("click", event => {
+    if (!(event.target instanceof HTMLElement)) return;
+
+    /** @type {HTMLElement} */
+    const el = event.target;
+
+    const action = deriveAction(el);
+    switch (action) {
+      case "show": {
+        if (panel) hidePanel(panel);
+        /** @type {HTMLElement} */
+        const dfn = el.closest("dfn, .index-term");
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        displayPanel(dfn, panel, { x: event.clientX, y: event.clientY });
+        break;
+      }
+      case "dock": {
+        panel.style.left = null;
+        panel.style.top = null;
+        panel.classList.add("docked");
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        break;
+      }
+    }
+  });
+}
+
+/** @param {HTMLElement} clickTarget */
+function deriveAction(clickTarget) {
+  const hitALink = !!clickTarget.closest("a");
+  if (clickTarget.closest("dfn, .index-term")) {
+    return hitALink ? null : "show";
+  }
+  if (clickTarget.closest(".dfn-panel")) {
+    if (hitALink) {
+      const clickedSelfLink = clickTarget.classList.contains("self-link");
+      return clickedSelfLink ? "hide" : "dock";
+    }
+    const panel = clickTarget.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : null;
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return null;
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement} */
+    const caret = panel.querySelector(".caret");
+    caret.style.left = `${newCaretOffset}px`;
+  }
+}
+
+/** @param {HTMLElement} panel */
+function hidePanel(panel) {
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script></body></html>
