@@ -26,7 +26,14 @@ var respecConfig = {
   // url van de github repository waar je in werkt
   github: "https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel",
 
-
+  alternateFormats: [{
+    label: "(static) html",
+    uri: "https://centrumvoorstandaarden.github.io/DigikoppelingRestfulAPiProfiel/snapshot.html",
+  },
+  {
+    label: "pdf",
+    uri: "https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/blob/master/DigikoppelingRestfulAPiProfiel.pdf",
+  }],
   // this parameter will add the tag_name of the latest release to the document Title
   // only set this parameter when a release has been set
   nl_addReleaseTagTitle: true,
@@ -97,8 +104,8 @@ var respecConfig = {
       date: "Juli 2020",
       publisher: "Logius",
     },
-    "API Design Rules-Extensions": { 
-      href: "https://docs.geostandaarden.nl/api/API-Strategie-ext", 
+    "API Design Rules-Extensions": {
+      href: "https://docs.geostandaarden.nl/api/API-Strategie-ext",
       title: "API Designrules Extensions (Nederlandse API Strategie IIb)",
       authors: ["Jasper Roes", "Linda van den Brink"],
       date: "Januari 2020",
@@ -125,7 +132,7 @@ var respecConfig = {
       date: "2020",
       publisher: "Logius",
     },
-    "Digikoppeling Identificatie-Authenticatie":{
+    "Digikoppeling Identificatie-Authenticatie": {
       href: "http://www.logius.nl/digikoppeling",
       title: "Digikoppeling Identificatie en Authenticatie",
       publisher: "Logius",

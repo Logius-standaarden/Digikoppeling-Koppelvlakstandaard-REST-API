@@ -3,9 +3,9 @@
 
 Het Digikoppeling Rest API profiel is gericht op M2M (Machine-to-Machine) en G2G (Government-to-Government) interacties conform de algemene uitgangspunten van de Digkoppeling standaard en het toepassingsgebied van Digikoppeling op de PTLU (Pas toe of leg uit) lijst van het Forum Standaardisatie;
 
-- HTML versie [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/)
-
-- HTML versie voor oudere browsers [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/static.html)
+- HTML-versie: [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/)
+- HTML-versie(static): [Digikoppeling Restful API Profiel](https://centrumvoorstandaarden.github.io/DigikoppelingRestfulApiProfiel/snapshot.html)
+- PDF-versie: [Digikoppeling Restful API Profiel](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/blob/master/DigikoppelingRestfulAPiProfiel.pdf)
 
 - Draft versie van profiel : [Digikoppeling Restful API Profiel](https://github.com/centrumvoorstandaarden/DigikoppelingRestfulApiProfiel/blob/master/DK_REST_API_totaal.md)
 
