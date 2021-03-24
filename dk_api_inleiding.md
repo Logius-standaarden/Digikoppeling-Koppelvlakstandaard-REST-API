@@ -1,5 +1,0 @@
-# Inleiding
-
-## Historie
-
-## Toepassingsgebied

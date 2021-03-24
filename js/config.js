@@ -1,9 +1,12 @@
 var respecConfig = {
-  //voor specStatus mogelijkheden zie https://github.com/centrumvoorstandaarden/respec/wiki/specStatus
-  specStatus: "WV",
-  //voor specType mogelijkheden zie https://github.com/centrumvoorstandaarden/respec/wiki/specType
+  //voor specStatus mogelijkheden zie https://github.com/Logius-standaarden/respec/wiki/specStatus
+  specStatus: "VV",
+  //voor specType mogelijkheden zie https://github.com/Logius-standaarden/respec/wiki/specType
   specType: "ST",
+  
+  pubDomain: "dk",
   shortName: "restapi",
+
   addSectionLinks: true,
 
 
@@ -24,15 +27,12 @@ var respecConfig = {
   ],
 
   // url van de github repository waar je in werkt
-  github: "https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel",
+  github: "https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API",
 
-  alternateFormats: [{
-    label: "(static) html",
-    uri: "https://centrumvoorstandaarden.github.io/DigikoppelingRestfulAPiProfiel/snapshot.html",
-  },
+  alternateFormats: [
   {
     label: "pdf",
-    uri: "https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel/blob/master/DigikoppelingRestfulAPiProfiel.pdf",
+    uri: "Digikoppeling-Koppelvlakstandaard-REST-API.pdf",
   }],
   // this parameter will add the tag_name of the latest release to the document Title
   // only set this parameter when a release has been set
@@ -46,9 +46,9 @@ var respecConfig = {
   // thi scan be configured below
   // if not set, the url's will be generated on the respecConfig.github automatically  
   nl_github: {
-    //  issueBase: "https://github.com/Logius-standaarden/Digikoppeling-Wat-is-Digikoppeling/issues",
-    revision: "https://github.com/centrumvoorstandaarden/DigikoppelingRestfulAPiProfiel",
-    //  pullrequests: "https://github.com/Logius-standaarden/Digikoppeling-Wat-is-Digikoppeling/pulls"
+    //  issueBase: "https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API/issues",
+    revision: "https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API",
+    //  pullrequests: "https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API/pulls"
   },
 
   // nl_organisationName is used for some company specific values in the header (and Sotd)
