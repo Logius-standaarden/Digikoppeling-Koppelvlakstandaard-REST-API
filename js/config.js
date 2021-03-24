@@ -7,6 +7,10 @@ var respecConfig = {
   pubDomain: "dk",
   shortName: "restapi",
 
+
+  publishVersion: "1.0",
+  previousPublishVersion: "1.0-candidate", 
+
   addSectionLinks: true,
 
 
