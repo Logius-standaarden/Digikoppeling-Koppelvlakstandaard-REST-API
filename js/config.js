@@ -105,14 +105,14 @@ var respecConfig = {
       date: "Maart 2011",
       publisher: "Nederlands Normalisatie-instituut",
     },
-    "API Design Rules": {
+    "ADR": {
       href: "https://publicatie.centrumvoorstandaarden.nl/api/adr/",
       title: "API Design Rules (Nederlandse API Strategie IIa)",
       authors: ["Jasper Roes", "Joost Farla"],
       date: "Juli 2020",
       publisher: "Logius",
     },
-    "API Design Rules-Extensions": {
+    "ADR-ext": {
       href: "https://docs.geostandaarden.nl/api/API-Strategie-ext",
       title: "API Designrules Extensions (Nederlandse API Strategie IIb)",
       authors: ["Jasper Roes", "Linda van den Brink"],
@@ -126,7 +126,7 @@ var respecConfig = {
       date: "Oktober 2017",
       publisher: "Logius",
     },
-    "Digikoppeling Architectuur": {
+    "Digikoppeling-Architectuur": {
       href: "https://centrumvoorstandaarden.github.io/Architectuur2.0-metRestfulAPI/static.html",
       title:
         "Digikoppeling Architectuur",
@@ -134,13 +134,13 @@ var respecConfig = {
       date: "december 2020",
       publisher: "Logius",
     },
-    "Digikoppeling Beveiligingsdocument": {
+    "Digikoppeling-Beveiligingsdocument": {
       href: "https://www.logius.nl/sites/default/files/bestanden/website/Digikoppeling_Beveiligingsstandaarden_en_voorschriften_v1.3.pdf",
       title: "Digikoppeling Beveiligingsstandaarden en voorschriften",
       date: "2020",
       publisher: "Logius",
     },
-    "Digikoppeling Identificatie-Authenticatie": {
+    "Digikoppeling-Identificatie-Authenticatie": {
       href: "http://www.logius.nl/digikoppeling",
       title: "Digikoppeling Identificatie en Authenticatie",
       publisher: "Logius",
@@ -150,27 +150,27 @@ var respecConfig = {
       title: "Gebruik en achtergrond van Digikoppeling certificaten",
       publisher: "Logius",
     },
-    "PKI Policy": {
+    "PKI-Policy": {
       href: "https://www.logius.nl/diensten/pkioverheid/aansluiten-als-tsp/pogramma-van-eisen",
       title: "Programma van Eisen (PKIoverheid)",
       publisher: "Logius",
     },
-    "PKI CA": {
+    "PKI-CA": {
       href: "https://www.logius.nl/diensten/pkioverheid/aansluiten-als-tsp/toegetreden-vertrouwensdienstverleners",
       title: "Toegetreden vertrouwensdienstverleners",
       publisher: "Logius",
     },
-    "PKIoverheid Certificaten": {
+    "PKIoverheid-Certificaten": {
       href: "https://cert.pkioverheid.nl/",
       title: "Pkioverheid certificaten",
       publisher: "Logius"
     },
-    "Logius website": {
+    "Logius-website": {
       href: "https://logius.nl/digikoppeling",
       title: "Logius Digikoppeling",
       publisher: "Logius",
     },
-    "Digikoppeling Compliance Voorziening": {
+    "Digikoppeling-Compliance-Voorziening": {
       href: "https://portaal.digikoppeling.nl",
       title: "Digikoppeling Compliance Voorziening",
       publisher: "Logius",
