@@ -46,7 +46,7 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
  Voorschriften zijn aangeduid met 'Verplicht', 'Aanbevolen' en 'Niet van Toepassing' waarvoor de volgende definities gelden:
 
 
-|**Categorie** | **Codering RFC2119** |**Voorschrift** | **Toelichting** |
+|Categorie | Codering RFC2119 |Voorschrift | Toelichting |
 | --- | --- |---|---|
 |  Verplicht | MUST |De eisen moeten gevolgd worden. Hier kan niet van afgeweken worden.|
 |  Aanbevolen | SHOULD | Aanbevolen is om de eisen conform conform voorschrift te implementeren. Wanneer hier van afgeweken wordt dient een zorgvuldige afweging plaats te vinden  |
@@ -58,7 +58,7 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
 
 Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [[ADR]].
 
- |**Categorie** |**Principe** |**Toelichting** |**Link** |
+ |Categorie |Principe |Toelichting |Link |
  |--- | --- |---|---|
  |Verplicht | REST-API Design Rules | Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules |[[ADR]]. |
 
@@ -67,7 +67,7 @@ In onderstaande tabel worden de normatieve eisen van de [[ADR]] weergegeven:
 <details>
 <summary>Normatieve eisen van de REST API Design Rules</summary>
 
- |**Categorie** |**Principe** |**Toelichting** |**Link** |
+ |Categorie |Principe |Toelichting |Link |
  |--- | --- |---|---|
  |Verplicht |3.1 API-01: Adhere to HTTP safety and idempotency semantics for operations |  |[API-01: Adhere to HTTP safety and idempotency semantics for operations](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-01) |
  |Verplicht |3.3 API-02: Do not maintain state information at the server |  |[API-02: Do not maintain session state on the server](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-02) |
@@ -97,7 +97,7 @@ De ADR extensie onderderdelen van dit profiel zijn gebaseerd op: [[ADR-ext]].
 
 Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit profiel verplicht zijn of worden aanbevolen.
 
-| **Categorie** | **Principe** | **Extensie** | **Toelichting** | **Link** |
+| Categorie | Principe | Extensie | Toelichting | Link |
 | --- | --- | --- | --- | --- |
 | Niet van toepassing | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[[Digikoppeling-Beveiligingsdocument]] |
 | Verplicht | 17.3 API-13: Accept tokens as HTTP headers only | Security Authorisation | | [17.3 API-13: Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-13) |
