@@ -1,6 +1,6 @@
 # Toelichting bij de scope van het Digikoppeling REST API profiel
 
-![Digikoppeling voor Closed Data G2G Uitwisseling](media/DK_closed_g2g.png "Digikoppeling voor Closed Data G2G Uitwisseling")
+![Digikoppeling voor Closed Data G2G Uitwisseling](media/DK_closed_g2g.svg "Digikoppeling voor Closed Data G2G Uitwisseling")
 <!-- <img src="media/api-dk2.jpg" width="400" /> -->
 
 In de figuur wordt onderscheid gemaakt tussen open en gesloten diensten:
