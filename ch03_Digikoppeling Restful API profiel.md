@@ -62,9 +62,7 @@ Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve 
 
 In onderstaande tabel worden de normatieve eisen van de [[ADR]] weergegeven:
 
-<details>
-<summary>Normatieve eisen van de REST API Design Rules</summary>
-
+Normatieve eisen van de REST API Design Rules
  |Categorie |Principe |Toelichting |Link |
  |--- | --- |---|---|
  |Verplicht |3.1 API-01: Adhere to HTTP safety and idempotency semantics for operations |  |[API-01: Adhere to HTTP safety and idempotency semantics for operations](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-01) |
@@ -86,8 +84,6 @@ In onderstaande tabel worden de normatieve eisen van de [[ADR]] weergegeven:
  |Verplicht |3.7 API-55: Publish a changelog for API changes between versions | | [API-55: Publish a changelog for API changes between versions](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-55)
  |Verplicht |3.7 API-56: Adhere to the Semantic Versioning model when releasing API changes | | [API-56: Adhere to the Semantic Versioning model when releasing API changes](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-56)
  |Verplicht |3.7 API-57: Return the full version number in a response header | | [API-57: Return the full version number in a response header](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-57)
-
-</details>
 
 ## Afspraken API Design Rules extensies
 
