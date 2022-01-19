@@ -1,3 +1,4 @@
+![build](https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API/actions/workflows/build.yml/badge.svg)
 
 # Digikoppeling Restful API profiel
 
