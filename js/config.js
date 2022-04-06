@@ -20,6 +20,13 @@ var respecConfig = {
   license: 'cc-by-nd',
   // logos: [], // Geef een lege array op als er geen Geonovum logo moet staan
   doJsonLd: true,
+  editors: [
+    {
+      name: "",
+      company: "Logius standaardenbeheer",
+      companyURL: "http://www.logius.nl/",
+    },
+  ],
   authors: [
     {
       name: "Peter Haasnoot",
