@@ -127,13 +127,12 @@ var respecConfig = {
       publisher: "Logius",
     },
     "Digikoppeling-Beveiligingsdocument": {
-      href: "https://publicatie.centrumvoorstandaarden.nl/dk/beveilig/1.3/",
+      href: "https://publicatie.centrumvoorstandaarden.nl/dk/beveilig",
       title: "Digikoppeling Beveiligingsstandaarden en voorschriften",
-      date: "2020",
       publisher: "Logius",
     },
     "Digikoppeling-Identificatie-Authenticatie": {
-      href: "http://www.logius.nl/digikoppeling",
+      href: "https://publicatie.centrumvoorstandaarden.nl/dk/idauth",
       title: "Digikoppeling Identificatie en Authenticatie",
       publisher: "Logius",
     },
