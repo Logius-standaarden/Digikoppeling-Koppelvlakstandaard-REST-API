@@ -119,11 +119,10 @@ var respecConfig = {
       publisher: "Logius",
     },
     "Digikoppeling-Architectuur": {
-      href: "https://centrumvoorstandaarden.github.io/Architectuur2.0-metRestfulAPI/static.html",
+      href: "https://publicatie.centrumvoorstandaarden.nl/dk/architectuur/",
       title:
         "Digikoppeling Architectuur",
       authors: ["Logius Centrum voor standaarden"],
-      date: "december 2020",
       publisher: "Logius",
     },
     "Digikoppeling-Beveiligingsdocument": {
