@@ -94,6 +94,7 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 | Categorie | Principe | Extensie | Toelichting | Link |
 | --- | --- | --- | --- | --- |
 | Niet van toepassing | 17.1 API-11: Encrypt connections using at least TLS v1.3 | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[[Digikoppeling-Beveiligingsdocument]] |
+| Verplicht | API-58  No sensitive information in URIs | Security | | [API-58 No sensitive information in URIs  ](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-58)|
 | Verplicht | 17.3 API-13: Accept tokens as HTTP headers only | Security Authorisation | | [17.3 API-13: Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-13) |
 | Aanbevolen | 17.31 API-46: Use default error handling | Error handling | | [17.31 API-46: Use default error handling](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-46) |
 | Aanbevolen | 17.32 API-47: Use the required HTTP status codes | Error handling  | | [17.32 API-47: Use the required HTTP status codes](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-47) |
