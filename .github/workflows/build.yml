@@ -1,44 +1,56 @@
-name: Build and Check
-on:
-  workflow_dispatch:
-  pull_request:
-jobs:
-  build:
-    name: Build
-    uses: Logius-standaarden/Automatisering/.github/workflows/build.yml@main
-  check:
-    needs: build
-    name: Check
-    uses: Logius-standaarden/Automatisering/.github/workflows/check.yml@main
-    
-  preview:
-    needs: build
-    name: Preview
-    runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'pull_request' && !github.event.pull_request.head.repo.fork }}
-    steps:
-      - uses: actions/checkout@v2
-      - name: Recover HTML
-        uses: actions/cache@v2
-        with:
-          path: ~/static
-          key: ${{ github.run_id }}      
-      - name: Gather files
-        run: |
-         rm index.html
-         mv ~/static/snapshot.html index.html
-         rm -f *.md *.pdf *.js snapshot.html
-         mkdir ~/content
-         mv ./* ~/content
-         git clone https://user:${{ secrets.BEHEER }}@github.com/Logius-standaarden/Publicatie-Preview.git
-      - name: Commit preview
-        run: |
-         cd Publicatie-Preview
-         rm -f -r ${{ github.event.repository.name }}/${{ github.head_ref }}
-         mkdir -p ${{ github.event.repository.name }}/${{ github.head_ref }}
-         mv ~/content/* ${{ github.event.repository.name }}/${{ github.head_ref }}
-         git add -A
-         git config user.name "GitHub Action"
-         git config user.email "api@logius.nl"
-         git commit -m "new preview build"
-         git push
+bmFtZTogQnVpbGQgYW5kIENoZWNrCm9uOgogIHdvcmtmbG93X2Rpc3BhdGNo
+OgogIHB1bGxfcmVxdWVzdDoKICBwdXNoOgogICAgYnJhbmNoZXM6CiAgICAg
+IC0gbWFpbgpqb2JzOgogIGJ1aWxkOgogICAgbmFtZTogQnVpbGQKICAgIHVz
+ZXM6IExvZ2l1cy1zdGFuZGFhcmRlbi9BdXRvbWF0aXNlcmluZy8uZ2l0aHVi
+L3dvcmtmbG93cy9idWlsZC55bWxAbWFpbgogIGNoZWNrOgogICAgbmVlZHM6
+IGJ1aWxkCiAgICBuYW1lOiBDaGVjawogICAgdXNlczogTG9naXVzLXN0YW5k
+YWFyZGVuL0F1dG9tYXRpc2VyaW5nLy5naXRodWIvd29ya2Zsb3dzL2NoZWNr
+LnltbEBtYWluCiAgICAKICByZWxlYXNlOgogICAgbmVlZHM6IGJ1aWxkCiAg
+ICBuYW1lOiBSZWxlYXNlCiAgICBydW5zLW9uOiB1YnVudHUtbGF0ZXN0CiAg
+ICBpZjogJHt7IGdpdGh1Yi5ldmVudF9uYW1lID09ICdwdXNoJ319CiAgICBz
+dGVwczoKICAgICAgLSB1c2VzOiBhY3Rpb25zL2NoZWNrb3V0QHYyCiAgICAg
+IC0gbmFtZTogUmVjb3ZlciBIVE1MCiAgICAgICAgdXNlczogYWN0aW9ucy9j
+YWNoZUB2MgogICAgICAgIHdpdGg6CiAgICAgICAgICBwYXRoOiB+L3N0YXRp
+YwogICAgICAgICAga2V5OiAke3sgZ2l0aHViLnJ1bl9pZCB9fSAgICAgIAog
+ICAgICAtIG5hbWU6IEdhdGhlciBmaWxlcwogICAgICAgIHJ1bjogfCAgICAg
+ICAgIAogICAgICAgICBybSAtZiAqLm1kICouaHRtbAogICAgICAgICBtdiB+
+L3N0YXRpYy9zbmFwc2hvdC5odG1sIGluZGV4Lmh0bWwKICAgICAgICAgbWtk
+aXIgY29udGVudAogICAgICAgICBzaG9wdCAtcyBleHRnbG9iCiAgICAgICAg
+IG12ICEoY29udGVudCkgY29udGVudAogICAgICAgICBnaXQgY2xvbmUgaHR0
+cHM6Ly91c2VyOiR7eyBzZWNyZXRzLkJFSEVFUiB9fUBnaXRodWIuY29tL0xv
+Z2l1cy1zdGFuZGFhcmRlbi9wdWJsaWNhdGllLmdpdAogICAgICAtIG5hbWU6
+IENvbW1pdCByZWxlYXNlCiAgICAgICAgcnVuOiB8CiAgICAgICAgIHdnZXQg
+aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0xvZ2l1cy1zdGFu
+ZGFhcmRlbi9BdXRvbWF0aXNlcmluZy9tYWluL3NjcmlwdHMvcmVsZWFzZS5w
+eQogICAgICAgICBweXRob24gcmVsZWFzZS5weQogICAgICAgICBjZCBwdWJs
+aWNhdGllCiAgICAgICAgIGdpdCBhZGQgLUEKICAgICAgICAgZ2l0IGNvbmZp
+ZyB1c2VyLm5hbWUgIkdpdEh1YiBBY3Rpb24iCiAgICAgICAgIGdpdCBjb25m
+aWcgdXNlci5lbWFpbCAiYXBpQGxvZ2l1cy5ubCIKICAgICAgICAgZ2l0IGNv
+bW1pdCAtbSAiUmVsZWFzZTogJHt7IGdpdGh1Yi5ldmVudC5yZXBvc2l0b3J5
+Lm5hbWUgfX0iCiAgICAgICAgIGdpdCBwdXNoCgogIHByZXZpZXc6CiAgICBu
+ZWVkczogYnVpbGQKICAgIG5hbWU6IFByZXZpZXcKICAgIHJ1bnMtb246IHVi
+dW50dS1sYXRlc3QKICAgIGlmOiAke3sgZ2l0aHViLmV2ZW50X25hbWUgPT0g
+J3B1bGxfcmVxdWVzdCcgJiYgIWdpdGh1Yi5ldmVudC5wdWxsX3JlcXVlc3Qu
+aGVhZC5yZXBvLmZvcmsgfX0KICAgIHN0ZXBzOgogICAgICAtIHVzZXM6IGFj
+dGlvbnMvY2hlY2tvdXRAdjIKICAgICAgLSBuYW1lOiBSZWNvdmVyIEhUTUwK
+ICAgICAgICB1c2VzOiBhY3Rpb25zL2NhY2hlQHYyCiAgICAgICAgd2l0aDoK
+ICAgICAgICAgIHBhdGg6IH4vc3RhdGljCiAgICAgICAgICBrZXk6ICR7eyBn
+aXRodWIucnVuX2lkIH19ICAgICAgCiAgICAgIC0gbmFtZTogR2F0aGVyIGZp
+bGVzCiAgICAgICAgcnVuOiB8CiAgICAgICAgIHJtIGluZGV4Lmh0bWwKICAg
+ICAgICAgbXYgfi9zdGF0aWMvc25hcHNob3QuaHRtbCBpbmRleC5odG1sCiAg
+ICAgICAgIHJtIC1mICoubWQgKi5wZGYgKi5qcyBzbmFwc2hvdC5odG1sCiAg
+ICAgICAgIG1rZGlyIH4vY29udGVudAogICAgICAgICBtdiAuLyogfi9jb250
+ZW50CiAgICAgICAgIGdpdCBjbG9uZSBodHRwczovL3VzZXI6JHt7IHNlY3Jl
+dHMuQkVIRUVSIH19QGdpdGh1Yi5jb20vTG9naXVzLXN0YW5kYWFyZGVuL1B1
+YmxpY2F0aWUtUHJldmlldy5naXQKICAgICAgLSBuYW1lOiBDb21taXQgcHJl
+dmlldwogICAgICAgIHJ1bjogfAogICAgICAgICBjZCBQdWJsaWNhdGllLVBy
+ZXZpZXcKICAgICAgICAgcm0gLWYgLXIgJHt7IGdpdGh1Yi5ldmVudC5yZXBv
+c2l0b3J5Lm5hbWUgfX0vJHt7IGdpdGh1Yi5oZWFkX3JlZiB9fQogICAgICAg
+ICBta2RpciAtcCAke3sgZ2l0aHViLmV2ZW50LnJlcG9zaXRvcnkubmFtZSB9
+fS8ke3sgZ2l0aHViLmhlYWRfcmVmIH19CiAgICAgICAgIG12IH4vY29udGVu
+dC8qICR7eyBnaXRodWIuZXZlbnQucmVwb3NpdG9yeS5uYW1lIH19LyR7eyBn
+aXRodWIuaGVhZF9yZWYgfX0KICAgICAgICAgZ2l0IGFkZCAtQQogICAgICAg
+ICBnaXQgY29uZmlnIHVzZXIubmFtZSAiR2l0SHViIEFjdGlvbiIKICAgICAg
+ICAgZ2l0IGNvbmZpZyB1c2VyLmVtYWlsICJhcGlAbG9naXVzLm5sIgogICAg
+ICAgICBnaXQgY29tbWl0IC1tICJuZXcgcHJldmlldyBidWlsZCIKICAgICAg
+ICAgZ2l0IHB1c2gK
