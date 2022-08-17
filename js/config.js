@@ -1,6 +1,6 @@
 var respecConfig = {
   //voor specStatus mogelijkheden zie https://github.com/Logius-standaarden/respec/wiki/specStatus
-  specStatus: "DEF",
+  specStatus: "CV",
   //voor specType mogelijkheden zie https://github.com/Logius-standaarden/respec/wiki/specType
   specType: "ST",
   
@@ -12,7 +12,7 @@ var respecConfig = {
   // Belangrijk: als publishDate niet opgegeven is, wordt bij de link "Laatst gepubliceerde versie" "geen" gezet. Anders wordt een link opgebouwd voor de laatste versie, met het formaat:
   publishDate: "2022-04-11",
 
-  publishVersion: "1.0.0",
+  publishVersion: "1.1.0",
 
   addSectionLinks: true,
 
