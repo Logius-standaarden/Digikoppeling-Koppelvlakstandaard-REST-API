@@ -1,10 +1,23 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 32.1.2 Logius profile 20220405">
+<meta name="generator" content="ReSpec 32.1.10 Logius profile 20220628">
+<style>
+.issue-label{text-transform:initial}
+.warning>p:first-child{margin-top:0}
+.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
+span.warning{padding:.1em .5em .15em}
+.issue.closed span.issue-number{text-decoration:line-through}
+.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
+.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
+.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+li.task-list-item{list-style:none}
+input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
+.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
+</style>
 <style>
 dfn{cursor:pointer}
-.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font:small Helvetica Neue,sans-serif,Droid Sans Fallback;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
 .dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
 .dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
@@ -27,7 +40,7 @@ dfn{cursor:pointer}
     
 <link rel="shortcut icon" type="image/x-icon" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/logius.ico">
     
-<title>Digikoppeling Koppelvlakstandaard REST-API 1.0.0</title>
+<title>Digikoppeling Koppelvlakstandaard REST-API 1.0.1</title>
     
     
     
@@ -106,8 +119,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "specType": "ST",
   "pubDomain": "dk",
   "shortName": "restapi",
-  "publishDate": "2022-04-11",
-  "publishVersion": "1.0.0",
+  "publishDate": "2022-08-12",
+  "publishVersion": "1.0.1",
   "addSectionLinks": true,
   "license": "cc-by-nd",
   "doJsonLd": true,
@@ -242,22 +255,22 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "publisher": "Logius"
     }
   },
-  "publishISODate": "2022-04-11T00:00:00.000Z",
-  "generatedSubtitle": "Vastgestelde versie 11 april 2022"
+  "publishISODate": "2022-08-12T00:00:00.000Z",
+  "generatedSubtitle": "Vastgestelde versie 12 augustus 2022"
 }</script>
 <link rel="stylesheet" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/LS-DEF.css"></head>
   <body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.logius.nl/standaarden"><img alt="Logius" height="77" id="Logius" src="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/figure-logius.svg" width="44">
-  </a> <h1 id="title" class="title">Digikoppeling Koppelvlakstandaard REST-API 1.0.0</h1>
+  </a> <h1 id="title" class="title">Digikoppeling Koppelvlakstandaard REST-API 1.0.1</h1>
     
     <h2>
       Logius Standaard<br>
       Vastgestelde versie
-      <time class="dt-published" datetime="2022-04-11">11 april 2022</time>
+      <time class="dt-published" datetime="2022-08-12">12 augustus 2022</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.0.0">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.0.0</a>
+              <a class="u-url status" href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.0.1">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.0.1</a>
             </dd><dt>Laatst gepubliceerde versie:</dt><dd>
               <a href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/</a>
             </dd>
@@ -391,7 +404,7 @@ De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API 
 </section><section id="toepassingsgebied"><div class="header-wrapper"><h4 id="x4-1-2-toepassingsgebied"><bdi class="secno">4.1.2 </bdi>Toepassingsgebied</h4><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 4.1.2"></a></div>
 <p>Het toepassingsgebied is voor Digikoppeling:</p>
 <blockquote>
-<p><em>Digikoppeling moet worden toegepast op alle digitale gegevensuitwisseling met behulp van gestructureerde berichten die plaatsvindt met voorzieningen die onderdeel zijn van de GDI, waaronder de basisregistraties, of die sector-overstijgend is.</em></p>
+<p>Digikoppeling moet worden toegepast bij digitale gegevensuitwisseling die plaatsvindt met voorzieningen die onderdeel zijn van de GDI, waaronder de basisregistraties, of die sectoroverstijgend is. De verplichting geldt voor gegevensuitwisseling tussen systemen waarbij er noodzaak is voor tweezijdige authenticatie.</p>
 </blockquote>
 <p>Dit profiel is toe te passen bij het aanbieden van REST API's ten behoeve van het ontsluiten van overheidsinformatie en/of functionaliteit.</p>
 </section></section><section id="digikoppeling-rest-api-profiel"><div class="header-wrapper"><h3 id="x4-2-digikoppeling-rest-api-profiel"><bdi class="secno">4.2 </bdi>Digikoppeling REST-API profiel</h3><a class="self-link" href="#digikoppeling-rest-api-profiel" aria-label="Permalink for Section 4.2"></a></div>
@@ -505,7 +518,7 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
 <td>Verplicht</td>
 <td>3.4 API-06: Use nested resources for child resources</td>
 <td></td>
-<td><a href="hhttps://publicatie.centrumvoorstandaarden.nl/api/adr/#api-06">API-06: Use nested URIs for child resources</a></td>
+<td><a href="https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-06">API-06: Use nested URIs for child resources</a></td>
 </tr>
 <tr>
 <td>Verplicht</td>
@@ -601,31 +614,31 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
 </thead>
 <tbody><tr>
 <td>Niet van toepassing</td>
-<td>17.1 API-11: Encrypt connections using at least TLS v1.3</td>
+<td>API-11: Secure connections using TLS</td>
 <td>Security</td>
 <td>Vervangen door Digikoppeling beveiligingsvoorschriften (*)</td>
 <td>[<cite><a class="bibref" data-link-type="biblio" href="#bib-digikoppeling-beveiligingsdocument" title="Digikoppeling Beveiligingsstandaarden en voorschriften">Digikoppeling-Beveiligingsdocument</a></cite>]</td>
 </tr>
 <tr>
 <td>Verplicht</td>
-<td>17.3 API-13: Accept tokens as HTTP headers only</td>
+<td>API-13: Accept tokens as HTTP headers only</td>
 <td>Security Authorisation</td>
 <td></td>
-<td><a href="https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-13">17.3 API-13: Accept tokens as HTTP headers only</a></td>
+<td><a href="https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-13">API-13: Accept tokens as HTTP headers only</a></td>
 </tr>
 <tr>
 <td>Aanbevolen</td>
-<td>17.31 API-46: Use default error handling</td>
+<td>API-46: Use default error handling</td>
 <td>Error handling</td>
 <td></td>
-<td><a href="https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-46">17.31 API-46: Use default error handling</a></td>
+<td><a href="https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-46">API-46: Use default error handling</a></td>
 </tr>
 <tr>
 <td>Aanbevolen</td>
-<td>17.32 API-47: Use the required HTTP status codes</td>
+<td>API-47: Use the required HTTP status codes</td>
 <td>Error handling</td>
 <td></td>
-<td><a href="https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-47">17.32 API-47: Use the required HTTP status codes</a></td>
+<td><a href="https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-47">API-47: Use the required HTTP status codes</a></td>
 </tr>
 </tbody></table>
 
@@ -633,7 +646,7 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
 <p>(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [<cite><a class="bibref" data-link-type="biblio" href="#bib-digikoppeling-beveiligingsdocument" title="Digikoppeling Beveiligingsstandaarden en voorschriften">Digikoppeling-Beveiligingsdocument</a></cite>]</p>
 </section></section>
 	<section id="bijlage-gebruik-van-signing-encryptie-in-de-context-van-http-rest-api"><div class="header-wrapper"><h2 id="x5-bijlage-gebruik-van-signing-encryptie-in-de-context-van-http-rest-api"><bdi class="secno">5. </bdi>BIJLAGE Gebruik van Signing &amp; Encryptie in de context van HTTP / Rest API</h2><a class="self-link" href="#bijlage-gebruik-van-signing-encryptie-in-de-context-van-http-rest-api" aria-label="Permalink for Section 5."></a></div>
-<aside class="note">Deze bijlage is informatief en geen normatief onderdeel van het profiel</aside>
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span></div><aside class="">Deze bijlage is informatief en geen normatief onderdeel van het profiel</aside></div>
 
 <section id="signing-in-de-context-van-http-rest"><div class="header-wrapper"><h3 id="x5-1-signing-in-de-context-van-http-rest"><bdi class="secno">5.1 </bdi>Signing in de context van HTTP Rest</h3><a class="self-link" href="#signing-in-de-context-van-http-rest" aria-label="Permalink for Section 5.1"></a></div>
 <p>Signing van HTTP body en/of header kan gebruikt worden voor <em>authenticatie</em>, om de <em>integriteit</em> van de request/response berichten te controleren en signing realiseert ook <em>onweerlegbaarheid</em>.
