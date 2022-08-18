@@ -13,6 +13,7 @@ var respecConfig = {
   publishDate: "2022-08-12",
 
   publishVersion: "1.1.0",
+  previousPublishVersion: "1.0.1",
 
   addSectionLinks: true,
 
