@@ -104,4 +104,11 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 
 (*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [[Digikoppeling-Beveiligingsdocument]]
 
-(**) Een endpoint dient beschikbaar gesteld te worden om bevragingen via _HTTP method_ `POST` te ondersteunen. Gevoelige query parameters worden in de _payload_ geplaatst als _content type_ `application/json`.
+(**) Voor deze gevoelige informatie dient gebruik te worden gemaakt van de HTTP 'POST' method.  Een endpoint dient beschikbaar gesteld te worden om bevragingen via _HTTP method_ `POST` te ondersteunen. Gevoelige query parameters worden in de _payload_ geplaatst als _content type_ `application/json`.
+
+voorbeeld : field1=value1&field2=value2
+wordt via POST overgebracht als:
+{
+  "field1": "value1",
+  "field2": "value2"
+}
