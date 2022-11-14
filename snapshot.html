@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 32.1.10 Logius profile 20220628">
+<meta name="generator" content="ReSpec 32.1.10">
 <style>
 .issue-label{text-transform:initial}
 .warning>p:first-child{margin-top:0}
@@ -40,7 +40,7 @@ dfn{cursor:pointer}
     
 <link rel="shortcut icon" type="image/x-icon" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/logius.ico">
     
-<title>Digikoppeling Koppelvlakstandaard REST-API 1.0.1</title>
+<title>Digikoppeling Koppelvlakstandaard REST-API 1.1.0</title>
     
     
     
@@ -117,8 +117,10 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "specType": "ST",
   "pubDomain": "dk",
   "shortName": "restapi",
-  "publishDate": "2022-08-12",
-  "publishVersion": "1.0.1",
+  "nl_emailcomments": "digikoppeling@logius.nl",
+  "publishDate": "2022-11-14",
+  "publishVersion": "1.1.0",
+  "previousPublishVersion": "1.0.1",
   "addSectionLinks": true,
   "license": "cc-by-nd",
   "doJsonLd": true,
@@ -253,22 +255,22 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "publisher": "Logius"
     }
   },
-  "publishISODate": "2022-08-12T00:00:00.000Z",
-  "generatedSubtitle": "Vastgestelde versie 12 augustus 2022"
+  "publishISODate": "2022-11-14T00:00:00.000Z",
+  "generatedSubtitle": "Vastgestelde versie 14 november 2022"
 }</script>
 <link rel="stylesheet" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/LS-DEF.css"></head>
   <body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.logius.nl/standaarden"><img alt="Logius" height="77" id="Logius" src="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/figure-logius.svg" width="44">
-  </a> <h1 id="title" class="title">Digikoppeling Koppelvlakstandaard REST-API 1.0.1</h1>
+  </a> <h1 id="title" class="title">Digikoppeling Koppelvlakstandaard REST-API 1.1.0</h1>
     
     <h2>
       Logius Standaard<br>
       Vastgestelde versie
-      <time class="dt-published" datetime="2022-08-12">12 augustus 2022</time>
+      <time class="dt-published" datetime="2022-11-14">14 november 2022</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.0.1">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.0.1</a>
+              <a class="u-url status" href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.1.0">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.1.0</a>
             </dd><dt>Laatst gepubliceerde versie:</dt><dd>
               <a href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/</a>
             </dd>
@@ -276,7 +278,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       
       
       
-      
+      <dt>Vorige versie</dt><dd><a href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.0.1/">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.0.1/</a></dd>
       
       <dt>Redacteur:</dt>
       
@@ -309,7 +311,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <hr title="Separator for header">
   </div>
     
-    <section id="sotd" class="introductory"><h2>Status van dit document</h2>Dit is de definitieve versie van de  standaard. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.<p>Het OBDO heeft op advies van het Forum Standaardisatie deze versie vastgesteld.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#context-voor-ontwikkeling-van-het-digikoppeling-rest-api-profiel"><bdi class="secno">2. </bdi>Context voor ontwikkeling van het Digikoppeling REST API profiel</a></li><li class="tocline"><a class="tocxref" href="#toelichting-bij-de-scope-van-het-digikoppeling-rest-api-profiel"><bdi class="secno">3. </bdi>Toelichting bij de scope van het Digikoppeling REST API profiel</a></li><li class="tocline"><a class="tocxref" href="#digikoppeling-restful-api-profiel"><bdi class="secno">4. </bdi>Digikoppeling Restful API profiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">4.1 </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#historie"><bdi class="secno">4.1.1 </bdi>Historie</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">4.1.2 </bdi>Toepassingsgebied</a></li></ol></li><li class="tocline"><a class="tocxref" href="#digikoppeling-rest-api-profiel"><bdi class="secno">4.2 </bdi>Digikoppeling REST-API profiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemeen"><bdi class="secno">4.2.1 </bdi>Algemeen</a></li><li class="tocline"><a class="tocxref" href="#koppelvlak-generiek"><bdi class="secno">4.2.2 </bdi>Koppelvlak Generiek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#vertrouwelijkheid"><bdi class="secno">4.2.2.1 </bdi>Vertrouwelijkheid</a></li><li class="tocline"><a class="tocxref" href="#identificatie-authenticatie"><bdi class="secno">4.2.2.2 </bdi>Identificatie &amp; Authenticatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#api-design-rules"><bdi class="secno">4.2.3 </bdi>API Design Rules</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toelichting-aanduidingen"><bdi class="secno">4.2.3.1 </bdi>Toelichting aanduidingen</a></li><li class="tocline"><a class="tocxref" href="#regels"><bdi class="secno">4.2.3.2 </bdi>Regels</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#afspraken-api-design-rules-extensies"><bdi class="secno">4.3 </bdi>Afspraken API Design Rules extensies</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bijlage-gebruik-van-signing-encryptie-in-de-context-van-http-rest-api"><bdi class="secno">5. </bdi>BIJLAGE Gebruik van Signing &amp; Encryptie in de context van HTTP / Rest API</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#signing-in-de-context-van-http-rest"><bdi class="secno">5.1 </bdi>Signing in de context van HTTP Rest</a></li><li class="tocline"><a class="tocxref" href="#encryptie-in-de-context-van-http-rest"><bdi class="secno">5.2 </bdi>Encryptie in de context van HTTP Rest</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">A.2 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
+    <section id="sotd" class="introductory"><h2>Status van dit document</h2>Dit is de definitieve versie van de  standaard. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.<p></p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#context-voor-ontwikkeling-van-het-digikoppeling-rest-api-profiel"><bdi class="secno">2. </bdi>Context voor ontwikkeling van het Digikoppeling REST API profiel</a></li><li class="tocline"><a class="tocxref" href="#toelichting-bij-de-scope-van-het-digikoppeling-rest-api-profiel"><bdi class="secno">3. </bdi>Toelichting bij de scope van het Digikoppeling REST API profiel</a></li><li class="tocline"><a class="tocxref" href="#digikoppeling-restful-api-profiel"><bdi class="secno">4. </bdi>Digikoppeling Restful API profiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">4.1 </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#historie"><bdi class="secno">4.1.1 </bdi>Historie</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">4.1.2 </bdi>Toepassingsgebied</a></li></ol></li><li class="tocline"><a class="tocxref" href="#digikoppeling-rest-api-profiel"><bdi class="secno">4.2 </bdi>Digikoppeling REST-API profiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemeen"><bdi class="secno">4.2.1 </bdi>Algemeen</a></li><li class="tocline"><a class="tocxref" href="#koppelvlak-generiek"><bdi class="secno">4.2.2 </bdi>Koppelvlak Generiek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#vertrouwelijkheid"><bdi class="secno">4.2.2.1 </bdi>Vertrouwelijkheid</a></li><li class="tocline"><a class="tocxref" href="#identificatie-authenticatie"><bdi class="secno">4.2.2.2 </bdi>Identificatie &amp; Authenticatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#api-design-rules"><bdi class="secno">4.2.3 </bdi>API Design Rules</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toelichting-aanduidingen"><bdi class="secno">4.2.3.1 </bdi>Toelichting aanduidingen</a></li><li class="tocline"><a class="tocxref" href="#regels"><bdi class="secno">4.2.3.2 </bdi>Regels</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#afspraken-api-design-rules-extensies"><bdi class="secno">4.3 </bdi>Afspraken API Design Rules extensies</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bijlage-gebruik-van-signing-encryptie-in-de-context-van-http-rest-api"><bdi class="secno">5. </bdi>BIJLAGE Gebruik van Signing &amp; Encryptie in de context van HTTP / Rest API</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#signing-in-de-context-van-http-rest"><bdi class="secno">5.1 </bdi>Signing in de context van HTTP Rest</a></li><li class="tocline"><a class="tocxref" href="#encryptie-in-de-context-van-http-rest"><bdi class="secno">5.2 </bdi>Encryptie in de context van HTTP Rest</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">A.2 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
    <section id="conformance"><div class="header-wrapper"><h2 id="x1-conformiteit"><bdi class="secno">1. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 1."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p>
      
    </section>   
@@ -616,6 +618,13 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
 <td>Security</td>
 <td>Vervangen door Digikoppeling beveiligingsvoorschriften (*)</td>
 <td>[<cite><a class="bibref" data-link-type="biblio" href="#bib-digikoppeling-beveiligingsdocument" title="Digikoppeling Beveiligingsstandaarden en voorschriften">Digikoppeling-Beveiligingsdocument</a></cite>]</td>
+</tr>
+<tr>
+<td>Verplicht</td>
+<td>API-58  No sensitive information in URIs</td>
+<td>Security</td>
+<td></td>
+<td><a href="https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-58">API-58 No sensitive information in URIs  </a></td>
 </tr>
 <tr>
 <td>Verplicht</td>
