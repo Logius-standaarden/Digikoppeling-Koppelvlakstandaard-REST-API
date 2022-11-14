@@ -1,18 +1,21 @@
 var respecConfig = {
   //voor specStatus mogelijkheden zie https://github.com/Logius-standaarden/respec/wiki/specStatus
-  specStatus: "DEF",
+  specStatus: "WV",
   //voor specType mogelijkheden zie https://github.com/Logius-standaarden/respec/wiki/specType
   specType: "ST",
   
   pubDomain: "dk",
   shortName: "restapi",
+  
+  nl_emailcomments: "digikoppeling@logius.nl",
 
   // A YYYY-MM-DD date. The publication date of the present document. 
   // Als er geen publishDate is opgegeven, genereert ReSpec de dataum o.b.v. de laatste wijzigingen
   // Belangrijk: als publishDate niet opgegeven is, wordt bij de link "Laatst gepubliceerde versie" "geen" gezet. Anders wordt een link opgebouwd voor de laatste versie, met het formaat:
-  publishDate: "2022-08-12",
+  publishDate: "2022-11-14",
 
-  publishVersion: "1.0.1",
+  publishVersion: "1.1.0",
+  previousPublishVersion: "1.0.1",
 
   addSectionLinks: true,
 
