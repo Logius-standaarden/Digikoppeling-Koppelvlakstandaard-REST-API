@@ -14,8 +14,8 @@ var respecConfig = {
   // Belangrijk: als publishDate niet opgegeven is, wordt bij de link "Laatst gepubliceerde versie" "geen" gezet. Anders wordt een link opgebouwd voor de laatste versie, met het formaat:
   publishDate: "2022-11-14",
 
-  publishVersion: "1.1.0",
-  previousPublishVersion: "1.0.1",
+  publishVersion: "1.1.1",
+  previousPublishVersion: "1.1.0",
 
   addSectionLinks: true,
 
