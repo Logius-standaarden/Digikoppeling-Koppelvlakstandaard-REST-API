@@ -40,7 +40,7 @@ dfn{cursor:pointer}
     
 <link rel="shortcut icon" type="image/x-icon" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/logius.ico">
     
-<title>Digikoppeling Koppelvlakstandaard REST-API 1.1.0</title>
+<title>Digikoppeling Koppelvlakstandaard REST-API 1.1.1</title>
     
     
     
@@ -119,8 +119,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "shortName": "restapi",
   "nl_emailcomments": "digikoppeling@logius.nl",
   "publishDate": "2022-11-14",
-  "publishVersion": "1.1.0",
-  "previousPublishVersion": "1.0.1",
+  "publishVersion": "1.1.1",
+  "previousPublishVersion": "1.1.0",
   "addSectionLinks": true,
   "license": "cc-by-nd",
   "doJsonLd": true,
@@ -261,7 +261,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <link rel="stylesheet" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/LS-DEF.css"></head>
   <body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.logius.nl/standaarden"><img alt="Logius" height="77" id="Logius" src="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/figure-logius.svg" width="44">
-  </a> <h1 id="title" class="title">Digikoppeling Koppelvlakstandaard REST-API 1.1.0</h1>
+  </a> <h1 id="title" class="title">Digikoppeling Koppelvlakstandaard REST-API 1.1.1</h1>
     
     <h2>
       Logius Standaard<br>
@@ -270,7 +270,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.1.0">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.1.0</a>
+              <a class="u-url status" href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.1.1">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.1.1</a>
             </dd><dt>Laatst gepubliceerde versie:</dt><dd>
               <a href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/</a>
             </dd>
@@ -278,7 +278,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       
       
       
-      <dt>Vorige versie</dt><dd><a href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.0.1/">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.0.1/</a></dd>
+      <dt>Vorige versie</dt><dd><a href="https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.1.0/">https://publicatie.centrumvoorstandaarden.nl/dk/restapi/1.1.0/</a></dd>
       
       <dt>Redacteur:</dt>
       
@@ -318,7 +318,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 	<section id="context-voor-ontwikkeling-van-het-digikoppeling-rest-api-profiel"><div class="header-wrapper"><h2 id="x2-context-voor-ontwikkeling-van-het-digikoppeling-rest-api-profiel"><bdi class="secno">2. </bdi>Context voor ontwikkeling van het Digikoppeling REST API profiel</h2><a class="self-link" href="#context-voor-ontwikkeling-van-het-digikoppeling-rest-api-profiel" aria-label="Permalink for Section 2."></a></div>
 <p>Het Digikoppeling Rest API profiel is gericht op Machine-to-Machine (M2M) en Government-to-Government (G2G) interacties conform de algemene uitgangspunten van de Digikoppeling standaard en het toepassingsgebied van Digikoppeling op de Pas-toe-of-leg-uit lijst (PTLU) van het Forum Standaardisatie;</p>
 <p>Opzet Digikoppeling:</p>
-<p><figure id="fig-overzicht-digikoppeling-koppelvlakken"><img src="media/fig-structuurv2.png" alt="Overzicht Digikoppeling Koppelvlakken" title="Overzicht Digikoppeling Koppelvlakken"><figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Overzicht Digikoppeling Koppelvlakken</span></figcaption></figure></p>
+<p><figure id="fig-overzicht-digikoppeling-koppelvlakken"><img src="media/fig-structuurv2.png" alt="Overzicht Digikoppeling Koppelvlakken" title="Overzicht Digikoppeling Koppelvlakken" height="610" width="1840"><figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Overzicht Digikoppeling Koppelvlakken</span></figcaption></figure></p>
 </section>
 	<section id="toelichting-bij-de-scope-van-het-digikoppeling-rest-api-profiel"><div class="header-wrapper"><h2 id="x3-toelichting-bij-de-scope-van-het-digikoppeling-rest-api-profiel"><bdi class="secno">3. </bdi>Toelichting bij de scope van het Digikoppeling REST API profiel</h2><a class="self-link" href="#toelichting-bij-de-scope-van-het-digikoppeling-rest-api-profiel" aria-label="Permalink for Section 3."></a></div>
 <p><figure id="fig-digikoppeling-voor-closed-data-g2g-uitwisseling"><img src="media/DK_closed_g2g.svg" alt="Digikoppeling voor Closed Data G2G Uitwisseling" title="Digikoppeling voor Closed Data G2G Uitwisseling"><figcaption>Figuur <bdi class="figno">2</bdi> <span class="fig-title">Digikoppeling voor Closed Data G2G Uitwisseling</span></figcaption></figure></p>
@@ -623,7 +623,7 @@ Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het ve
 <td>Verplicht</td>
 <td>API-58  No sensitive information in URIs</td>
 <td>Security</td>
-<td></td>
+<td>Alleen verplicht indien er sprake is van logging in systemen die niet onder controle van de betrokken client- en serverorganisatie staan</td>
 <td><a href="https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-58">API-58 No sensitive information in URIs  </a></td>
 </tr>
 <tr>
