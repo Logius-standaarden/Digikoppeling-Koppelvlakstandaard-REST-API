@@ -79,11 +79,16 @@ De Digikoppeling Beveiligingsstandaarden en voorschriften verplichten het gebrui
 FSC gebruikt Contracten om afspraken tussen Peers vast te leggen. Een Contract kan één of meerdere Grants bevatten. Een Grant beschrijft welke interactie er mogelijk is tussen de Peers.
 FSC plaatst geen beperking op het aantal Grants per Contract. Het Digikoppeling REST API profiel doet dit wel om te voorkomen dat er fragiele Contracten ontstaan met een hoge beheerslast. Het aantal Grants wordt beperkt tot maximaal 10.
 
-#### Retry-mechanisme tijdens synchronisatie
+#### Retry-mechanisme voor versturen van Contracten en hantekeningen
 
-FSC stelt elke implementatie zelf verantwoordlijk voor het synchroniseren van Contracten en de digitale handtekeningen onder deze Contracten.
-Het Digikoppeling REST API profiel verplicht hiervoor het implementeren van een exponential backoff retry-mechanisme.
+De Peer die een Contract aanmaakt of een handtekening plaats op een Contract is zelf verantwoordelijk voor het distribureren van het Contract of handtekening naar de Peers op het Contract.
+In het scenario dat het versturen van Contract of handtekening mislukt verplicht het Digikoppeling REST API profiel het toepassen van een exponential backoff retry-mechanisme.
 > Het retry mechanisme betreft niet de HTTP-requests voor het bevragen van een Service.
+
+Een exponential backoff retry-mechanism is een mechanisme dat een mislukt verzoek opnieuw gaat uitvoeren op een interval die exponentieel groeit. 
+Deze exponentiële groei voorkomt dat een applicatie een veelfout van verzoeken verstuurd naar een service die niet bereikbaar is. 
+
+Voorbeeld: Peer A verstuurt een Contract naar Peer B. Het versturen mislukt. Peer A probeert het opnieuw na 1 seconde, het verzoek mislukt weer. De volgende poging wordt gedaan na 2 seconden, daarna 4 seconden, vervolgens 16 seconden, enzovoort. Om te voorkomen dat er langlopende processen worden gecreëerd hanteerd Peer A een maximale interval van 300 seconden.  
 
 #### Logging
 
