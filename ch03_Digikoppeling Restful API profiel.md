@@ -27,15 +27,15 @@ Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve 
 
 #### Vertrouwelijkheid
 
-De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [[PKI-Policy]] en 2-zijdig TLS.
-* Zie [[Digikoppeling-Beveiligingsdocument]]
+De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [[PKIO-PvE]] en 2-zijdig TLS.
+* Zie [[[DK-beveiliging]]]
 
 
 #### Identificatie & Authenticatie
 
 Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties.
 Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
-* Zie [[Digikoppeling-Identificatie-Authenticatie]]
+* Zie [[[DK-IDAuth]]]
 
 ### API Design Rules
 
@@ -93,7 +93,7 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 
 | Categorie | Principe | Extensie | Toelichting | Link |
 | --- | --- | --- | --- | --- |
-| Niet van toepassing | API-11: Secure connections using TLS | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[[Digikoppeling-Beveiligingsdocument]] |
+| Niet van toepassing | API-11: Secure connections using TLS | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[[[DK-beveiliging]]] |
 | Verplicht | API-58  No sensitive information in URIs | Security | Alleen verplicht indien er sprake is van logging in systemen die niet onder controle van de betrokken client- en serverorganisatie staan | [API-58 No sensitive information in URIs  ](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-58)|
 | Verplicht | API-13: Accept tokens as HTTP headers only | Security Authorisation | | [API-13: Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-13) |
 | Aanbevolen | API-46: Use default error handling | Error handling | | [API-46: Use default error handling](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-46) |
@@ -102,5 +102,5 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 
 </span>
 
-(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [[Digikoppeling-Beveiligingsdocument]]
+(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [[[DK-beveiliging]]]
 
