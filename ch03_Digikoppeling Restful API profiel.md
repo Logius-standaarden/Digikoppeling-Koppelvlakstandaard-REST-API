@@ -5,7 +5,7 @@
 ### Historie
 
 Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond RESTful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de Pas-toe-of-leg-uit lijst van het Forum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).
-Daarnaast is de standaard Federated Service Connectivity (FSC) ontwikkelt die voorschrijft hoe organisaties REST API's kunnen ontdekken, aanbieden en consumeren. De FSC standaard is opgenomen in dit Digikoppeling REST API Profiel om de koppelingen met REST API's te standardiseren waardoor er een interoperabel API landschap ontstaat.  
+Daarnaast is de standaard Federated Service Connectivity (FSC) ontwikkeld die voorschrijft hoe organisaties REST API's kunnen ontdekken, aanbieden en consumeren. De FSC standaard is opgenomen in dit Digikoppeling REST API Profiel om de koppelingen met REST API's te standardiseren waardoor er een interoperabel API landschap ontstaat.  
 
 ### Toepassingsgebied
 
@@ -19,7 +19,7 @@ Dit profiel is toe te passen bij het aanbieden en/of consumeren van REST API's t
 
 ### Algemeen
 
-Het Digikoppeling REST API profiel verplicht het gebruik van de FSC standaard.
+Het Digikoppeling REST API profiel maakt gebruikt van de FSC standaard.
 
 
 Het Digikoppeling REST API profiel is o.a. gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden: [[ADR]]
@@ -56,15 +56,15 @@ De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensies Loggi
 De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [[PKI-Policy]] .
 * Zie [[Digikoppeling-Beveiligingsdocument]]
 
-FSC spreekt over een Thrust Anchor die door een Group moet worden gekozen. De Trust Anchor is binnen de context van X.509 certificaten de certificate authority (CA) waaruit het vertrouwen wordt afgeleid.
+FSC spreekt over een Trust Anchor die door een Group moet worden gekozen. De Trust Anchor is binnen de context van X.509 certificaten de certificate authority (CA) waaruit het vertrouwen wordt afgeleid.
 
 De Trust Anchor voor de FSC Group moet daarom de PKIO Private Root zijn.
 
 #### Identificatie & Authenticatie
 
 Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties. Dit is het PeerID binnen de context van FSC. Het OIN wordt bij PKIO certificaten geplaatst in het SerialNumber veld van het Subject.
-Het verplicht vanuit FSC om te bepalen welk veld uit het certificaat de Peer name bepaald. Dit is het organization veld van het Subject van het PKIO certificaat.
-Binnen dit Digikoppeling REST API profielprofiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten en FSC. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
+Het is verplicht vanuit FSC om te bepalen welk veld uit het certificaat de Peer name bepaald. Dit is het organization veld van het Subject van het PKIO certificaat.
+Binnen dit Digikoppeling REST API profiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten en FSC. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
 * Zie [[Digikoppeling-Identificatie-Authenticatie]]
 
 #### TLS 
@@ -82,11 +82,16 @@ De Digikoppeling Beveiligingsstandaarden en voorschriften verplichten het gebrui
 FSC gebruikt Contracten om afspraken tussen Peers vast te leggen. Een Contract kan één of meerdere Grants bevatten. Een Grant beschrijft welke interactie er mogelijk is tussen de Peers.
 FSC plaatst geen beperking op het aantal Grants per Contract. Het Digikoppeling REST API profiel doet dit wel om te voorkomen dat er fragiele Contracten ontstaan met een hoge beheerslast. Het aantal Grants wordt beperkt tot maximaal 10.
 
-#### Retry-mechanisme tijdens synchronisatie
+#### Retry-mechanisme voor versturen van Contracten en hantekeningen
 
-FSC stelt elke implementatie zelf verantwoordlijk voor het synchroniseren van Contracten en de digitale handtekeningen onder deze Contracten.
-Het Digikoppeling REST API profiel verplicht hiervoor het implementeren van een exponential backoff retry-mechanisme.
+De Peer die een Contract aanmaakt of een handtekening plaats op een Contract is zelf verantwoordelijk voor het distribureren van het Contract of handtekening naar de Peers op het Contract.
+In het scenario dat het versturen van Contract of handtekening mislukt verplicht het Digikoppeling REST API profiel het toepassen van een exponential backoff retry-mechanisme.
 > Het retry mechanisme betreft niet de HTTP-requests voor het bevragen van een Service.
+
+Een exponential backoff retry-mechanism is een mechanisme dat een mislukt verzoek opnieuw gaat uitvoeren op een interval die exponentieel groeit. 
+Deze exponentiële groei voorkomt dat een applicatie een veelvoud van verzoeken verstuurd naar een service die niet bereikbaar is. 
+
+Voorbeeld: Peer A verstuurt een Contract naar Peer B. Het versturen mislukt. Peer A probeert het opnieuw na 1 seconde, het verzoek mislukt weer. De volgende poging wordt gedaan na 2 seconden, daarna 4 seconden, vervolgens 16 seconden, enzovoort. Om te voorkomen dat er langlopende processen worden gecreëerd hanteerd Peer A een maximale interval van 300 seconden.  
 
 #### Logging
 
