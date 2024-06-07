@@ -1,12 +1,10 @@
 # Digikoppeling Restful API profiel
 
-## Inleiding
-
-### Historie
+## Historie
 
 Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond Restful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de Pas-toe-of-leg-uit lijst van het Forum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).
 
-### Toepassingsgebied
+## Toepassingsgebied
 
 Het toepassingsgebied is voor Digikoppeling:
 
@@ -14,45 +12,30 @@ Het toepassingsgebied is voor Digikoppeling:
 
 Dit profiel is toe te passen bij het aanbieden van REST API's ten behoeve van het ontsluiten van overheidsinformatie en/of functionaliteit.
 
-## Digikoppeling REST-API profiel
-
-### Algemeen
+## Algemeen
 
 Het Digikoppeling REST-API profiel is gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden: [[ADR]]
 
 
 Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de REST-API Design Rules.
 
-### Koppelvlak Generiek
+## Koppelvlak Generiek
 
-#### Vertrouwelijkheid
+### Vertrouwelijkheid
 
 De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [[PKIO-PvE]] en 2-zijdig TLS.
 * Zie [[[DK-beveiliging]]]
 
 
-#### Identificatie & Authenticatie
+### Identificatie & Authenticatie
 
 Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties.
 Binnen dit DK REST-API profielprofiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
 * Zie [[[DK-IDAuth]]]
 
-### API Design Rules
+## API Design Rules
 
-#### Toelichting aanduidingen
-
- Voorschriften zijn aangeduid met 'Verplicht', 'Aanbevolen' en 'Niet van Toepassing' waarvoor de volgende definities gelden:
-
-
-|Categorie | Codering RFC2119 |Voorschrift | Toelichting |
-| --- | --- |---|---|
-|  Verplicht | MUST |De eisen moeten gevolgd worden. Hier kan niet van afgeweken worden.|
-|  Aanbevolen | SHOULD | Aanbevolen is om de eisen conform conform voorschrift te implementeren. Wanneer hier van afgeweken wordt dient een zorgvuldige afweging plaats te vinden  |
-|  Niet van Toepassing | - | De eisen zijn niet van toepassing|
-
-(Indeling gebaseerd op [[?rfc2119]])
-
-#### Regels
+### Regels
 
 Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [[[ADR]]]. Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules:
 
@@ -78,11 +61,9 @@ Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve 
 - [/core/version-header](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/version-header): Return the full version number in a response header
 - [/core/transport-security](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transport-security): Apply the transport security module
 
-## Afspraken API Design Rules extensies
+### Afspraken API Design Rules modules
 
-De ADR extensie onderderdelen van dit profiel zijn gebaseerd op: [[ADR-ext]].
-
-Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit profiel verplicht zijn of worden aanbevolen.
+Extensies op de [[[ADR]]] zijn geschreven in modules. Hieronder wordt aangegeven welke regels uit de API Design Rules modules in dit profiel verplicht zijn of worden aanbevolen.
 
 | Categorie | Principe | Extensie | Toelichting | Link |
 | --- | --- | --- | --- | --- |
@@ -92,8 +73,14 @@ Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit
 | Aanbevolen | API-46: Use default error handling | Error handling | | [API-46: Use default error handling](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-46) |
 | Aanbevolen | API-47: Use the required HTTP status codes | Error handling  | | [API-47: Use the required HTTP status codes](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-47) |
 
-
-</span>
-
 (*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [[[DK-beveiliging]]]
 
+#### Toelichting aanduidingen
+
+ Voorschriften zijn aangeduid met 'Verplicht', 'Aanbevolen' en 'Niet van Toepassing' waarvoor de volgende definities gelden (gebaseerd op [[?rfc2119]]):
+ 
+|Categorie | Codering RFC2119 |Voorschrift |
+| --- | --- |---|
+|  Verplicht | MUST |De eisen moeten gevolgd worden. Hier kan niet van afgeweken worden.|
+|  Aanbevolen | SHOULD | Aanbevolen is om de eisen conform conform voorschrift te implementeren. Wanneer hier van afgeweken wordt dient een zorgvuldige afweging plaats te vinden  |
+|  Niet van Toepassing | - | De eisen zijn niet van toepassing|
