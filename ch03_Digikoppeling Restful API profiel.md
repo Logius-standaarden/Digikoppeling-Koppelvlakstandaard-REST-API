@@ -65,19 +65,20 @@ Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve 
 
 Extensies op de [[[ADR]]] zijn geschreven in modules. Hieronder wordt aangegeven welke regels uit de API Design Rules modules in dit profiel verplicht zijn of worden aanbevolen.
 
-| Categorie | Principe | Extensie | Toelichting | Link |
-| --- | --- | --- | --- | --- |
-| Niet van toepassing | API-11: Secure connections using TLS | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[[[DK-beveiliging]]] |
-| Verplicht | API-58  No sensitive information in URIs | Security | Alleen verplicht indien er sprake is van logging in systemen die niet onder controle van de betrokken client- en serverorganisatie staan | [API-58 No sensitive information in URIs  ](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-58)|
-| Verplicht | API-13: Accept tokens as HTTP headers only | Security Authorisation | | [API-13: Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-13) |
-| Aanbevolen | API-46: Use default error handling | Error handling | | [API-46: Use default error handling](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-46) |
-| Aanbevolen | API-47: Use the required HTTP status codes | Error handling  | | [API-47: Use the required HTTP status codes](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-47) |
+| Categorie             | Module             | Principe                                                                                                                                                    |
+|-----------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Niet van toepassing\* | Transport Security | [Secure connections using TLS](https://gitdocumentatie.logius.nl/publicatie/api/mod-ts/#/transport/tls)                                                     |
+| Verplicht\*\*         | Transport Security | [No sensitive information in URIs](https://gitdocumentatie.logius.nl/publicatie/api/mod-ts/#/transport/no-sensitive-uris)                                   |
+| Verplicht             | API access control | [Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/API-Strategie-mod-access-control/#api-13)                                           |
+| Aanbevolen            | Error handling     | [Use default error handling](https://github.com/Geonovum/KP-APIs/blob/master/API-strategie-modules/_extensions_legacy/ext-error-handling.md#api-46)         |
+| Aanbevolen            | Error handling     | [Use the required HTTP status codes](https://github.com/Geonovum/KP-APIs/blob/master/API-strategie-modules/_extensions_legacy/ext-error-handling.md#api-47) |
 
-(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [[[DK-beveiliging]]]
+\* Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend (zie [[[DK-beveiliging]]]).<br>
+\*\* Alleen verplicht indien er sprake is van logging in systemen die niet onder controle van de betrokken client- en serverorganisatie staan.
 
 #### Toelichting aanduidingen
 
- Voorschriften zijn aangeduid met 'Verplicht', 'Aanbevolen' en 'Niet van Toepassing' waarvoor de volgende definities gelden (gebaseerd op [[?rfc2119]]):
+Voorschriften zijn aangeduid met 'Verplicht', 'Aanbevolen' en 'Niet van Toepassing' waarvoor de volgende definities gelden (gebaseerd op [[?rfc2119]]):
  
 |Categorie | Codering RFC2119 |Voorschrift |
 | --- | --- |---|
