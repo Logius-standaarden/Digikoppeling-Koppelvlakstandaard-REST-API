@@ -1,4 +1,4 @@
-# BIJLAGE Gebruik van Signing & Encryptie in de context van HTTP / Rest API
+# Gebruik van Signing & Encryptie in de context van HTTP / Rest API
 
 <aside class="note">Deze bijlage is informatief en geen normatief onderdeel van het profiel</aside>
 
