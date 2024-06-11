@@ -6,19 +6,19 @@ var respecConfig = {
   authors: [ 
       { 
         "company" : "Logius",
-        "companyURL" : "http://www.logius.nl/",
+        "companyURL" : "https://www.logius.nl/",
         "name" : "Peter Haasnoot"
       },
       { 
         "company" : "Logius",
-        "companyURL" : "http://www.logius.nl/",
+        "companyURL" : "https://www.logius.nl/",
         "name" : "Pieter Hering"
       }
     ],
-  editors: [ { 
-        "company" : "Logius standaardenbeheer",
-        "companyURL" : "http://www.logius.nl/",
-        "name" : ""
+  editors: [ {    
+        "company" : "Logius",  
+        "companyURL" : "https://www.logius.nl/",
+        "name" : "Standaardenbeheer"
       } ],
   github: "https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API",
   nl_emailcomments: "digikoppeling@logius.nl",
