@@ -24,7 +24,7 @@ var respecConfig = {
   nl_emailcomments: "digikoppeling@logius.nl",
   previousPublishVersion: "1.1.0",
   pubDomain: "dk",
-  publishDate: "2022-11-14",
+  publishDate: "2024-06-12",
   publishVersion: "1.1.1",
   shortName: "restapi",
   specStatus: "CV",
