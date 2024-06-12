@@ -27,6 +27,6 @@ var respecConfig = {
   publishDate: "2022-11-14",
   publishVersion: "1.1.1",
   shortName: "restapi",
-  specStatus: "WV",
+  specStatus: "CV",
   specType: "ST"
 };

@@ -41,7 +41,7 @@ De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op h
 Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties. Binnen dit Digikoppeling REST API profiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten en FSC. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
 * Zie [[[DK-IDAuth]]]
 
-### FSC
+### Federated Service Connectivity Standaard (FSC)
 
 Gebruik van de FSC standaard binnen het Digikoppeling REST API profiel is aanbevolen.
 
