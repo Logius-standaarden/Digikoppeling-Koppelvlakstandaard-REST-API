@@ -19,20 +19,34 @@ Dit profiel is toe te passen bij het aanbieden en/of consumeren van REST API's t
 
 ### Algemeen
 
-Het Digikoppeling REST API profiel maakt gebruikt van de FSC standaard.
-
-
 Het Digikoppeling REST API profiel is o.a. gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden: [[ADR]]
 
 
 Het Digikoppeling REST API profiel conformeert zich volledig aan het normatieve deel van de REST-API Design Rules.
 
+Het Digikoppeling REST API profiel maakt gebruikt van de FSC standaard.
+
 
 ### Koppelvlak Generiek
 
-#### FSC
 
-De FSC standaard bestaat uit een Core component en een extensie genaamd Logging. Het Digikoppeling REST API profiel verplicht het gebruik van zowel Core, Logging.
+#### Vertrouwelijkheid
+
+De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [[PKI-Policy]] .
+* Zie [[[DK-beveiliging]]]
+
+
+#### Identificatie & Authenticatie
+
+Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties. Binnen dit Digikoppeling REST API profiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten en FSC. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
+* Zie [[[DK-IDAuth]]]
+
+### FSC
+
+Gebruik van de FSC standaard binnen het Digikoppeling REST API profiel is aanbevolen.
+
+De FSC standaard bestaat uit een Core component en een extensie genaamd Logging.
+Wanneer FSC wordt gebruikt is het verplicht Core en Logging beide te gebruiken.
 
 FSC beschrijft het volgende:
 
@@ -51,21 +65,19 @@ De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensies Loggi
 1. [Core](https://commonground.gitlab.io/standards/fsc/core/draft-fsc-core-00.html) 
 2. [Logging](https://commonground.gitlab.io/standards/fsc/logging/draft-fsc-logging-00.html)
 
+
 #### Vertrouwelijkheid
 
-De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [[PKI-Policy]] .
-* Zie [[[DK-beveiliging]]]
-
 FSC spreekt over een Trust Anchor die door een Group moet worden gekozen. De Trust Anchor is binnen de context van X.509 certificaten de certificate authority (CA) waaruit het vertrouwen wordt afgeleid.
-
 De Trust Anchor voor de FSC Group moet daarom de PKIO Private Root zijn.
 
 #### Identificatie & Authenticatie
 
-Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties. Dit is het PeerID binnen de context van FSC. Het OIN wordt bij PKIO certificaten geplaatst in het SerialNumber veld van het Subject.
+Het PeerID binnen de context van FSC is OIN. Het OIN wordt bij PKIO certificaten geplaatst in het SerialNumber veld van het Subject.
 Het is verplicht vanuit FSC om te bepalen welk veld uit het certificaat de Peer name bepaald. Dit is het organization veld van het Subject van het PKIO certificaat.
 Binnen dit Digikoppeling REST API profiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten en FSC. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
 * Zie [[[DK-IDAuth]]]
+
 
 #### TLS 
 
