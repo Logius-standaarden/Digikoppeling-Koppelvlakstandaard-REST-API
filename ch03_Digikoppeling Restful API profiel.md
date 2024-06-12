@@ -32,7 +32,7 @@ Het Digikoppeling REST API profiel maakt gebruikt van de FSC standaard.
 
 #### Vertrouwelijkheid
 
-De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [[PKI-Policy]] .
+De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [[PKIO-PvE]].
 * Zie [[[DK-beveiliging]]]
 
 
@@ -82,12 +82,12 @@ Binnen dit Digikoppeling REST API profiel zijn er alleen voorschriften m.b.t. he
 #### TLS 
 
 De Digikoppeling Beveilingsstandaarden en voorschriften veplichten het gebruik van 2-zijdig TLS met minimaal TLS versie 1.2, FSC verscherpt deze eis door de ciphersuites die geen perfect forward secrecy ondersteunen niet toe te laten.
-* Zie [[Digikoppeling-Beveiligingsdocument]]
+* Zie [[[DK-beveiliging]]]
 
 #### Netwerk-poorten
 
 De Digikoppeling Beveiligingsstandaarden en voorschriften verplichten het gebruik van de netwerkpoort 443 voor data verkeer. FSC voegt daar het gebruik van port 8443 voor managementverkeer aan toe. E.g. toegang aanvragen voor een API. 
-* Zie [[Digikoppeling-Beveiligingsdocument]]
+* Zie [[[DK-beveiliging]]]
 
 #### Contracten
 
