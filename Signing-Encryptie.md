@@ -25,7 +25,7 @@ Enkele voorbeelden van signing standaarden die in ontwikkeling zijn:
 
 
 - https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures
-- https://www.openbankingeurope.eu/media/2095/obe-json-web-signature-profile-for-open-banking.pdf
+- https://www.openbankingeurope.eu/media/2096/obe-json-web-signature-profile-for-open-banking.pdf
 
 
 ## Encryptie in de context van HTTP Rest
