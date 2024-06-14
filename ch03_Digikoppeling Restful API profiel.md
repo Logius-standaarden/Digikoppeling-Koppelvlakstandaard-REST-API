@@ -78,7 +78,7 @@ Extensies op de [[[ADR]]] zijn geschreven in modules. Hieronder wordt aangegeven
 \* Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend (zie [[[DK-beveiliging]]]).<br>
 \*\* Alleen verplicht indien er sprake is van logging in systemen die niet onder controle van de betrokken client- en serverorganisatie staan.
 
-#### Toelichting aanduidingen
+### Toelichting aanduidingen
 
 Voorschriften zijn aangeduid met 'Verplicht', 'Aanbevolen' en 'Niet van Toepassing' waarvoor de volgende definities gelden (gebaseerd op [[?rfc2119]]):
  
