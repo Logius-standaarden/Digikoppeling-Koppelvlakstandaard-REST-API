@@ -87,3 +87,32 @@ Voorschriften zijn aangeduid met 'Verplicht', 'Aanbevolen' en 'Niet van Toepassi
 |  Verplicht | MUST |De eisen moeten gevolgd worden. Hier kan niet van afgeweken worden.|
 |  Aanbevolen | SHOULD | Aanbevolen is om de eisen conform conform voorschrift te implementeren. Wanneer hier van afgeweken wordt dient een zorgvuldige afweging plaats te vinden  |
 |  Niet van Toepassing | - | De eisen zijn niet van toepassing|
+
+## Signing & Encryptie (in HTTP REST Context)
+
+### Signing 
+
+Signing van HTTP body en/of header kan gebruikt worden voor _authenticatie_, om de _integriteit_ van de request/response berichten te controleren en signing realiseert ook _onweerlegbaarheid_.
+(Onweerlegbaarheid in de zin van: de verzender van de request/response kan niet ontkennen het bericht verzonden te hebben wanneer deze voorzien is van de digitale handtekening van de afzender).
+
+De berichten kunnen ook samen met de digitale handtekeningen worden bewaard zodat deze bij audits of juridische bewijsvoering gebruikt kunnen worden.
+
+Een HTTP requestbericht is opgebouwd uit de volgende onderdelen:
+
+- Header
+  - HTTP operatie (GET, POST etc)
+  - Pad / URL resource
+  - Protocol
+  - Header velden
+- Body
+  - _data_
+
+Door naast de body data ook onderdelen uit de header digitaal te ondertekenen kan worden gecontroleerd dat bv ook de HTTP operatie en resource specificatie in de request echt van de afzender afkomstig zijn en niet onderweg gemanipuleerd.
+
+Indien signing van HTTP body/header wordt toegepast is het Verplicht om dit te doen volgens de regels van de ADR Module [ADR-HTTP Message and payload signing with JAdES](https://geonovum.github.io/KP-APIs/API-strategie-modules/signing-jades/)
+
+### Encryptie 
+
+Encryptie van HTTP request/response kan gebruikt worden om de vertrouwelijkheid van gegevens te beschermen.
+
+Indien encryptie van HTTP request/response wordt toegepast is het Verplicht om dit te doen volgens de regels van de ADR Module [ADR-HTTP Payload encryption](https://geonovum.github.io/KP-APIs/API-strategie-modules/encryption/)
