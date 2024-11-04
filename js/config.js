@@ -29,4 +29,6 @@ var respecConfig = {
   shortName: "restapi",
   specStatus: "CV",
   specType: "ST"
+
+  postProcess: [window.respecMermaid.createFigures]
 };
