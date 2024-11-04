@@ -8,10 +8,12 @@ verzonden.
 
 Bij HTTP verkeer wordt voor authenticatie, integriteits bescherming (en bescherming van de vertrouwelijkheid) TLS (Transport Level Security) breed toegepast. In Digikoppeling wordt specifiek 2-zijdig TLS toegepast. Echter TLS beschermt alleen via één TLS-verbinding en het pad tussen de client en de server kan bestaan ​​uit meerdere onafhankelijke TLS-verbindingen (bijvoorbeeld als de applicatie wordt gehost achter een TLS-beëindigende gateway of als de client zich achter een TLS Inspection-apparaat bevindt). In dergelijke gevallen kan TLS geen end-to-end berichtintegriteit of authenticiteit tussen de client en de server garanderen.
 
-HTTP Message signing kan dit geval gebruikt worden om end-to-end bescherming tegen manipulatie te realiseren voor het volledige pad Client naar Server;
+HTTP Message signing kan dit geval gebruikt worden om end-to-end bescherming tegen manipulatie te realiseren voor het volledige pad Client naar Server.
 
-HTTP Payload encryptie kan dit geval gebruikt worden om end-to-end vertrouwelijkheid te realiseren voor het volledige pad Client naar Server;
+HTTP Payload encryptie kan dit geval gebruikt worden om end-to-end vertrouwelijkheid te realiseren voor het volledige pad Client naar Server.
 
+<figure>
+  
 ```mermaid
   graph LR;
       Client-->Proxy;
@@ -19,6 +21,8 @@ HTTP Payload encryptie kan dit geval gebruikt worden om end-to-end vertrouwelijk
       API_Gateway-->Server
 
 ```
+<figcaption>Bescherming voor het volledige pad Client naar Server</figcaption>
+</figure>
 
 ## Wanneer is HTTP Message Signing/Encryptie te gebruiken
 
