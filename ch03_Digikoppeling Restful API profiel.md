@@ -46,7 +46,7 @@ Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor 
 Gebruik van de FSC standaard binnen het Digikoppeling REST API profiel is verplicht.
 
 De FSC standaard bestaat uit een Core component en een extensie genaamd Logging.
-Wanneer FSC wordt gebruikt is het verplicht Core en Logging beide te gebruiken.
+Het is verplicht Core en Logging beide te gebruiken.
 
 FSC beschrijft het volgende:
 
