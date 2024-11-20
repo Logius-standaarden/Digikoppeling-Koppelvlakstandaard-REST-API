@@ -24,7 +24,7 @@ Het Digikoppeling REST API profiel is o.a. gebaseerd op de REST-API Design Rules
 
 Het Digikoppeling REST API profiel conformeert zich volledig aan het normatieve deel van de REST-API Design Rules.
 
-Het Digikoppeling REST API profiel maakt gebruikt van de FSC standaard.
+Het Digikoppeling REST API profiel maakt gebruik van de FSC-standaard.
 
 
 ### Koppelvlak Generiek
