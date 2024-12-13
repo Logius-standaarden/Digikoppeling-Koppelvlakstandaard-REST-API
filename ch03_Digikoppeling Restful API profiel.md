@@ -24,7 +24,7 @@ Het Digikoppeling REST API profiel is o.a. gebaseerd op de REST-API Design Rules
 
 Het Digikoppeling REST API profiel conformeert zich volledig aan het normatieve deel van de REST-API Design Rules.
 
-Het Digikoppeling REST API profiel maakt gebruikt van de FSC standaard.
+Het Digikoppeling REST API profiel maakt gebruik van de FSC-standaard.
 
 
 ### Koppelvlak Generiek
@@ -43,10 +43,10 @@ Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor 
 
 ### Federated Service Connectivity Standaard (FSC)
 
-Gebruik van de FSC standaard binnen het Digikoppeling REST API profiel is aanbevolen.
+Gebruik van de FSC standaard binnen het Digikoppeling REST API profiel is verplicht.
 
 De FSC standaard bestaat uit een Core component en een extensie genaamd Logging.
-Wanneer FSC wordt gebruikt is het verplicht Core en Logging beide te gebruiken.
+Het is verplicht Core en Logging beide te gebruiken.
 
 FSC beschrijft het volgende:
 
@@ -58,9 +58,9 @@ FSC beschrijft het volgende:
 6. Hoe een intermediar namens een organisatie een API kan consumeren en/of publiceren.
 
 Het Digikoppeling REST API profiel geeft invulling aan keuzes die gemaakt moeten worden bij het gebruik van FSC. 
-In het Digikoppeling REST API profiel wordt er vanuit gegaan dat de lezer bekent is met de standaard FSC. Er worden namelijk termen gebruikt uit deze standaard.
+In het Digikoppeling REST API profiel wordt er vanuit gegaan dat de lezer bekend is met de standaard FSC. Er worden namelijk termen gebruikt uit deze standaard.
 
-De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensies Logging en Delegation. Core beschrijft het koppelen met API's, Logging hoe logregels wgeggeschreven moeten worden en Delegation hoe een intermediar namens een organisatie een API kan consumeren en/of publiceren.  
+De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensies Logging en Delegation. Core beschrijft het koppelen met API's, Logging hoe logregels weggeschreven moeten worden en Delegation hoe een intermediar namens een organisatie een API kan consumeren en/of publiceren.  
 
 1. [Core](https://commonground.gitlab.io/standards/fsc/core/draft-fsc-core-00.html) 
 2. [Logging](https://commonground.gitlab.io/standards/fsc/logging/draft-fsc-logging-00.html)
