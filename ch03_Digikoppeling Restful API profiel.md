@@ -77,6 +77,12 @@ De Digikoppeling Beveilingsstandaarden en voorschriften veplichten het gebruik v
 De Digikoppeling Beveiligingsstandaarden en voorschriften verplichten het gebruik van de netwerkpoort 443 voor data verkeer. FSC voegt daar het gebruik van port 8443 voor managementverkeer aan toe. E.g. toegang aanvragen voor een API. 
 * Zie [[Digikoppeling-Beveiligingsdocument]]
 
+#### Groep
+
+Organisaties die gezamenlijk API's aanbieden en consumeren, doen dit binnen een Groep (Group).
+Een Groep wordt volgens FSC gedefinieerd als een verzameling afspraken die organisaties in staat stelt met elkaar te koppelen. Het Digikoppeling REST API-profiel specificeert de afspraken die gelden voor de Digikoppeling Groep.
+Elk Contract bevat het veld `GroupID`, waarmee wordt aangegeven voor welke Groep het Contract geldig is. Voor de Digikoppeling Groep dienen Contracten het GroupID `dva-nederland` te gebruiken.
+
 #### Contracten
 
 FSC gebruikt Contracten om afspraken tussen Peers vast te leggen. Een Contract kan één of meerdere Grants bevatten. Een Grant beschrijft welke interactie er mogelijk is tussen de Peers.
