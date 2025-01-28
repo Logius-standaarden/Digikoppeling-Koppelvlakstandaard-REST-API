@@ -46,7 +46,7 @@ FSC beschrijft het volgende:
 Het Digikoppeling REST API profiel geeft invulling aan keuzes die gemaakt moeten worden bij het gebruik van FSC. 
 In het Digikoppeling REST API profiel wordt er vanuit gegaan dat de lezer bekent is met de standaard FSC. Er worden namelijk termen gebruikt uit deze standaard.
 
-De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensies Logging en Delegation. Core beschrijft het koppelen met API's, Logging hoe logregels wgeggeschreven moeten worden en Delegation hoe een intermediar namens een organisatie een API kan consumeren en/of publiceren.  
+De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensie Logging. Core beschrijft het koppelen,aanbieden en ontdekken van API's en de extensie Logging beschrijft hoe logregels weggeschreven moeten worden.
 
 1. [Core](https://commonground.gitlab.io/standards/fsc/core/draft-fsc-core-00.html) 
 2. [Logging](https://commonground.gitlab.io/standards/fsc/logging/draft-fsc-logging-00.html)
