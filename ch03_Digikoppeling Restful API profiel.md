@@ -71,6 +71,7 @@ De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensies Loggi
 - [[FSC-Core]]
 - [[FSC-Logging]]
 
+De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensie Logging. Core beschrijft het koppelen,aanbieden en ontdekken van API's en de extensie Logging beschrijft hoe logregels weggeschreven moeten worden.
 
 
 #### Vertrouwelijkheid
