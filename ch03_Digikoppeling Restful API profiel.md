@@ -45,7 +45,7 @@ Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor 
 
 Gebruik van de [FSC-standaard](https://fsc-standaard.nl/) binnen het Digikoppeling REST API profiel is verplicht  <sup>[1](#f1)</sup>,  <sup>[2](#f2)</sup> 
 
-De FSC standaard bestaat uit het hoofddocument [[FSC-Core]] en een extensie genaamd [[FSC-Logging]].
+De FSC standaard bestaat uit het hoofddocument [[[FSC-Core]]] en een extensie genaamd [[[FSC-Logging]]].
 Het is verplicht Core en Logging beide te gebruiken.
 
 <a name="f1"></a><sup>1</sup>: *De verplichting valt onder het pas-toe-of-leg-uit beginsel van het Forum Standaardisatie zoals dat geldt voor de Digikoppeling REST-API Koppelvlakstandaard.*
@@ -68,8 +68,8 @@ In het Digikoppeling REST API profiel wordt er vanuit gegaan dat de lezer bekend
 
 De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensies Logging en Delegation. Core beschrijft het koppelen met API's, Logging hoe logregels weggeschreven moeten worden en Delegation hoe een intermediar namens een organisatie een API kan consumeren en/of publiceren.  
 
-- [[FSC-Core]]
-- [[FSC-Logging]]
+- [[[FSC-Core]]]
+- [[[FSC-Logging]]]
 
 De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensie Logging. Core beschrijft het koppelen,aanbieden en ontdekken van API's en de extensie Logging beschrijft hoe logregels weggeschreven moeten worden.
 
