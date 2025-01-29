@@ -66,7 +66,7 @@ FSC beschrijft het volgende:
 Het Digikoppeling REST API profiel geeft invulling aan keuzes die gemaakt moeten worden bij het gebruik van FSC. 
 In het Digikoppeling REST API profiel wordt er vanuit gegaan dat de lezer bekend is met de standaard FSC. Er worden namelijk termen gebruikt uit deze standaard.
 
-De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensies Logging en Delegation. Core beschrijft het koppelen met API's, Logging hoe logregels weggeschreven moeten worden en Delegation hoe een intermediar namens een organisatie een API kan consumeren en/of publiceren.  
+De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensie Logging. Core beschrijft het koppelen,aanbieden en ontdekken van API's en de extensie Logging beschrijft hoe logregels weggeschreven moeten worden.
 
 - [[FSC-Core]]
 - [[FSC-Logging]]
@@ -95,6 +95,12 @@ De Digikoppeling Beveilingsstandaarden en voorschriften veplichten het gebruik v
 
 De Digikoppeling Beveiligingsstandaarden en voorschriften verplichten het gebruik van de netwerkpoort 443 voor data verkeer. FSC voegt daar het gebruik van port 8443 voor managementverkeer aan toe. E.g. toegang aanvragen voor een API. 
 * Zie [[[DK-beveiliging]]]
+
+#### Groep
+
+Organisaties die gezamenlijk API's aanbieden en consumeren, doen dit binnen een Groep (Group).
+Een Groep wordt volgens FSC gedefinieerd als een verzameling afspraken die organisaties in staat stelt met elkaar te koppelen. Het Digikoppeling REST API-profiel specificeert de afspraken die gelden voor de Digikoppeling Groep.
+Elk Contract bevat het veld `GroupID`, waarmee wordt aangegeven voor welke Groep het Contract geldig is. Voor de Digikoppeling Groep dienen Contracten het GroupID `dva-nederland` te gebruiken.
 
 #### Contracten
 
