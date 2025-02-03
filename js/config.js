@@ -21,7 +21,6 @@ var respecConfig = {
         "name" : "Standaardenbeheer"
       } ],
   github: "https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API",
-  nl_emailcomments: "digikoppeling@logius.nl",
   previousPublishVersion: "2.0.1",
   pubDomain: "dk",
   //publishDate: "2025-01-30",
