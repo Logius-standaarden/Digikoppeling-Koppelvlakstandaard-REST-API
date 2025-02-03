@@ -27,7 +27,7 @@ var respecConfig = {
   //publishDate: "2025-01-30",
   publishVersion: "3.0.0",
   shortName: "restapi",
-  specStatus: "VV",
+  specStatus: "DEF",
   specType: "ST",
   postProcess: [window.respecMermaid.createFigures]
 };
