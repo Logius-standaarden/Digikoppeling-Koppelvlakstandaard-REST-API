@@ -21,13 +21,12 @@ var respecConfig = {
         "name" : "Standaardenbeheer"
       } ],
   github: "https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API",
-  previousPublishVersion: "1.1.1",
+  previousPublishVersion: "2.0.1",
   pubDomain: "dk",
-  publishDate: "2025-01-30",
-  publishVersion: "2.0.1",
+  publishDate: "2025-03-19",
+  publishVersion: "3.0.0",
   shortName: "restapi",
-  specStatus: "WV",
+  specStatus: "DEF",
   specType: "ST",
-
   postProcess: [window.respecMermaid.createFigures]
 };

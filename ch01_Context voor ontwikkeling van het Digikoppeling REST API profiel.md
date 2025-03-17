@@ -4,5 +4,7 @@ Het Digikoppeling Rest API profiel is gericht op Machine-to-Machine (M2M) en Gov
 
 Opzet Digikoppeling:
 
-![Overzicht Digikoppeling Koppelvlakken](media/fig-structuurv2.png "Overzicht Digikoppeling Koppelvlakken")
-
+<figure id="structuur">
+  <div data-include="./media/structuur.xhtml"></div>
+  <figcaption>Overzicht Digikoppeling Koppelvlakken</figcaption>
+</figure>
