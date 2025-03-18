@@ -20,11 +20,11 @@ De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API 
 | --- | --- |---|---|
 | Bevragingen / Meldingen |  |  |  |
 | best-effort | 1.0 | 2W-be | osb-be |
-| best-effort signed |  | 2W-be-S | osb-be-s |
-| best-effort signed/encrypted |  | 2W-be-SE | osb-be-e |
+| best-effort signed | 2.0 | 2W-be-S | osb-be-s |
+| best-effort signed/encrypted | 2.0 | 2W-be-SE | osb-be-e |
 |  |  |  |  |
 | reliable |  |  | osb-rm |
 | reliable signed |  |  | osb-rm-s |
 | reliable signed en encrypted |  |  | osb-rm-e |
 
-In versie 1.0 van het Digikoppeling REST API profiel wordt signing en encryptie nog niet ondersteund. In de volgende versies van het profiel wordt hier wel invulling aan gegeven. Modules voor signing en encryptie zijn al ontwikkeld en worden na vaststelling toegevoegd. (Zie ook [[[#signing-encryptie-in-http-rest-context]]])
+Vanaf versie 2.0 van het Digikoppeling REST API profiel wordt signing en encryptie ondersteund (zie [[[#signing-encryptie-in-http-rest-context]]]).
