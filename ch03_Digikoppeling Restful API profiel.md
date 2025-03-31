@@ -146,25 +146,25 @@ In onderstaande tabel worden de normatieve eisen van de [[ADR]] weergegeven:
 Normatieve eisen van de REST API Design Rules
  |Categorie |Principe |Toelichting |Link |
  |--- | --- |---|---|
- |Verplicht |3.1 API-01: Adhere to HTTP safety and idempotency semantics for operations |  |[API-01: Adhere to HTTP safety and idempotency semantics for operations](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-01) |
- |Verplicht |3.3 API-02: Do not maintain state information at the server |  |[API-02: Do not maintain session state on the server](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-02) |
- |Verplicht|3.2 API-03: Only apply default HTTP operations |  |[API-03: Only apply standard HTTP methods](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-03) |
- |Verplicht|3.1 API-04: Define interfaces in Dutch unless there is an official English glossary available |  |[API-04: Define interfaces in Dutch unless there is an official English glossary available](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-04) |
- |Verplicht|3.5 API-05: Use nouns to indicate resources |  |[API-05: Use nouns to name resources](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-05) |
- |Verplicht|3.4 API-06: Use nested resources for child resources |  |[API-06: Use nested URIs for child resources](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-06) |
- |Verplicht|3.5 API-10: Model resource operations as a sub-reresource or dedicated resource |  |[API-10: Model resource operations as a sub-resource or dedicated resource](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-10) |
- |Verplicht |3.6 API-16: Use OpenAPI Specification for documentation |  |[API-16: Use OpenAPI Specification for documentation](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-16) |
- |Verplicht |3.6 API-17: Publish documentation in Dutch unless there is existing documentation in English |  |[API-17: Publish documentation in Dutch unless there is existing documentation in English](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-17) |
- |Verplicht |3.7 API-18: Include a deprecation schedule when publishing API changes |  |[API-18: Include a deprecation schedule when publishing API changes](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-18) |
- |Verplicht |3.7 API-19: Schedule a fixed transition period for a new major API version |  |[API-19: Schedule a fixed transition period for a new major API version](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-19) |
- |Verplicht|3.7 API-20: Include the major version number in the URI |  |[API-20: Include the major version number in the URI](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-20) |
- |Verplicht |3.1 API-48: Leave off trailing slashes from URIs |  |[API-48: Leave off trailing slashes from URIs](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-48) |
- |Verplicht |3.6 API-51: Publish OAS at a standard location in JSON-format | |[API-51: Publish OAS document at a standard location in JSON-format](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-51)
- |Verplicht |3.1 API-53: Hide irrelevant implementation details | |[API-53: Hide irrelevant implementation details](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-53)
- |Verplicht |3.1 API-54: Use plural nouns to name collection resources | | [API-54: Use plural nouns to name collection resources](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-54)
- |Verplicht |3.7 API-55: Publish a changelog for API changes between versions | | [API-55: Publish a changelog for API changes between versions](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-55)
- |Verplicht |3.7 API-56: Adhere to the Semantic Versioning model when releasing API changes | | [API-56: Adhere to the Semantic Versioning model when releasing API changes](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-56)
- |Verplicht |3.7 API-57: Return the full version number in a response header | | [API-57: Return the full version number in a response header](https://publicatie.centrumvoorstandaarden.nl/api/adr/#api-57)
+ |Verplicht |3.1 API-01: Adhere to HTTP safety and idempotency semantics for operations |  |[API-01: Adhere to HTTP safety and idempotency semantics for operations](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-01) |
+ |Verplicht |3.3 API-02: Do not maintain state information at the server |  |[API-02: Do not maintain session state on the server](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-02) |
+ |Verplicht|3.2 API-03: Only apply default HTTP operations |  |[API-03: Only apply standard HTTP methods](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-03) |
+ |Verplicht|3.1 API-04: Define interfaces in Dutch unless there is an official English glossary available |  |[API-04: Define interfaces in Dutch unless there is an official English glossary available](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-04) |
+ |Verplicht|3.5 API-05: Use nouns to indicate resources |  |[API-05: Use nouns to name resources](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-05) |
+ |Verplicht|3.4 API-06: Use nested resources for child resources |  |[API-06: Use nested URIs for child resources](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-06) |
+ |Verplicht|3.5 API-10: Model resource operations as a sub-reresource or dedicated resource |  |[API-10: Model resource operations as a sub-resource or dedicated resource](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-10) |
+ |Verplicht |3.6 API-16: Use OpenAPI Specification for documentation |  |[API-16: Use OpenAPI Specification for documentation](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-16) |
+ |Verplicht |3.6 API-17: Publish documentation in Dutch unless there is existing documentation in English |  |[API-17: Publish documentation in Dutch unless there is existing documentation in English](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-17) |
+ |Verplicht |3.7 API-18: Include a deprecation schedule when publishing API changes |  |[API-18: Include a deprecation schedule when publishing API changes](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-18) |
+ |Verplicht |3.7 API-19: Schedule a fixed transition period for a new major API version |  |[API-19: Schedule a fixed transition period for a new major API version](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-19) |
+ |Verplicht|3.7 API-20: Include the major version number in the URI |  |[API-20: Include the major version number in the URI](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-20) |
+ |Verplicht |3.1 API-48: Leave off trailing slashes from URIs |  |[API-48: Leave off trailing slashes from URIs](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-48) |
+ |Verplicht |3.6 API-51: Publish OAS at a standard location in JSON-format | |[API-51: Publish OAS document at a standard location in JSON-format](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-51)
+ |Verplicht |3.1 API-53: Hide irrelevant implementation details | |[API-53: Hide irrelevant implementation details](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-53)
+ |Verplicht |3.1 API-54: Use plural nouns to name collection resources | | [API-54: Use plural nouns to name collection resources](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-54)
+ |Verplicht |3.7 API-55: Publish a changelog for API changes between versions | | [API-55: Publish a changelog for API changes between versions](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-55)
+ |Verplicht |3.7 API-56: Adhere to the Semantic Versioning model when releasing API changes | | [API-56: Adhere to the Semantic Versioning model when releasing API changes](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-56)
+ |Verplicht |3.7 API-57: Return the full version number in a response header | | [API-57: Return the full version number in a response header](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-57)
 
 ## Afspraken API Design Rules extensies
 
