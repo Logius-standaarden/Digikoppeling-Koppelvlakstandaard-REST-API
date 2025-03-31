@@ -66,7 +66,7 @@ FSC beschrijft het volgende:
 Het Digikoppeling REST API profiel geeft invulling aan keuzes die gemaakt moeten worden bij het gebruik van FSC. 
 In het Digikoppeling REST API profiel wordt er vanuit gegaan dat de lezer bekend is met de standaard FSC. Er worden namelijk termen gebruikt uit deze standaard.
 
-De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensies Logging en Delegation. Core beschrijft het koppelen met API's, Logging hoe logregels weggeschreven moeten worden en Delegation hoe een intermediar namens een organisatie een API kan consumeren en/of publiceren.  
+De bovengenoemde functionaliteit is vastgelegd in FSC _Core_ en de extensie _Logging_. Core beschrijft het koppelen met API's en Logging hoe logregels weggeschreven moeten worden.  
 
 - [[[FSC-Core]]]
 - [[[FSC-Logging]]]
