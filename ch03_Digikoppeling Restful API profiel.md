@@ -19,7 +19,7 @@ Dit profiel is toe te passen bij het aanbieden en/of consumeren van REST API's t
 
 ### Algemeen
 
-Het Digikoppeling REST API profiel is o.a. gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden: [[ADR]]
+Het Digikoppeling REST API profiel is o.a. gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden: [[[ADR1]]]
 
 
 Het Digikoppeling REST API profiel conformeert zich volledig aan het normatieve deel van de REST-API Design Rules.
@@ -141,13 +141,13 @@ Het Digikoppeling REST API profiel verplicht het gebruik van een UUID V7 als Tra
 
 #### Regels
 
-Het Digikoppeling REST API profiel conformeert zich volledig aan het normatieve deel van de [[ADR]].
+Het Digikoppeling REST API profiel conformeert zich volledig aan het normatieve deel van de [[[ADR1]]].
 
  |Categorie |Principe |Toelichting |Link |
  |--- | --- |---|---|
- |Verplicht | REST-API Design Rules | Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules |[[ADR]]. |
+ |Verplicht | REST-API Design Rules | Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules |[[[ADR1]]]. |
 
-In onderstaande tabel worden de normatieve eisen van de [[ADR]] weergegeven:
+In onderstaande tabel worden de normatieve eisen van de [[[ADR1]]] weergegeven:
 
 Normatieve eisen van de REST API Design Rules
  |Categorie |Principe |Toelichting |Link |
