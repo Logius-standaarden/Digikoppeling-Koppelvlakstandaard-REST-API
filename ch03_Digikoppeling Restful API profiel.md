@@ -45,6 +45,12 @@ Het is verplicht Core en Logging beide te gebruiken.
 
 <a name="f1"></a><sup>1</sup>: *De verplichting valt onder het pas-toe-of-leg-uit beginsel van het Forum Standaardisatie zoals dat geldt voor de Digikoppeling REST-API Koppelvlakstandaard.*
 
+<aside class="note" title="Toevoeging 18 april 2025">
+Omdat FSC als nieuwe standaard aan de Digikoppeling REST-API koppelvlakstandaard is toegevoegd beoordeelt het Forum Standaardisatie of deze versie van het koppelvlak (met FSC) daarmee automatisch aanspraak kan maken op de ‘pas toe of leg uit’-verplichting of dat hiervoor een aanvullende toetsing vanuit het Forum nodig is.
+
+(Verwacht wordt dat het resultaat van het onderzoek eind juli 2025 bekend is.)
+</aside>
+
 <a name="f2"></a><sup>2</sup>: *Voor bestaande implementaties is het toegestaan tot 1/1/2027 gebruik te maken van versie 1.1 van de Digikoppeling REST-API Koppelvlakstandaard.*
 
 
