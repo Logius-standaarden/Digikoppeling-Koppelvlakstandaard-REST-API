@@ -25,7 +25,7 @@ var respecConfig = {
   previousPublishVersion: "1.1.1",
   pubDomain: "dk",
   publishDate: "2025-01-30",
-  publishVersion: "2.0.2",
+  publishVersion: "2.0.3",
   shortName: "restapi",
   specStatus: "DEF",
   specType: "ST"
