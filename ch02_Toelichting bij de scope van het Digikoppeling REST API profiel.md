@@ -1,7 +1,6 @@
 # Toelichting bij de scope van het Digikoppeling REST API profiel
 
 ![Digikoppeling voor Closed Data G2G Uitwisseling](media/DK_closed_g2g.svg "Digikoppeling voor Closed Data G2G Uitwisseling")
-<!-- <img src="media/api-dk2.jpg" width="400" /> -->
 
 In de figuur wordt onderscheid gemaakt tussen open en gesloten diensten:
 
@@ -21,14 +20,11 @@ De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API 
 | --- | --- |---|---|
 | Bevragingen / Meldingen |  |  |  |
 | best-effort | 1.0 | 2W-be | osb-be |
-| best-effort signed |  | 2W-be-S | osb-be-s |
-| best-effort signed/encrypted |  | 2W-be-SE | osb-be-e |
+| best-effort signed | 2.0 | 2W-be-S | osb-be-s |
+| best-effort signed/encrypted | 2.0 | 2W-be-SE | osb-be-e |
 |  |  |  |  |
 | reliable |  |  | osb-rm |
 | reliable signed |  |  | osb-rm-s |
 | reliable signed en encrypted |  |  | osb-rm-e |
 
-In versie 1.0 van het Digikoppeling REST API profiel wordt signing en encryptie niet ondersteund. In toekomstige versies van het profiel zal hier wel invulling aan worden gegeven. (Zie ook [[[#bijlage-gebruik-van-signing-encryptie-in-de-context-van-http-rest-api]]])
-
-<!-- [Bijlage HTTP Signing & Encryptie](#Bijlage-gebruik-van-signing--encryptie-in-de-context-van-http--rest-api)  -->
-
+Vanaf versie 2.0 van het Digikoppeling REST API profiel wordt signing en encryptie ondersteund (zie [[[#signing-encryptie-in-http-rest-context]]]).

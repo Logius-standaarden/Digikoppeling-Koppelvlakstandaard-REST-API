@@ -1,13 +1,14 @@
 # Digikoppeling REST API profiel
 
-## Inleiding
-
-### Historie
+## Historie
 
 Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond RESTful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de Pas-toe-of-leg-uit lijst van het Forum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).
 Daarnaast is de standaard Federated Service Connectivity (FSC) ontwikkeld die voorschrijft hoe organisaties REST API's kunnen ontdekken, aanbieden en consumeren. De FSC standaard is opgenomen in dit Digikoppeling REST API Profiel om de koppelingen met REST API's te standardiseren waardoor er een interoperabel API landschap ontstaat.  
 
-### Toepassingsgebied
+Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond RESTful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de Pas-toe-of-leg-uit lijst van het Forum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).
+Daarnaast is de standaard Federated Service Connectivity (FSC) ontwikkeld die voorschrijft hoe organisaties REST API's kunnen ontdekken, aanbieden en consumeren. De FSC standaard is opgenomen in dit Digikoppeling REST API Profiel om de koppelingen met REST API's te standardiseren waardoor er een interoperabel API landschap ontstaat.  
+
+## Toepassingsgebied
 
 Het toepassingsgebied is voor Digikoppeling:
 
@@ -15,9 +16,7 @@ Het toepassingsgebied is voor Digikoppeling:
 
 Dit profiel is toe te passen bij het aanbieden en/of consumeren van REST API's ten behoeve van het ontsluiten van overheidsinformatie en/of functionaliteit.
 
-## Digikoppeling REST API profiel
-
-### Algemeen
+## Algemeen
 
 Het Digikoppeling REST API profiel is o.a. gebaseerd op de REST-API Design Rules standaard zoals ontwikkeld door het Kennisplatform API's en in beheer gebracht bij Logius Stelsels & Standaarden: [[ADR]]
 
@@ -27,16 +26,15 @@ Het Digikoppeling REST API profiel conformeert zich volledig aan het normatieve 
 Het Digikoppeling REST API profiel maakt gebruik van de FSC-standaard.
 
 
-### Koppelvlak Generiek
+## Koppelvlak Generiek
 
-
-#### Vertrouwelijkheid
+### Vertrouwelijkheid
 
 De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [[PKIO-PvE]].
 * Zie [[[DK-beveiliging]]]
 
 
-#### Identificatie & Authenticatie
+### Identificatie & Authenticatie
 
 Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties. Binnen dit Digikoppeling REST API profiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten en FSC. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
 * Zie [[[DK-IDAuth]]]
@@ -120,10 +118,52 @@ Het Digikoppeling REST API profiel verplicht het gebruik van een UUID V7 als Tra
 
 ### API Design Rules
 
+### Regels
+
+Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [[[ADR]]]. Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules:
+
+| Regelnaam                                                                                                      | Principe                                                                          |
+|----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| [/core/naming-resources](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/naming-resources)         | Use nouns to name resources                                                       |
+| [/core/naming-collections](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/naming-collections)     | Use plural nouns to name collection resources                                     |
+| [/core/interface-language](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/interface-language)     | Define interfaces in Dutch unless there is an official English glossary available |
+| [/core/hide-implementation](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/hide-implementation)   | Hide irrelevant implementation details                                            |
+| [/core/http-safety](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/http-safety)                   | Adhere to HTTP safety and idempotency semantics for operations                    |
+| [/core/stateless](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/stateless)                       | Do not maintain session state on the server                                       |
+| [/core/nested-child](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/nested-child)                 | Use nested URIs for child resources                                               |
+| [/core/resource-operations](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/resource-operations)   | Model resource operations as a sub-resource or dedicated resource                 |
+| [/core/doc-language](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/doc-language)                 | Publish documentation in Dutch unless there is existing documentation in English  |
+| [/core/deprecation-schedule](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/deprecation-schedule) | Include a deprecation schedule when deprecating features or versions              |
+| [/core/transition-period](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transition-period)       | Schedule a fixed transition period for a new major API version                    |
+| [/core/changelog](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/changelog)                       | Publish a changelog for API changes between versions                              |
+| [/core/geospatial](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/geospatial)                     | Apply the geospatial module for geospatial data                                   |
+| [/core/no-trailing-slash](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/no-trailing-slash)       | Leave off trailing slashes from URIs                                              |
+| [/core/http-methods](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/http-methods)                 | Only apply standard HTTP methods                                                  |
+| [/core/doc-openapi](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/doc-openapi)                   | Use OpenAPI Specification for documentation                                       |
+| [/core/publish-openapi](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/publish-openapi)           | Publish OAS document at a standard location in JSON-format                        |
+| [/core/uri-version](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/uri-version)                   | Include the major version number in the URI                                       |
+| [/core/semver](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/semver)                             | Adhere to the Semantic Versioning model when releasing API changes                |
+| [/core/version-header](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/version-header)             | Return the full version number in a response header                               |
+| [/core/transport-security](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transport-security)     | Apply the transport security module                                               |
+
+### Afspraken API Design Rules modules
+
+Extensies op de [[[ADR]]] zijn geschreven in modules. Hieronder wordt aangegeven welke regels uit de API Design Rules modules in dit profiel verplicht zijn of worden aanbevolen.
+
+| Categorie             | Module             | Principe                                                                                                                                                    |
+|-----------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Niet van toepassing\* | Transport Security | [Secure connections using TLS](https://gitdocumentatie.logius.nl/publicatie/api/mod-ts/#/transport/tls)                                                     |
+| Verplicht\*\*         | Transport Security | [No sensitive information in URIs](https://gitdocumentatie.logius.nl/publicatie/api/mod-ts/#/transport/no-sensitive-uris)                                   |
+| Verplicht             | API access control | [Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/API-Strategie-mod-access-control/#api-13)                                           |
+| Aanbevolen            | Error handling     | [Use default error handling](https://github.com/Geonovum/KP-APIs/blob/master/API-strategie-modules/_extensions_legacy/ext-error-handling.md#api-46)         |
+| Aanbevolen            | Error handling     | [Use the required HTTP status codes](https://github.com/Geonovum/KP-APIs/blob/master/API-strategie-modules/_extensions_legacy/ext-error-handling.md#api-47) |
+
+\* Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend (zie [[[DK-beveiliging]]]).<br>
+\*\* Alleen verplicht indien er sprake is van logging in systemen die niet onder controle van de betrokken client- en serverorganisatie staan.
+
 #### Toelichting aanduidingen
 
  Voorschriften zijn aangeduid met 'Verplicht', 'Aanbevolen' en 'Niet van Toepassing' waarvoor de volgende definities gelden:
-
 
 |Categorie | Codering RFC2119 |Voorschrift | Toelichting |
 | --- | --- |---|---|
@@ -131,57 +171,31 @@ Het Digikoppeling REST API profiel verplicht het gebruik van een UUID V7 als Tra
 |  Aanbevolen | SHOULD | Aanbevolen is om de eisen conform conform voorschrift te implementeren. Wanneer hier van afgeweken wordt dient een zorgvuldige afweging plaats te vinden  |
 |  Niet van Toepassing | - | De eisen zijn niet van toepassing|
 
-(Indeling gebaseerd op [[?rfc2119]])
+## Signing & Encryptie (in HTTP REST Context)
 
-#### Regels
+### Signing 
 
-Het Digikoppeling REST API profiel conformeert zich volledig aan het normatieve deel van de [[ADR]].
+Signing van HTTP body en/of header kan gebruikt worden voor _authenticatie_, om de _integriteit_ van de request/response berichten te controleren en signing realiseert ook _onweerlegbaarheid_.
+(Onweerlegbaarheid in de zin van: de verzender van de request/response kan niet ontkennen het bericht verzonden te hebben wanneer deze voorzien is van de digitale handtekening van de afzender).
 
- |Categorie |Principe |Toelichting |Link |
- |--- | --- |---|---|
- |Verplicht | REST-API Design Rules | Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules |[[ADR]]. |
+De berichten kunnen ook samen met de digitale handtekeningen worden bewaard zodat deze bij audits of juridische bewijsvoering gebruikt kunnen worden.
 
-In onderstaande tabel worden de normatieve eisen van de [[ADR]] weergegeven:
+Een HTTP requestbericht is opgebouwd uit de volgende onderdelen:
 
-Normatieve eisen van de REST API Design Rules
- |Categorie |Principe |Toelichting |Link |
- |--- | --- |---|---|
- |Verplicht |3.1 API-01: Adhere to HTTP safety and idempotency semantics for operations |  |[API-01: Adhere to HTTP safety and idempotency semantics for operations](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-01) |
- |Verplicht |3.3 API-02: Do not maintain state information at the server |  |[API-02: Do not maintain session state on the server](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-02) |
- |Verplicht|3.2 API-03: Only apply default HTTP operations |  |[API-03: Only apply standard HTTP methods](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-03) |
- |Verplicht|3.1 API-04: Define interfaces in Dutch unless there is an official English glossary available |  |[API-04: Define interfaces in Dutch unless there is an official English glossary available](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-04) |
- |Verplicht|3.5 API-05: Use nouns to indicate resources |  |[API-05: Use nouns to name resources](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-05) |
- |Verplicht|3.4 API-06: Use nested resources for child resources |  |[API-06: Use nested URIs for child resources](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-06) |
- |Verplicht|3.5 API-10: Model resource operations as a sub-reresource or dedicated resource |  |[API-10: Model resource operations as a sub-resource or dedicated resource](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-10) |
- |Verplicht |3.6 API-16: Use OpenAPI Specification for documentation |  |[API-16: Use OpenAPI Specification for documentation](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-16) |
- |Verplicht |3.6 API-17: Publish documentation in Dutch unless there is existing documentation in English |  |[API-17: Publish documentation in Dutch unless there is existing documentation in English](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-17) |
- |Verplicht |3.7 API-18: Include a deprecation schedule when publishing API changes |  |[API-18: Include a deprecation schedule when publishing API changes](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-18) |
- |Verplicht |3.7 API-19: Schedule a fixed transition period for a new major API version |  |[API-19: Schedule a fixed transition period for a new major API version](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-19) |
- |Verplicht|3.7 API-20: Include the major version number in the URI |  |[API-20: Include the major version number in the URI](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-20) |
- |Verplicht |3.1 API-48: Leave off trailing slashes from URIs |  |[API-48: Leave off trailing slashes from URIs](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-48) |
- |Verplicht |3.6 API-51: Publish OAS at a standard location in JSON-format | |[API-51: Publish OAS document at a standard location in JSON-format](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-51)
- |Verplicht |3.1 API-53: Hide irrelevant implementation details | |[API-53: Hide irrelevant implementation details](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-53)
- |Verplicht |3.1 API-54: Use plural nouns to name collection resources | | [API-54: Use plural nouns to name collection resources](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-54)
- |Verplicht |3.7 API-55: Publish a changelog for API changes between versions | | [API-55: Publish a changelog for API changes between versions](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-55)
- |Verplicht |3.7 API-56: Adhere to the Semantic Versioning model when releasing API changes | | [API-56: Adhere to the Semantic Versioning model when releasing API changes](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-56)
- |Verplicht |3.7 API-57: Return the full version number in a response header | | [API-57: Return the full version number in a response header](https://gitdocumentatie.logius.nl/publicatie/api/adr/#api-57)
+- Header
+  - HTTP operatie (GET, POST etc)
+  - Pad / URL resource
+  - Protocol
+  - Header velden
+- Body
+  - _data_
 
-## Afspraken API Design Rules extensies
+Door naast de body data ook onderdelen uit de header digitaal te ondertekenen kan worden gecontroleerd dat bv ook de HTTP operatie en resource specificatie in de request echt van de afzender afkomstig zijn en niet onderweg gemanipuleerd.
 
-De ADR extensie onderderdelen van dit profiel zijn gebaseerd op: [[ADR-ext]].
+Indien signing van HTTP body/header wordt toegepast is het Verplicht om dit te doen volgens de regels van de ADR Module [ADR-HTTP Message and payload signing with JAdES](https://geonovum.github.io/KP-APIs/API-strategie-modules/signing-jades/)
 
-Hieronder wordt aangegeven welke regels uit de API Design Rules extensies in dit profiel verplicht zijn of worden aanbevolen.
+### Encryptie 
 
-| Categorie | Principe | Extensie | Toelichting | Link |
-| --- | --- | --- | --- | --- |
-| Niet van toepassing | API-11: Secure connections using TLS | Security | Vervangen door Digikoppeling beveiligingsvoorschriften (*)  |[[[DK-beveiliging]]] |
-| Verplicht | API-58  No sensitive information in URIs | Security | Alleen verplicht indien er sprake is van logging in systemen die niet onder controle van de betrokken client- en serverorganisatie staan | [API-58 No sensitive information in URIs  ](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-58)|
-| Verplicht | API-13: Accept tokens as HTTP headers only | Security Authorisation | | [API-13: Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013/#api-13) |
-| Aanbevolen | API-46: Use default error handling | Error handling | | [API-46: Use default error handling](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-46) |
-| Aanbevolen | API-47: Use the required HTTP status codes | Error handling  | | [API-47: Use the required HTTP status codes](https://docs.geostandaarden.nl/api/def-hr-API-Strategie-ext-20211013#api-47) |
+Encryptie van HTTP request/response kan gebruikt worden om de vertrouwelijkheid van gegevens te beschermen.
 
-
-</span>
-
-(*) Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend , Zie [[[DK-beveiliging]]]
-
+Indien encryptie van HTTP request/response wordt toegepast is het Verplicht om dit te doen volgens de regels van de ADR Module [ADR-HTTP Payload encryption](https://geonovum.github.io/KP-APIs/API-strategie-modules/encryption/)
