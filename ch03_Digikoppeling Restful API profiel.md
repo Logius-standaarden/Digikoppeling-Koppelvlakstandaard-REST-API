@@ -3,7 +3,7 @@
 ## Historie
 
 Vanuit het TO Digikoppeling zijn al langere tijd de ontwikkelingen rond RESTful API's gevolgd. Binnen het Kennisplatform API zijn de REST-API Design Rules (REST ADR) ontwikkeld en de REST ADR standaard is ook opgenomen op de Pas-toe-of-leg-uit lijst van het Forum Standaardisatie. De REST ADR standaard is dan ook als basis genomen voor dit Digikoppeling REST API Profiel dat zich specifiek richt op G2G (Government-to-Government) interactie en M2M (Machine-to-Machine verkeer).
-Daarnaast is de standaard Federated Service Connectivity (FSC) ontwikkeld die voorschrijft hoe organisaties REST API's kunnen ontdekken, aanbieden en consumeren. De FSC standaard is opgenomen in dit Digikoppeling REST API Profiel om de koppelingen met REST API's te standardiseren waardoor er een interoperabel API landschap ontstaat.  
+Daarnaast is de standaard Federated Service Connectivity (FSC) ontwikkeld die voorschrijft hoe organisaties REST API's kunnen ontdekken, aanbieden en consumeren. De FSC standaard is opgenomen in dit Digikoppeling REST API Profiel om de koppelingen met REST API's te standaardiseren waardoor er een interoperabel API landschap ontstaat.  
 
 ## Toepassingsgebied
 
@@ -48,7 +48,7 @@ Het is verplicht Core en Logging beide te gebruiken.
 <aside class="note" title="Toevoeging 18 april 2025">
 Omdat FSC als nieuwe standaard aan de Digikoppeling REST-API koppelvlakstandaard is toegevoegd beoordeelt het Forum Standaardisatie of deze versie van het koppelvlak (met FSC) daarmee automatisch aanspraak kan maken op de ‘pas toe of leg uit’-verplichting of dat hiervoor een aanvullende toetsing vanuit het Forum nodig is.
 
-(Verwacht wordt dat het resultaat van het onderzoek eind juli 2025 bekend is.)
+(Verwacht wordt dat het resultaat van het onderzoek eind augustus 2025 bekend is.)
 </aside>
 
 <a name="f2"></a><sup>2</sup>: *Voor bestaande implementaties is het toegestaan tot 1/1/2027 gebruik te maken van versie 1.1 van de Digikoppeling REST-API Koppelvlakstandaard.*
