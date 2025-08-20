@@ -1,4 +1,7 @@
-var respecConfig = {
+import { loadRespecWithConfiguration } from "https://logius-standaarden.github.io/publicatie/respec/organisation-config.mjs";
+import { generateMermaidFigures } from "https://logius-standaarden.github.io/publicatie/respec/plugins/mermaid.mjs";
+
+loadRespecWithConfiguration({
   alternateFormats: [ { 
         "label" : "pdf",
         "uri" : "Digikoppeling-Koppelvlakstandaard-REST-API.pdf"
@@ -28,5 +31,5 @@ var respecConfig = {
   shortName: "restapi",
   specStatus: "DEF",
   specType: "ST",
-  postProcess: [window.respecMermaid.createFigures]
-};
+  postProcess: [ generateMermaidFigures ]
+});
