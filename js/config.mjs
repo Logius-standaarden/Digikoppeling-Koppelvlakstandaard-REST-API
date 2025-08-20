@@ -1,5 +1,5 @@
 import { loadRespecWithConfiguration } from "https://logius-standaarden.github.io/publicatie/respec/organisation-config.mjs";
-import { generateMermaidFigures } from "https://logius-standaarden.github.io/publicatie/respec/plugins/mermaid.mjs";
+import { generateMermaidFigures } from "./mermaid.mjs";
 
 loadRespecWithConfiguration({
   alternateFormats: [ { 
