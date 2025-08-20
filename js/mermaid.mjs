@@ -47,8 +47,4 @@ export async function generateMermaidFigures(config, document, utils) {
   await mermaid.run({
     nodes: generatedFigures,
   });
-  // Remove code block background from generated images
-  for (const figure of generatedFigures) {
-    figure.classList.remove('hljs');
-  }
 }
