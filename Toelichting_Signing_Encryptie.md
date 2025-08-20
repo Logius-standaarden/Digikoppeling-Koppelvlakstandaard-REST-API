@@ -13,15 +13,8 @@ HTTP Message signing kan dit geval gebruikt worden om end-to-end bescherming teg
 HTTP Payload encryptie kan dit geval gebruikt worden om end-to-end vertrouwelijkheid te realiseren voor het volledige pad Client naar Server.
 
 <figure>
-  
-```mermaid
-  graph LR;
-      Client-->Proxy;
-      Proxy-->API_Gateway
-      API_Gateway-->Server
-
-```
-<figcaption>Bescherming voor het volledige pad Client naar Server</figcaption>
+  <div class="mermaid" data-figure-name="client-server-pad.mermaid"></div>
+  <figcaption>Bescherming voor het volledige pad Client naar Server</figcaption>
 </figure>
 
 ## Wanneer is HTTP Message Signing/Encryptie te gebruiken
