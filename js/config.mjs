@@ -2,10 +2,6 @@ import { loadRespecWithConfiguration } from "https://logius-standaarden.github.i
 import { generateMermaidFigures } from "https://logius-standaarden.github.io/publicatie/respec/plugins/mermaid.mjs";
 
 loadRespecWithConfiguration({
-  alternateFormats: [ { 
-        "label" : "pdf",
-        "uri" : "Digikoppeling-Koppelvlakstandaard-REST-API.pdf"
-      } ],
   authors: [ 
       { 
         "company" : "Logius",
