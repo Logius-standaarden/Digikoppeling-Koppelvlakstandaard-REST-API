@@ -141,7 +141,10 @@ Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve 
 | [/core/uri-version](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/uri-version)                   | Include the major version number in the URI                                       |
 | [/core/semver](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/semver)                             | Adhere to the Semantic Versioning model when releasing API changes                |
 | [/core/version-header](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/version-header)             | Return the full version number in a response header                               |
-| [/core/transport-security](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transport-security)     | Apply the transport security module                                               |
+| [/core/transport/no-sensitive-uris](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transport/no-sensitive-uris) | No sensitive information in URIs |
+| [core/transport/tls](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transport/tls) | Secure connections using TLS |
+| [/core/transport/security-headers](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transport/security-headers) | Use mandatory security headers in API all responses |
+| [/core/transport/cors](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transport/cors) | Use CORS to control access |
 
 ### Afspraken API Design Rules modules
 
