@@ -121,30 +121,30 @@ Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve 
 
 | Regelnaam                                                                                                      | Principe                                                                          |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [/core/naming-resources](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/naming-resources)         | Use nouns to name resources                                                       |
-| [/core/naming-collections](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/naming-collections)     | Use plural nouns to name collection resources                                     |
-| [/core/interface-language](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/interface-language)     | Define interfaces in Dutch unless there is an official English glossary available |
-| [/core/hide-implementation](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/hide-implementation)   | Hide irrelevant implementation details                                            |
-| [/core/http-safety](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/http-safety)                   | Adhere to HTTP safety and idempotency semantics for operations                    |
-| [/core/stateless](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/stateless)                       | Do not maintain session state on the server                                       |
-| [/core/nested-child](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/nested-child)                 | Use nested URIs for child resources                                               |
-| [/core/resource-operations](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/resource-operations)   | Model resource operations as a sub-resource or dedicated resource                 |
-| [/core/doc-language](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/doc-language)                 | Publish documentation in Dutch unless there is existing documentation in English  |
-| [/core/deprecation-schedule](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/deprecation-schedule) | Include a deprecation schedule when deprecating features or versions              |
-| [/core/transition-period](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transition-period)       | Schedule a fixed transition period for a new major API version                    |
-| [/core/changelog](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/changelog)                       | Publish a changelog for API changes between versions                              |
-| [/core/geospatial](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/geospatial)                     | Apply the geospatial module for geospatial data                                   |
-| [/core/no-trailing-slash](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/no-trailing-slash)       | Leave off trailing slashes from URIs                                              |
-| [/core/http-methods](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/http-methods)                 | Only apply standard HTTP methods                                                  |
-| [/core/doc-openapi](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/doc-openapi)                   | Use OpenAPI Specification for documentation                                       |
-| [/core/publish-openapi](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/publish-openapi)           | Publish OAS document at a standard location in JSON-format                        |
-| [/core/uri-version](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/uri-version)                   | Include the major version number in the URI                                       |
-| [/core/semver](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/semver)                             | Adhere to the Semantic Versioning model when releasing API changes                |
-| [/core/version-header](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/version-header)             | Return the full version number in a response header                               |
-| [/core/transport/no-sensitive-uris](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transport/no-sensitive-uris) | No sensitive information in URIs |
-| [core/transport/tls](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transport/tls) | Secure connections using TLS |
-| [/core/transport/security-headers](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transport/security-headers) | Use mandatory security headers in API all responses |
-| [/core/transport/cors](https://gitdocumentatie.logius.nl/publicatie/api/adr/#/core/transport/cors) | Use CORS to control access |
+| [/core/naming-resources](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/naming-resources)         | Use nouns to name resources                                                       |
+| [/core/naming-collections](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/naming-collections)     | Use plural nouns to name collection resources                                     |
+| [/core/interface-language](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/interface-language)     | Define interfaces in Dutch unless there is an official English glossary available |
+| [/core/hide-implementation](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/hide-implementation)   | Hide irrelevant implementation details                                            |
+| [/core/http-safety](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/http-safety)                   | Adhere to HTTP safety and idempotency semantics for operations                    |
+| [/core/stateless](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/stateless)                       | Do not maintain session state on the server                                       |
+| [/core/nested-child](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/nested-child)                 | Use nested URIs for child resources                                               |
+| [/core/resource-operations](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/resource-operations)   | Model resource operations as a sub-resource or dedicated resource                 |
+| [/core/doc-language](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/doc-language)                 | Publish documentation in Dutch unless there is existing documentation in English  |
+| [/core/deprecation-schedule](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/deprecation-schedule) | Include a deprecation schedule when deprecating features or versions              |
+| [/core/transition-period](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/transition-period)       | Schedule a fixed transition period for a new major API version                    |
+| [/core/changelog](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/changelog)                       | Publish a changelog for API changes between versions                              |
+| [/core/geospatial](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/geospatial)                     | Apply the geospatial module for geospatial data                                   |
+| [/core/no-trailing-slash](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/no-trailing-slash)       | Leave off trailing slashes from URIs                                              |
+| [/core/http-methods](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/http-methods)                 | Only apply standard HTTP methods                                                  |
+| [/core/doc-openapi](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/doc-openapi)                   | Use OpenAPI Specification for documentation                                       |
+| [/core/publish-openapi](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/publish-openapi)           | Publish OAS document at a standard location in JSON-format                        |
+| [/core/uri-version](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/uri-version)                   | Include the major version number in the URI                                       |
+| [/core/semver](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/semver)                             | Adhere to the Semantic Versioning model when releasing API changes                |
+| [/core/version-header](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/version-header)             | Return the full version number in a response header                               |
+| [/core/transport/no-sensitive-uris](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/transport/no-sensitive-uris) | No sensitive information in URIs |
+| [core/transport/tls](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/transport/tls) | Secure connections using TLS |
+| [/core/transport/security-headers](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/transport/security-headers) | Use mandatory security headers in API all responses |
+| [/core/transport/cors](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/transport/cors) | Use CORS to control access |
 
 ### Afspraken API Design Rules modules
 
