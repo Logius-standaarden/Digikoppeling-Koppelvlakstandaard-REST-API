@@ -20,10 +20,10 @@ loadRespecWithConfiguration({
         "name" : "Standaardenbeheer"
       } ],
   github: "https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API",
-  previousPublishVersion: "3.0.1",
+  previousPublishVersion: "3.0.0",
   pubDomain: "dk",
-  publishDate: "2026-01-16",
-  publishVersion: "3.1.0",
+  publishDate: "2025-11-05",
+  publishVersion: "3.0.1",
   shortName: "restapi",
   specStatus: "DEF",
   specType: "ST",
