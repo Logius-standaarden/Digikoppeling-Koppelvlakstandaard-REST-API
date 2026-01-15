@@ -117,49 +117,18 @@ Het Digikoppeling REST API profiel verplicht het gebruik van een UUID V7 als Tra
 
 ### Regels
 
-Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [[[ADR]]]. Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules:
-
-| Regelnaam                                                                                                      | Principe                                                                          |
-|----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [/core/naming-resources](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/naming-resources)         | Use nouns to name resources                                                       |
-| [/core/naming-collections](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/naming-collections)     | Use plural nouns to name collection resources                                     |
-| [/core/interface-language](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/interface-language)     | Define interfaces in Dutch unless there is an official English glossary available |
-| [/core/hide-implementation](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/hide-implementation)   | Hide irrelevant implementation details                                            |
-| [/core/http-safety](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/http-safety)                   | Adhere to HTTP safety and idempotency semantics for operations                    |
-| [/core/stateless](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/stateless)                       | Do not maintain session state on the server                                       |
-| [/core/nested-child](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/nested-child)                 | Use nested URIs for child resources                                               |
-| [/core/resource-operations](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/resource-operations)   | Model resource operations as a sub-resource or dedicated resource                 |
-| [/core/doc-language](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/doc-language)                 | Publish documentation in Dutch unless there is existing documentation in English  |
-| [/core/deprecation-schedule](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/deprecation-schedule) | Include a deprecation schedule when deprecating features or versions              |
-| [/core/transition-period](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/transition-period)       | Schedule a fixed transition period for a new major API version                    |
-| [/core/changelog](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/changelog)                       | Publish a changelog for API changes between versions                              |
-| [/core/geospatial](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/geospatial)                     | Apply the geospatial module for geospatial data                                   |
-| [/core/no-trailing-slash](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/no-trailing-slash)       | Leave off trailing slashes from URIs                                              |
-| [/core/http-methods](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/http-methods)                 | Only apply standard HTTP methods                                                  |
-| [/core/doc-openapi](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/doc-openapi)                   | Use OpenAPI Specification for documentation                                       |
-| [/core/publish-openapi](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/publish-openapi)           | Publish OAS document at a standard location in JSON-format                        |
-| [/core/uri-version](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/uri-version)                   | Include the major version number in the URI                                       |
-| [/core/semver](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/semver)                             | Adhere to the Semantic Versioning model when releasing API changes                |
-| [/core/version-header](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/version-header)             | Return the full version number in a response header                               |
-| [/core/transport/no-sensitive-uris](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/transport/no-sensitive-uris) | No sensitive information in URIs |
-| [core/transport/tls](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/transport/tls) | Secure connections using TLS |
-| [/core/transport/security-headers](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/transport/security-headers) | Use mandatory security headers in API all responses |
-| [/core/transport/cors](https://gitdocumentatie.logius.nl/publicatie/api/adr/2.1.0/#/core/transport/cors) | Use CORS to control access |
+Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [[[ADR]]].
+Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules.
 
 ### Afspraken API Design Rules modules
 
-Extensies op de [[[ADR]]] zijn geschreven in modules. Hieronder wordt aangegeven welke regels uit de API Design Rules modules in dit profiel verplicht zijn of worden aanbevolen.
+Extensies op de [[[ADR]]] zijn geschreven in modules.
+Hieronder wordt aangegeven welke regels uit de API Design Rules modules in dit profiel verplicht zijn of worden aanbevolen.
 
-| Categorie             | Module             | Principe                                                                                                                                                    |
-|-----------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Niet van toepassing\* | Transport Security | [Secure connections using TLS](https://gitdocumentatie.logius.nl/publicatie/api/mod-ts/#/transport/tls)                                                     |
-| Verplicht\*\*         | Transport Security | [No sensitive information in URIs](https://gitdocumentatie.logius.nl/publicatie/api/mod-ts/#/transport/no-sensitive-uris)                                   |
-| Verplicht             | API access control | [Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/API-Strategie-mod-access-control/#api-13)                                           |
-| Aanbevolen            | Error handling     | [Use default error handling](https://github.com/Geonovum/KP-APIs/blob/master/API-strategie-modules/_extensions_legacy/ext-error-handling.md#api-46)         |
-| Aanbevolen            | Error handling     | [Use the required HTTP status codes](https://github.com/Geonovum/KP-APIs/blob/master/API-strategie-modules/_extensions_legacy/ext-error-handling.md#api-47) |
-
-\* Wat betreft TLS zijn de Digikoppeling beveiligingsvoorschriften leidend (zie [[[DK-beveiliging]]]).<br>
-\*\* Alleen verplicht indien er sprake is van logging in systemen die niet onder controle van de betrokken client- en serverorganisatie staan.
+| Categorie  | Module             | Principe                                                                                                                                            |
+|------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Verplicht  | API access control | [Accept tokens as HTTP headers only](https://docs.geostandaarden.nl/api/API-Strategie-mod-access-control/#api-13)                                   |
+| Aanbevolen | Error handling     | [Use default error handling](https://github.com/Geonovum/KP-APIs/blob/master/API-strategie-modules/_extensions_legacy/ext-error-handling.md#api-46) |
 
 #### Toelichting aanduidingen
 
