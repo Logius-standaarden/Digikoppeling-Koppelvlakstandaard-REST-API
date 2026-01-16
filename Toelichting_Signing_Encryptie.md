@@ -25,7 +25,7 @@ Wanneer de 2-zijdig TLS connectie bij de Gateway wordt beindigd en de gateway he
 De Client kan HTTP header informatie zoals bv de HTTP Operatie (GET/POST/DELETE/etc) en het resource pad samen met de body van het bericht voorzien van een handtekening, De Gateway kan deze ondertekening doorsturen naar de Server en de Server kan dmv de handtekening afzender en integriteit van het bericht controleren en vaststellen.
 
 
-> NB Of HTTP Signing en Encryptie nodig/wenselijk zijn is afhankelijk van de opzet van de infrastruktuur en het gewenste beschermingsniveau. Signing , en ook Encryptie toepassen zorgt voor meer comlexiteit in de uitwisselingen. Ook zijn Signing en Encryptie relatief zware operaties die ook beslag op resources opleveren dus het is belangrijk om dit alleen toe te passen in use cases waar  HTTP Signing en Encryptie toegevoegde waarde hebben
+> NB Of HTTP Signing en Encryptie nodig/wenselijk zijn is afhankelijk van de opzet van de infrastructuur en het gewenste beschermingsniveau. Signing , en ook Encryptie toepassen zorgt voor meer complexiteit in de uitwisselingen. Ook zijn Signing en Encryptie relatief zware operaties die ook beslag op resources opleveren dus het is belangrijk om dit alleen toe te passen in use cases waar  HTTP Signing en Encryptie toegevoegde waarde hebben
 
 
 

@@ -84,7 +84,7 @@ Binnen dit Digikoppeling REST API profiel zijn er alleen voorschriften m.b.t. he
 
 #### TLS 
 
-De Digikoppeling Beveilingsstandaarden en voorschriften veplichten het gebruik van 2-zijdig TLS met minimaal TLS versie 1.2, FSC verscherpt deze eis door de ciphersuites die geen perfect forward secrecy ondersteunen niet toe te laten.
+De Digikoppeling Beveilingsstandaarden en voorschriften verplichten het gebruik van 2-zijdig TLS met minimaal TLS versie 1.2, FSC verscherpt deze eis door de ciphersuites die geen perfect forward secrecy ondersteunen niet toe te laten.
 * Zie [[[DK-beveiliging]]]
 
 #### Netwerk-poorten
