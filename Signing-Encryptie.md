@@ -30,7 +30,7 @@ Enkele voorbeelden van signing standaarden die in ontwikkeling zijn:
 
 ## Encryptie in de context van HTTP Rest
 
-Voor encryptie is de standaard JSON Web Encryption (JWE) [[rfc7516]] beschikbaar
+Voor encryptie is de standaard JSON Web Encryption (JWE) [[RFC7516]] beschikbaar
 
 Zie ook de ADR extensie signing en encryptie:
 
