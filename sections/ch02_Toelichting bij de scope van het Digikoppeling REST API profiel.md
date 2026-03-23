@@ -16,15 +16,15 @@ Buiten scope van het profiel zijn:
 Het Digikoppeling REST API profiel is wat betreft functionele toepassing vergelijkbaar met het Digikoppeling WUS profiel.
 De client van de dienstafnemer die gebruik maakt van het Digikoppeling REST API profiel is in deze context een systeem (applicatie) en geen internetbrowser.
 
-| Invulling Digikoppeling  | DK REST API profiel | DK WUS profiel | DK ebMS2 profiel |
-| --- | --- |---|---|
-| Bevragingen / Meldingen |  |  |  |
-| best-effort | 1.0 | 2W-be | osb-be |
-| best-effort signed | 2.0 | 2W-be-S | osb-be-s |
-| best-effort signed/encrypted | 2.0 | 2W-be-SE | osb-be-e |
-|  |  |  |  |
-| reliable |  |  | osb-rm |
-| reliable signed |  |  | osb-rm-s |
-| reliable signed en encrypted |  |  | osb-rm-e |
+| Invulling Digikoppeling      | DK REST API profiel | DK WUS profiel | DK ebMS2 profiel |
+|------------------------------|---------------------|----------------|------------------|
+| Bevragingen / Meldingen      |                     |                |                  |
+| best-effort                  | 1.0                 | 2W-be          | osb-be           |
+| best-effort signed           | 2.0                 | 2W-be-S        | osb-be-s         |
+| best-effort signed/encrypted | 2.0                 | 2W-be-SE       | osb-be-e         |
+|                              |                     |                |                  |
+| reliable                     |                     |                | osb-rm           |
+| reliable signed              |                     |                | osb-rm-s         |
+| reliable signed en encrypted |                     |                | osb-rm-e         |
 
 Vanaf versie 2.0 van het Digikoppeling REST API profiel wordt signing en encryptie ondersteund (zie [[[#signing-encryptie-in-http-rest-context]]]).
