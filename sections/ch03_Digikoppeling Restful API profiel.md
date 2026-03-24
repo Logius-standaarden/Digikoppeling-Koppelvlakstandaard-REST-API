@@ -27,13 +27,13 @@ Het Digikoppeling REST API profiel maakt gebruik van de FSC-standaard.
 
 De Digikoppeling Beveiligingsstandaarden en voorschriften gaan specifiek in op het verplichte gebruik van PKIO certificaten [[PKIO-PvE]].
 
-> Zie [[[DK-beveiliging]]]
+* Zie [[[DK-beveiliging]]]
 
 ### Identificatie & Authenticatie
 
 Digikoppeling maakt gebruik van het OIN (Organisatie Identificatie Nummer) voor de identificatie van organisaties. Binnen dit Digikoppeling REST API profiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten en FSC. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
 
-> Zie [[[DK-IDAuth]]]
+* Zie [[[DK-IDAuth]]]
 
 ### Federated Service Connectivity Standaard (FSC)
 
@@ -76,19 +76,19 @@ Het PeerID binnen de context van FSC is OIN. Het OIN wordt bij PKIO certificaten
 Het is verplicht vanuit FSC om te bepalen welk veld uit het certificaat de Peer name bepaalt. Dit is het organization veld van het Subject van het PKIO certificaat.
 Binnen dit Digikoppeling REST API profiel zijn er alleen voorschriften m.b.t. het verplicht gebruik van het OIN binnen PKIO certificaten en FSC. Voor OIN gebruik binnen payloads (bv JSON) of resource-pad gelden geen specifieke voorschriften.
 
-> Zie [[[DK-IDAuth]]]
+* Zie [[[DK-IDAuth]]]
 
 #### TLS
 
 De Digikoppeling Beveilingsstandaarden en voorschriften veplichten het gebruik van 2-zijdig TLS met minimaal TLS versie 1.2, FSC verscherpt deze eis door de ciphersuites die geen perfect forward secrecy ondersteunen niet toe te laten.
 
-> Zie [[[DK-beveiliging]]]
+* Zie [[[DK-beveiliging]]]
 
 #### Netwerk-poorten
 
 De Digikoppeling Beveiligingsstandaarden en voorschriften verplichten het gebruik van de netwerkpoort 443 voor data verkeer. FSC voegt daar het gebruik van port 8443 voor managementverkeer aan toe. E.g. toegang aanvragen voor een API.
 
-> Zie [[[DK-beveiliging]]]
+* Zie [[[DK-beveiliging]]]
 
 #### Contracten
 
