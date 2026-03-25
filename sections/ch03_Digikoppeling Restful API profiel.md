@@ -65,12 +65,12 @@ De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensies Loggi
 
 De bovengenoemde functionaliteit is vastgelegd in FSC Core en de extensie Logging. Core beschrijft het koppelen,aanbieden en ontdekken van API's en de extensie Logging beschrijft hoe logregels weggeschreven moeten worden.
 
-#### Vertrouwelijkheid FSC
+#### Vertrouwelijkheid
 
 FSC spreekt over een Trust Anchor die door een Group moet worden gekozen. De Trust Anchor is binnen de context van X.509 certificaten de certificate authority (CA) waaruit het vertrouwen wordt afgeleid.
 De Trust Anchor voor de FSC Group moet daarom de PKIO Private Root zijn.
 
-#### Identificatie & Authenticatie FSC
+#### Identificatie & Authenticatie
 
 Het PeerID binnen de context van FSC is OIN. Het OIN wordt bij PKIO certificaten geplaatst in het SerialNumber veld van het Subject.
 Het is verplicht vanuit FSC om te bepalen welk veld uit het certificaat de Peer name bepaalt. Dit is het organization veld van het Subject van het PKIO certificaat.
