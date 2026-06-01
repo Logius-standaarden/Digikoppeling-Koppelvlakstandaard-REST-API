@@ -108,8 +108,8 @@ Voorbeeld: Peer A verstuurt een Contract naar Peer B. Het versturen mislukt. Pee
 
 #### Logging
 
-De FSC Logging extensie beschrijft een Transaction ID. Een unieke identifier in de vorm van een UUID voor elke transactie die gedaan wordt, i.e. een bevraging van een API. Deze transactie ID wordt weggeschreven bij elke log regel.
-Het Digikoppeling REST API profiel verplicht het gebruik van een UUID V7 als Transaction ID.
+De FSC Logging extensie beschrijft een `TransactionID`. Een unieke identifier in de vorm van een UUID voor elke transactie die gedaan wordt, i.e. een bevraging van een API. Deze transactieidentificatie wordt weggeschreven bij elke log regel.
+Het Digikoppeling REST API profiel verplicht het gebruik van een UUID V7 als `TransactionID`.
 
 ### API Design Rules
 
