@@ -113,12 +113,10 @@ Het Digikoppeling REST API profiel verplicht het gebruik van een UUID V7 als `Tr
 
 ### API Design Rules
 
-### Regels
-
 Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [[[ADR]]].
 Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules.
 
-### Afspraken API Design Rules modules
+#### Afspraken
 
 Extensies op de [[[ADR]]] zijn geschreven in modules.
 Hieronder wordt aangegeven welke regels uit de API Design Rules modules in dit profiel verplicht zijn of worden aanbevolen.
