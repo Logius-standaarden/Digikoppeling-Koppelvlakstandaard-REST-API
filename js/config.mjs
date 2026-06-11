@@ -25,7 +25,7 @@ loadRespecWithConfiguration({
   publishDate: "2026-04-21",
   publishVersion: "4.0.1",
   shortName: "restapi",
-  specStatus: "WV",
+  specStatus: "DEF",
   specType: "ST",
   postProcess: [ generateMermaidFigures ]
 });
