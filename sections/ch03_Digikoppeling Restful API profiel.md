@@ -80,8 +80,7 @@ Binnen dit Digikoppeling REST API profiel zijn er alleen voorschriften m.b.t. he
 
 #### TLS
 
-De Digikoppeling Beveilingsstandaarden en voorschriften veplichten het gebruik van 2-zijdig TLS met minimaal TLS versie 1.2, FSC verscherpt deze eis door de ciphersuites die geen perfect forward secrecy ondersteunen niet toe te laten.
-
+De Digikoppeling Beveilingsstandaarden en voorschriften verplichten het gebruik van 2-zijdig TLS met minimaal TLS versie 1.2, FSC verscherpt deze eis door de ciphersuites die geen perfect forward secrecy ondersteunen niet toe te laten.
 * Zie [[[DK-beveiliging]]]
 
 #### Netwerk-poorten
@@ -113,10 +112,12 @@ Het Digikoppeling REST API profiel verplicht het gebruik van een UUID V7 als `Tr
 
 ### API Design Rules
 
+### Regels
+
 Het Digikoppeling REST-API profiel conformeert zich volledig aan het normatieve deel van de [[[ADR]]].
 Het is verplicht te voldoen aan alle (normatieve) eisen van de REST-API Design Rules.
 
-#### Afspraken
+### Afspraken API Design Rules modules
 
 Extensies op de [[[ADR]]] zijn geschreven in modules.
 Hieronder wordt aangegeven welke regels uit de API Design Rules modules in dit profiel verplicht zijn of worden aanbevolen.
