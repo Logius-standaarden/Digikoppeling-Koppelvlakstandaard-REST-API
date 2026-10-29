@@ -11,5 +11,5 @@
 <p align="center">
   <a href="https://logius-standaarden.github.io/Digikoppeling-Koppelvlakstandaard-REST-API/"><b>Werkversie</b></a> &nbsp;·&nbsp;
   <a href="https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API/issues/new/choose"><b>Issue indienen</b></a> &nbsp;·&nbsp;
-  <a href="https://gitdocumentatie.logius.nl/publicatie/dk/beheermodel/"><b>Beheermodel</b></a>
+  <a href="https://gitdocumentatie.logius.nl/publicatie/dk/beheer/"><b>Beheermodel</b></a>
 </p>
