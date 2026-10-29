@@ -1,14 +1,15 @@
-# Digikoppeling Restful API profiel
+<h1 align="center">Digikoppeling Koppelvlakstandaard REST-API</h1>
 
-Het Digikoppeling Rest API profiel is gericht op M2M (Machine-to-Machine) en G2G (Government-to-Government) interacties conform de algemene uitgangspunten van de Digkoppeling standaard en het toepassingsgebied van Digikoppeling op de PTLU (Pas toe of leg uit) lijst van het Forum Standaardisatie;
+<p align="center">
+  <em>Het Digikoppeling Rest API profiel is gericht op Machine-to-Machine (M2M) en Government-to-Government (G2G) interacties conform de algemene uitgangspunten van de Digikoppeling standaard en het toepassingsgebied van Digikoppeling op de Pas-toe-of-leg-uit lijst (PTLU) van het Forum Standaardisatie.</em>
+</p>
 
-- Werkversie: https://logius-standaarden.github.io/Digikoppeling-Koppelvlakstandaard-REST-API/
-- Gepubliceerde versie: https://gitdocumentatie.logius.nl/publicatie/dk/restapi ([PDF](https://gitdocumentatie.logius.nl/publicatie/dk/restapi/Digikoppeling-Koppelvlakstandaard-REST-API.pdf))
+<p align="center">
+  <a href="https://gitdocumentatie.logius.nl/publicatie/dk/restapi/"><img alt="Gepubliceerde versie 4.0.1" src="https://img.shields.io/badge/Gepubliceerd-4.0.1-0B71CE?style=flat-square"></a>
+</p>
 
-(Het Digikoppeling Rest API profiel is opgenomen in de Digikoppeling Architectuur versie 2.0, zie hiervoor [Digikoppeling Architectuur 2.0](https://logius-standaarden.github.io/Digikoppeling-Architectuur/) )
-
-
-## Commentaar is welkom!
-
-Maak een issue aan in deze repository. Eerste keer? Hoe een issue moet worden aangemaakt vindt u [hier](https://github.com/Logius-standaarden/Openbare-Consultaties#issues-en-pull-requests-opmerkingen-maken-of-tekstvoorstellen-indienen).
-
+<p align="center">
+  <a href="https://logius-standaarden.github.io/Digikoppeling-Koppelvlakstandaard-REST-API/"><b>Werkversie</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API/issues/new/choose"><b>Issue indienen</b></a> &nbsp;·&nbsp;
+  <a href="https://gitdocumentatie.logius.nl/publicatie/dk/beheer/"><b>Beheermodel</b></a>
+</p>
